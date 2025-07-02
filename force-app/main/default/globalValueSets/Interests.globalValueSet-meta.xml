@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Bærekraft</fullName>
+        <default>false</default>
+        <label>Bærekraft</label>
+    </customValue>
+    <customValue>
+        <fullName>Cybersikkerhet</fullName>
+        <default>false</default>
+        <label>Cybersikkerhet</label>
+    </customValue>
+    <customValue>
+        <fullName>Design</fullName>
+        <default>false</default>
+        <label>Design</label>
+    </customValue>
+    <customValue>
+        <fullName>Innovasjon</fullName>
+        <default>false</default>
+        <label>Innovasjon</label>
+    </customValue>
+    <customValue>
+        <fullName>Ledelse, organisasjon og strategi</fullName>
+        <default>false</default>
+        <label>Ledelse, organisasjon og strategi</label>
+    </customValue>
+    <customValue>
+        <fullName>Markedsføring</fullName>
+        <default>false</default>
+        <label>Markedsføring</label>
+    </customValue>
+    <customValue>
+        <fullName>Sky</fullName>
+        <default>false</default>
+        <label>Sky</label>
+    </customValue>
+    <customValue>
+        <fullName>Teknologi og Data</fullName>
+        <default>false</default>
+        <label>Teknologi og Data</label>
+    </customValue>
+    <masterLabel>Interests</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

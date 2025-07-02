@@ -1,0 +1,31 @@
+<apex:page lightningStylesheets="true">
+<head >
+<style type="text/css">
+        
+        h1 { 
+        width: 100%;
+        background-color:#00ff00;
+        color:white;
+        text-align:center;
+        font-size:24pt
+        }
+
+        h3 {
+        width: 100%;
+        background-color:#00ff00;
+        color:white;
+        text-align:center;
+        font-size:16pt
+        }
+</style>
+
+</head>
+
+ <h1>Feil i tilbudsportalen!
+
+<h3>Det er en feil i opprettelse av tilbudsrom, og ingen nye tilbudsrom er tilgjengelige. <br></br>Du kan likevel arbeide med eksisterende tilbudsrom.
+ Problemet er eskalert til Support i Frankrike.
+ </h3>
+  </h1>
+
+</apex:page>

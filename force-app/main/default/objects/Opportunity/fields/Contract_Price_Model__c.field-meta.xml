@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract_Price_Model__c</fullName>
+    <externalId>false</externalId>
+    <label>Price / Delivery Model</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Fixed price/Target price</fullName>
+                <default>false</default>
+                <label>Fixed price/Target price</label>
+            </value>
+            <value>
+                <fullName>T&amp;M (No estimates or cap)</fullName>
+                <default>false</default>
+                <label>T&amp;M (No estimates or cap)</label>
+            </value>
+            <value>
+                <fullName>T&amp;M with estimates / delivery responsibility</fullName>
+                <default>false</default>
+                <label>T&amp;M with estimates / delivery responsibility</label>
+            </value>
+            <value>
+                <fullName>SW/Solution delivery</fullName>
+                <default>false</default>
+                <label>SW/Solution delivery</label>
+            </value>
+            <value>
+                <fullName>FAST</fullName>
+                <default>false</default>
+                <label>FAST</label>
+            </value>
+            <value>
+                <fullName>T&amp;M delivery responsibility</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>T&amp;M delivery responsibility</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Area_BU__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(TEXT(BU_Lead__c) = &quot;Apps&quot;,
+TEXT(Community__c),
+IF(TEXT(BU_Lead__c) = &quot;DPS&quot;, 
+SUBSTITUTE(
+IF (INCLUDES(Service_Area_DPS__c,&quot;AI Ops&quot; ),&quot;AI Ops; &quot;,null ) &amp;
+IF (INCLUDES(Service_Area_DPS__c,&quot;AWS&quot; ),&quot;AWS; &quot;,null ) &amp;
+IF (INCLUDES(Service_Area_DPS__c,&quot;Cloud Native&quot; ),&quot;Cloud Native; &quot;,null ) &amp;
+IF (INCLUDES(Service_Area_DPS__c,&quot;Collaboration&quot; ),&quot;Collaboration; &quot;,null ) &amp;
+IF (INCLUDES(Service_Area_DPS__c,&quot;Cybersecurity&quot; ),&quot;Cybersecurity; &quot;,null ) &amp;
+IF (INCLUDES(Service_Area_DPS__c,&quot;Data Management&quot; ),&quot;Data Management; &quot;,null ) &amp;
+IF (INCLUDES(Service_Area_DPS__c,&quot;Digital Identity&quot; ),&quot;Digital Identity; &quot;,null ) &amp;
+IF (INCLUDES(Service_Area_DPS__c,&quot;Digital Workflow&quot; ),&quot;Digital Workflow; &quot;,null ) &amp;
+IF (INCLUDES(Service_Area_DPS__c,&quot;Digital Workplace&quot; ),&quot;Digital Workplace; &quot;,null ) &amp;
+IF (INCLUDES(Service_Area_DPS__c,&quot;DPSD Add-on&quot; ),&quot;DPSD Add-on; &quot;,null ) &amp;
+IF (INCLUDES(Service_Area_DPS__c,&quot;DPSD Service Delivery&quot; ),&quot;DPSD Service Delivery; &quot;,null ) &amp;
+IF (INCLUDES(Service_Area_DPS__c,&quot;Energy Solutions&quot; ),&quot;Energy Solutions; &quot;,null ) &amp;
+IF (INCLUDES(Service_Area_DPS__c,&quot;Health Solutions&quot; ),&quot;Health Solutions; &quot;,null ) &amp;
+IF (INCLUDES(Service_Area_DPS__c,&quot;Hybrid Cloud&quot; ),&quot;Hybrid Cloud; &quot;,null ) &amp;
+IF (INCLUDES(Service_Area_DPS__c,&quot;IT Excellence&quot; ),&quot;IT Excellence; &quot;,null ) &amp;
+IF (INCLUDES(Service_Area_DPS__c,&quot;Microsoft Cloud&quot; ),&quot;Microsoft Cloud; &quot;,null ) &amp;
+IF (INCLUDES(Service_Area_DPS__c,&quot;Network&quot; ),&quot;Network; &quot;,null ) &amp;
+IF (INCLUDES(Service_Area_DPS__c,&quot;Observability &amp; AI Ops&quot; ),&quot;Observability &amp; AI Ops; &quot;,null ) &amp;
+IF (INCLUDES(Service_Area_DPS__c,&quot;Open Source&quot; ),&quot;Open Source; &quot;,null ) &amp;
+IF (INCLUDES(Service_Area_DPS__c,&quot;Outsourcing&quot; ),&quot;Outsourcing; &quot;,null ) &amp;
+IF (INCLUDES(Service_Area_DPS__c,&quot;Power Platform&quot; ),&quot;Power Platform; &quot;,null ) &amp;
+IF (INCLUDES(Service_Area_DPS__c,&quot;Project Management&quot; ),&quot;Project Management; &quot;,null ) &amp;
+IF (INCLUDES(Service_Area_DPS__c,&quot;RightCloud&quot; ),&quot;RightCloud; &quot;,null ) &amp;
+IF (INCLUDES(Service_Area_DPS__c,&quot;RightExperience&quot; ),&quot;RightExperience; &quot;,null ) &amp;
+IF (INCLUDES(Service_Area_DPS__c,&quot;RightSecurity&quot; ),&quot;RightSecurity; &quot;,null ) &amp;
+IF (INCLUDES(Service_Area_DPS__c,&quot;RightService&quot; ),&quot;RightService; &quot;,null ) &amp;
+IF (INCLUDES(Service_Area_DPS__c,&quot;Solution Architecture&quot; ),&quot;Solution Architecture; &quot;,null ) &amp;
+IF (INCLUDES(Service_Area_DPS__c,&quot;Testing&quot; ),&quot;Testing; &quot;,null ) &amp;
+&quot;-&quot;,
+&quot;; -&quot;,
+null
+),
+IF(TEXT(BU_Lead__c) = &quot;Advisory&quot;,
+SUBSTITUTE(
+IF (INCLUDES(Service_Area_BC__c,&quot;Business Improvement&quot; ),&quot;Business Improvement; &quot;,null ) &amp;
+IF (INCLUDES(Service_Area_BC__c,&quot;Change Management&quot; ),&quot;Change Management; &quot;,null ) &amp;
+IF (INCLUDES(Service_Area_BC__c,&quot;Digital Security and Privacy&quot; ),&quot;Digital Security and Privacy; &quot;,null ) &amp;
+IF (INCLUDES(Service_Area_BC__c,&quot;Footprint&quot; ),&quot;Footprint; &quot;,null ) &amp;
+IF (INCLUDES(Service_Area_BC__c,&quot;Graduates&quot; ),&quot;Graduates; &quot;,null ) &amp;
+IF (INCLUDES(Service_Area_BC__c,&quot;Information Management&quot; ),&quot;Information Management; &quot;,null ) &amp;
+IF (INCLUDES(Service_Area_BC__c,&quot;Insight and Analysis&quot; ),&quot;Insight and Analysis; &quot;,null ) &amp;
+IF (INCLUDES(Service_Area_BC__c,&quot;Modern Workplace&quot; ),&quot;Modern Workplace; &quot;,null ) &amp;
+IF (INCLUDES(Service_Area_BC__c,&quot;Organizational Transformation&quot; ),&quot;Organizational Transformation; &quot;,null ) &amp;
+IF (INCLUDES(Service_Area_BC__c,&quot;Project- and Program Management&quot; ),&quot;Project- and Program Management; &quot;,null ) &amp;
+IF (INCLUDES(Service_Area_BC__c,&quot;Strategy&quot; ),&quot;Strategy; &quot;,null ) &amp;
+IF (INCLUDES(Service_Area_BC__c,&quot;Summer Interns&quot; ),&quot;Summer Interns; &quot;,null ) &amp;
+
+&quot;-&quot;,
+&quot;; -&quot;,
+null
+),&quot;&quot;)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Service Area BU</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

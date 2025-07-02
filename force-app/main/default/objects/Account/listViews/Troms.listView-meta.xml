@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Troms</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.OWNERSHIP</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>Owner__c</columns>
+    <columns>Opportunities__c</columns>
+    <columns>ACCOUNT.LAST_ACTIVITY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Region__c</field>
+        <operation>equals</operation>
+        <value>Tromsø</value>
+    </filters>
+    <label>Tromsø</label>
+    <sharedTo>
+        <group>NO</group>
+    </sharedTo>
+</ListView>

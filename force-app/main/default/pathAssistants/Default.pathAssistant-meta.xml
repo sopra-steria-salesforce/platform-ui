@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Lead</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Default</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Lead_Title__c</fieldNames>
+        <fieldNames>Company</fieldNames>
+        <fieldNames>Title</fieldNames>
+        <fieldNames>OwnerId</fieldNames>
+        <info>&lt;p&gt;&lt;strong style=&quot;font-size: 13px;&quot;&gt;Great job, a new Lead has been created and is ready to be qualified. &lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Set the Lead stage to &amp;quot;Qualification&amp;quot; and check the parameters that are required to qualify this Lead in order to move it forward in the Lead process. &lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>New</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Not_Qualified_Reason__c</fieldNames>
+        <info>&lt;p&gt;&lt;strong style=&quot;font-size: 13px;&quot;&gt;Sorry to hear that the Lead is not qualified! &lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Please state a reason why the Lead was not qualified. You help us analysing Leads that have not been converted! &lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;After you inserted a reason you can Leave the Lead as it is.  &lt;/strong&gt;&lt;/p&gt;</info>
+        <picklistValueName>Not Qualified</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Lead_Title__c</fieldNames>
+        <fieldNames>Company</fieldNames>
+        <fieldNames>Employees__c</fieldNames>
+        <fieldNames>AnnualRevenue</fieldNames>
+        <info>&lt;p&gt;&lt;strong style=&quot;font-size: 13px;&quot;&gt;Lead Qualification Framework&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Exploring the &amp;quot;Need&amp;quot;&lt;ul&gt;&lt;li&gt;Has the need been identified?&lt;/li&gt;&lt;li&gt;Can we cover the need?&lt;/li&gt;&lt;li&gt;What are the pain points?&lt;/li&gt;&lt;li&gt;What is the timeline?&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Company Metrics&lt;ul&gt;&lt;li&gt;Does the company have liquidity to buy our services?&lt;/li&gt;&lt;li&gt;Does the company have the size that fit into our portfolio?​&lt;/li&gt;&lt;li&gt;Is there a chance to establish a long term relationship&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Decision Maker&lt;ul&gt;&lt;li&gt;Is the Lead Contact entitled to make a buying decision?&lt;/li&gt;&lt;li&gt;Do we have all information we need from the Contact&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Qualification</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <picklistValueName>Qualified</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

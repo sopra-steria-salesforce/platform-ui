@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Location__c</fullName>
+    <externalId>false</externalId>
+    <label>Location</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>NO - Oslo</fullName>
+                <default>false</default>
+                <label>NO - Oslo</label>
+            </value>
+            <value>
+                <fullName>NO - Stavanger</fullName>
+                <default>false</default>
+                <label>NO - Stavanger</label>
+            </value>
+            <value>
+                <fullName>NO - Trondheim</fullName>
+                <default>false</default>
+                <label>NO - Trondheim</label>
+            </value>
+            <value>
+                <fullName>SE - Stockholm</fullName>
+                <default>false</default>
+                <label>SE - Stockholm</label>
+            </value>
+            <value>
+                <fullName>SE - Göteborg</fullName>
+                <default>false</default>
+                <label>SE - Göteborg</label>
+            </value>
+            <value>
+                <fullName>DK</fullName>
+                <default>false</default>
+                <label>DK</label>
+            </value>
+            <value>
+                <fullName>SE - Malmö</fullName>
+                <default>false</default>
+                <label>SE - Malmö</label>
+            </value>
+            <value>
+                <fullName>East</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>East</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

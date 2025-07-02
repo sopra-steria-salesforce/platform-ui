@@ -1,0 +1,26 @@
+</br>
+
+<h3>The Opportunity {!Opportunity.Name} has changed stage from {!Opportunity.StageName_Priorvalue__c} to {!Opportunity.StageName} and is assigned to {!Opportunity.Business_Unit__c}</h3>
+<strong>The opportunity is registered with the following information:</strong></br></br>
+
+Opportunity: {!Opportunity.Name}</br>
+Account: {!Opportunity.Account}</br>
+Opportunity Owner: {!Opportunity.OwnerFirstName} {!Opportunity.OwnerLastName}</br>
+Proposal due date: {!Opportunity.Proposal_Due_Date_Time__c}</br>
+<strong>Stage: {!Opportunity.StageName}</strong></br>
+<strong>Status: {!Opportunity.Status__c}</strong></br>
+Opportunity type: {!Opportunity.Type}</br>
+Apps owner: {!Opportunity.Apps_Owner__c}</br>
+BC owner: {!Opportunity.BC_Owner__c}</br>
+DPS owner: {!Opportunity.DPS_Owner__c}</br></br>
+
+</br>
+Link to Bid room: {!Opportunity.BID_room__c}</br></br>
+Link to Opportunity in Salesforce: {!Opportunity.Opportunity_Link__c}</br></br>
+
+
+<strong>Description:</strong></br>
+{!Opportunity.Description}
+</br></br>
+</hr>
+You cannot reply to this e-mail but if you have received this notification by a mistake please contact the Salesforce Admin in Sopra Steria.

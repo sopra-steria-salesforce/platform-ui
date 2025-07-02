@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PriceDelivery_Model_Required_Stage4_NO</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+OR(TEXT(StageName) = &quot;4 - Offer&quot; , TEXT(StageName)= &quot;5 - Awarded&quot;), $Permission.Bypass_validation_rule = FALSE,
+    $User.Username != &apos;servicenow.integrationuser@soprasteria.com&apos; ,
+				$User.Country != &quot;Sweden&quot;, 
+				TEXT(Type) != &apos;Frame agreement&apos;,
+    TEXT(Type) != &apos;Capacity agreement&apos;,
+				ISBLANK(TEXT(Contract_Price_Model__c)))</errorConditionFormula>
+    <errorMessage>Price / delivery Model is required when Stage is 4 - Offer or higher, except for Frame Agreement and Capacity Agreement</errorMessage>
+</ValidationRule>

@@ -1,13 +1,53 @@
 {
 	"packageDirectories": [
-		{
-			"path": "force-app",
-			"default": true
-		},
-		{ "path": "unpackaged" }
-	],
+	  {
+		"path": "force-app",
+		"package": "platform-ui",
+		"versionNumber": "1.1.0.NEXT",
+		"versionDescription": "Top level package for Flexipages, Quick Actions, Applications, Reports, etc. that span the entire platform",
+		"default": true,
+		"dependencies": [
+		  {
+			"package": "Nebula Logger@4.16.0.2"
+		  },
+		  {
+			"package": "DashboardsGSP@2.9.0.1"
+		  },
+		  {
+			"package": "Pardot@5.5.0.2"
+		  },
+		  {
+			"package": "Lightning Messaging Utility@1.5.0.1"
+		  },
+		  {
+			"package": "trigger-actions-framework@0.3.2"
+		  },
+		  {
+			"package": "platform-base",
+			"versionNumber": "1.1.0.LATEST"
+		  },
+		  {
+			"package": "document-transfer",
+			"versionNumber": "0.7.0.LATEST"
+		  }
+	]
+}
+],
+	"name": "platform-ui",
 	"namespace": "",
 	"sfdcLoginUrl": "https://login.salesforce.com",
-	"sourceApiVersion": "61.0",
-	"packageAliases": {}
-}
+	"sourceApiVersion": "63.0",
+	"packageAliases": {
+	  "Nebula Logger@4.16.0.2": "04t5Y0000015pGyQAI",
+	  "DashboardsGSP@2.9.0.1": "04t1n000002WswiAAC",
+	  "Pardot@5.5.0.2": "04tKY000000kevRYAQ",
+	  "Lightning Messaging Utility@1.5.0.1": "04t5w000003gWWBAA2",
+	  "platform-base": "0HoP100000001CDKAY",
+	  "trigger-actions-framework@0.3.2": "04tKY000000PdZOYA0",
+	  "document-transfer": "0HoP100000001FRKAY",
+	  "platform-ui": "0HoP100000001P7KAI"
+	},
+	"sourceBehaviorOptions": [
+	  "decomposeWorkflowBeta"
+	]
+  }

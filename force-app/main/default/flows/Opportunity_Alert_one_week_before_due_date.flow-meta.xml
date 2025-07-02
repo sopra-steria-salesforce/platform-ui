@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Alert_Opportunity_Owner</name>
+        <label>Alert Opportunity Owner</label>
+        <locationX>50</locationX>
+        <locationY>732</locationY>
+        <actionName>Opportunity.Alert_opportunity_owner_due_date_is_today</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Due_Date_0_0</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Opportunity.Alert_opportunity_owner_due_date_is_today</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Alert_Opportunity_Owner_0</name>
+        <label>Alert Opportunity Owner</label>
+        <locationX>50</locationX>
+        <locationY>396</locationY>
+        <actionName>Opportunity.Alert_opportunity_owner_one_week_before</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Due_Date_0</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Opportunity.Alert_opportunity_owner_one_week_before</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Alert_Opportunity_Owner_CloseDate</name>
+        <label>Alert Opportunity Owner</label>
+        <locationX>50</locationX>
+        <locationY>1068</locationY>
+        <actionName>Opportunity.Alert_opportunity_owner_closed_date_is_passed_by_1_day</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Opportunity.Alert_opportunity_owner_closed_date_is_passed_by_1_day</nameSegment>
+    </actionCalls>
+    <apiVersion>55.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <description>Fires an email alert based on the due date</description>
+        <name>Due_Date</name>
+        <label>Due Date</label>
+        <locationX>182</locationX>
+        <locationY>276</locationY>
+        <defaultConnector>
+            <targetReference>Due_Date_0</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>None</defaultConnectorLabel>
+        <rules>
+            <name>Due_Date_One_Week</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Days_From_Proposal_Due_Date__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <numberValue>7.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Alert_Opportunity_Owner_0</targetReference>
+            </connector>
+            <label>Due Date One Week</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Fires an email alert based on the due date</description>
+        <name>Due_Date_0</name>
+        <label>Due Date</label>
+        <locationX>182</locationX>
+        <locationY>612</locationY>
+        <defaultConnector>
+            <targetReference>Due_Date_0_0</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>None</defaultConnectorLabel>
+        <rules>
+            <name>Due_Date_Tomorrow</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Days_From_Proposal_Due_Date__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <numberValue>1.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Alert_Opportunity_Owner</targetReference>
+            </connector>
+            <label>Due Date Tomorrow</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Fires an email alert based on the due date</description>
+        <name>Due_Date_0_0</name>
+        <label>Due Date</label>
+        <locationX>182</locationX>
+        <locationY>948</locationY>
+        <defaultConnectorLabel>None</defaultConnectorLabel>
+        <rules>
+            <name>Close_Date_Yesterday</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Days_from_CloseDate__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <numberValue>-1.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Alert_Opportunity_Owner_CloseDate</targetReference>
+            </connector>
+            <label>Close Date Yesterday</label>
+        </rules>
+    </decisions>
+    <description>alerts the opportunity owner when opportunity due date is approaching or when it has passed</description>
+    <environments>Default</environments>
+    <interviewLabel>Opportunity: Alert one week before close date {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Opportunity: Alert Owner on Due Date</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Due_Date</targetReference>
+        </connector>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>StageName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>1 - Possibility</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>StageName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>2 - RFI</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>StageName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>3 - Prequal</stringValue>
+            </value>
+        </filters>
+        <object>Opportunity</object>
+        <schedule>
+            <frequency>Daily</frequency>
+            <startDate>2022-10-14</startDate>
+            <startTime>06:00:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

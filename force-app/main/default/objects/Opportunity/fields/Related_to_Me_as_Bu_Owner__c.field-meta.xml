@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Related_to_Me_as_Bu_Owner__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( (
+$User.Id = Apps_Owner__r.Id ||
+$User.Id = BC_Owner__r.Id ||
+$User.Id = DPS_Owner__r.Id ), True , False )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Related to Me as Bu Owner</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

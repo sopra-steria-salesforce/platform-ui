@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Plan__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Describe sales activities with time lines to close the sale: meetings, further discovery, solution development, decision makers, budget and decision process, purchase process, win strategy</inlineHelpText>
+    <label>Sales Plan</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

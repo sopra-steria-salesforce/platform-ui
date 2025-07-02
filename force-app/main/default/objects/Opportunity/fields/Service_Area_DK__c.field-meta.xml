@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Area_DK__c</fullName>
+    <externalId>false</externalId>
+    <label>Service Area DK</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Core</fullName>
+                <default>false</default>
+                <label>Core</label>
+            </value>
+            <value>
+                <fullName>Cx</fullName>
+                <default>false</default>
+                <label>Cx</label>
+            </value>
+            <value>
+                <fullName>CRM</fullName>
+                <default>false</default>
+                <label>CRM</label>
+            </value>
+            <value>
+                <fullName>ServiceNow</fullName>
+                <default>false</default>
+                <label>ServiceNow</label>
+            </value>
+            <value>
+                <fullName>BMC</fullName>
+                <default>false</default>
+                <label>BMC</label>
+            </value>
+            <value>
+                <fullName>AM</fullName>
+                <default>false</default>
+                <label>AM</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

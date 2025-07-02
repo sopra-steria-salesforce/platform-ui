@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>XXXContract_Price_model_required_stage4</fullName>
+    <active>false</active>
+    <description>When Opportunity stage = 4, field Contract/ Price model is required</description>
+    <errorConditionFormula>AND
+($User.Country != &apos;Sweden&apos;,
+
+TEXT( Contract_Price_Model__c ) = &apos;&apos;,
+OR
+(
+TEXT(StageName) = &apos;4 - Offer&apos;, 
+TEXT(StageName) = &apos;5 - Awarded&apos;
+)
+)</errorConditionFormula>
+    <errorMessage>Contract/ Price model is required when stage = 4-Offer ORstage = 5-Awarded</errorMessage>
+</ValidationRule>

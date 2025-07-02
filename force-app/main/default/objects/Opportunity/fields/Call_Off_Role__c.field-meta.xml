@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Call_Off_Role__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Choose which role the call-off most relates to</inlineHelpText>
+    <label>Call-Off Role</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Frame_Agreement_Sub_Area__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Architect</fullName>
+                <default>false</default>
+                <label>Architect</label>
+            </value>
+            <value>
+                <fullName>Business Analyst</fullName>
+                <default>false</default>
+                <label>Business Analyst</label>
+            </value>
+            <value>
+                <fullName>Databas</fullName>
+                <default>false</default>
+                <label>Databas</label>
+            </value>
+            <value>
+                <fullName>Database design and administration</fullName>
+                <default>false</default>
+                <label>Database design and administration</label>
+            </value>
+            <value>
+                <fullName>Developer</fullName>
+                <default>false</default>
+                <label>Developer</label>
+            </value>
+            <value>
+                <fullName>Developer .Net</fullName>
+                <default>false</default>
+                <label>Developer .Net</label>
+            </value>
+            <value>
+                <fullName>Developer Java</fullName>
+                <default>false</default>
+                <label>Developer Java</label>
+            </value>
+            <value>
+                <fullName>Developer Other</fullName>
+                <default>false</default>
+                <label>Developer Other</label>
+            </value>
+            <value>
+                <fullName>Förvaltningsledare</fullName>
+                <default>false</default>
+                <label>Förvaltningsledare</label>
+            </value>
+            <value>
+                <fullName>Infrastruktur</fullName>
+                <default>false</default>
+                <label>Infrastruktur</label>
+            </value>
+            <value>
+                <fullName>Product Owner</fullName>
+                <default>false</default>
+                <label>Product Owner</label>
+            </value>
+            <value>
+                <fullName>Project Manager</fullName>
+                <default>false</default>
+                <label>Project Manager</label>
+            </value>
+            <value>
+                <fullName>Scrum Master</fullName>
+                <default>false</default>
+                <label>Scrum Master</label>
+            </value>
+            <value>
+                <fullName>Security</fullName>
+                <default>false</default>
+                <label>Security</label>
+            </value>
+            <value>
+                <fullName>Service manager</fullName>
+                <default>false</default>
+                <label>Service manager</label>
+            </value>
+            <value>
+                <fullName>System developer</fullName>
+                <default>false</default>
+                <label>System developer</label>
+            </value>
+            <value>
+                <fullName>Technical project manager</fullName>
+                <default>false</default>
+                <label>Technical project manager</label>
+            </value>
+            <value>
+                <fullName>Test</fullName>
+                <default>false</default>
+                <label>Test</label>
+            </value>
+            <value>
+                <fullName>Test leader</fullName>
+                <default>false</default>
+                <label>Test leader</label>
+            </value>
+            <value>
+                <fullName>Test Manager</fullName>
+                <default>false</default>
+                <label>Test Manager</label>
+            </value>
+            <value>
+                <fullName>UI/UX</fullName>
+                <default>false</default>
+                <label>UI/UX</label>
+            </value>
+            <value>
+                <fullName>Webb</fullName>
+                <default>false</default>
+                <label>Webb</label>
+            </value>
+            <value>
+                <fullName>Web developer</fullName>
+                <default>false</default>
+                <label>Web developer</label>
+            </value>
+            <value>
+                <fullName>Projektledare</fullName>
+                <default>false</default>
+                <label>Projektledare</label>
+            </value>
+            <value>
+                <fullName>Teknisk Projektledare</fullName>
+                <default>false</default>
+                <label>Teknisk Projektledare</label>
+            </value>
+            <value>
+                <fullName>Tjänsteansvarig</fullName>
+                <default>false</default>
+                <label>Tjänsteansvarig</label>
+            </value>
+            <value>
+                <fullName>Databasdesigner/databasadministratör</fullName>
+                <default>false</default>
+                <label>Databasdesigner/databasadministratör</label>
+            </value>
+            <value>
+                <fullName>Enterprisearkitekt</fullName>
+                <default>false</default>
+                <label>Enterprisearkitekt</label>
+            </value>
+            <value>
+                <fullName>Infrastrukturarkitekt</fullName>
+                <default>false</default>
+                <label>Infrastrukturarkitekt</label>
+            </value>
+            <value>
+                <fullName>Konfigurations- och versionshanterare</fullName>
+                <default>false</default>
+                <label>Konfigurations- och versionshanterare</label>
+            </value>
+            <value>
+                <fullName>Lösningsarkitekt</fullName>
+                <default>false</default>
+                <label>Lösningsarkitekt</label>
+            </value>
+            <value>
+                <fullName>Mjukvaruarkitekt</fullName>
+                <default>false</default>
+                <label>Mjukvaruarkitekt</label>
+            </value>
+            <value>
+                <fullName>Systemintegratör</fullName>
+                <default>false</default>
+                <label>Systemintegratör</label>
+            </value>
+            <value>
+                <fullName>Systemutvecklare</fullName>
+                <default>false</default>
+                <label>Systemutvecklare</label>
+            </value>
+            <value>
+                <fullName>Testare</fullName>
+                <default>false</default>
+                <label>Testare</label>
+            </value>
+            <value>
+                <fullName>Testledare</fullName>
+                <default>false</default>
+                <label>Testledare</label>
+            </value>
+            <value>
+                <fullName>Verksamhetsarkitekt</fullName>
+                <default>false</default>
+                <label>Verksamhetsarkitekt</label>
+            </value>
+            <value>
+                <fullName>Webbutvecklare</fullName>
+                <default>false</default>
+                <label>Webbutvecklare</label>
+            </value>
+            <value>
+                <fullName>Installation Nivå 2</fullName>
+                <default>false</default>
+                <label>Installation Nivå 2</label>
+            </value>
+            <value>
+                <fullName>Installation Nivå 3</fullName>
+                <default>false</default>
+                <label>Installation Nivå 3</label>
+            </value>
+            <value>
+                <fullName>Installation Nivå 4</fullName>
+                <default>false</default>
+                <label>Installation Nivå 4</label>
+            </value>
+            <value>
+                <fullName>Installation Nivå 5</fullName>
+                <default>false</default>
+                <label>Installation Nivå 5</label>
+            </value>
+            <value>
+                <fullName>Konfiguration/ Systemutveckling Nivå 2</fullName>
+                <default>false</default>
+                <label>Konfiguration/ Systemutveckling Nivå 2</label>
+            </value>
+            <value>
+                <fullName>Konfiguration/ Systemutveckling Nivå 3</fullName>
+                <default>false</default>
+                <label>Konfiguration/ Systemutveckling Nivå 3</label>
+            </value>
+            <value>
+                <fullName>Konfiguration/ Systemutveckling Nivå 4</fullName>
+                <default>false</default>
+                <label>Konfiguration/ Systemutveckling Nivå 4</label>
+            </value>
+            <value>
+                <fullName>Konfiguration/ Systemutveckling Nivå 5</fullName>
+                <default>false</default>
+                <label>Konfiguration/ Systemutveckling Nivå 5</label>
+            </value>
+            <value>
+                <fullName>Migrering Nivå 4</fullName>
+                <default>false</default>
+                <label>Migrering Nivå 4</label>
+            </value>
+            <value>
+                <fullName>Migrering Nivå 5</fullName>
+                <default>false</default>
+                <label>Migrering Nivå 5</label>
+            </value>
+            <value>
+                <fullName>Test Nivå 2</fullName>
+                <default>false</default>
+                <label>Test Nivå 2</label>
+            </value>
+            <value>
+                <fullName>Test Nivå 3</fullName>
+                <default>false</default>
+                <label>Test Nivå 3</label>
+            </value>
+            <value>
+                <fullName>Test Nivå 4</fullName>
+                <default>false</default>
+                <label>Test Nivå 4</label>
+            </value>
+            <value>
+                <fullName>Test Nivå 5</fullName>
+                <default>false</default>
+                <label>Test Nivå 5</label>
+            </value>
+            <value>
+                <fullName>Projektledning/RTE/systemarkitekt Nivå 4</fullName>
+                <default>false</default>
+                <label>Projektledning/RTE/systemarkitekt Nivå 4</label>
+            </value>
+            <value>
+                <fullName>Projektledning/RTE/systemarkitekt Nivå 5</fullName>
+                <default>false</default>
+                <label>Projektledning/RTE/systemarkitekt Nivå 5</label>
+            </value>
+            <value>
+                <fullName>Annat</fullName>
+                <default>false</default>
+                <label>Annat</label>
+            </value>
+            <value>
+                <fullName>Mjukvaruutvecklare</fullName>
+                <default>false</default>
+                <label>Mjukvaruutvecklare</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Service Now konsulter</controllingFieldValue>
+            <valueName>Installation Nivå 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service Now konsulter</controllingFieldValue>
+            <valueName>Installation Nivå 3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service Now konsulter</controllingFieldValue>
+            <valueName>Installation Nivå 4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service Now konsulter</controllingFieldValue>
+            <valueName>Installation Nivå 5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service Now konsulter</controllingFieldValue>
+            <valueName>Konfiguration/ Systemutveckling Nivå 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service Now konsulter</controllingFieldValue>
+            <valueName>Konfiguration/ Systemutveckling Nivå 3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service Now konsulter</controllingFieldValue>
+            <valueName>Konfiguration/ Systemutveckling Nivå 4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service Now konsulter</controllingFieldValue>
+            <valueName>Konfiguration/ Systemutveckling Nivå 5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service Now konsulter</controllingFieldValue>
+            <valueName>Migrering Nivå 4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service Now konsulter</controllingFieldValue>
+            <valueName>Migrering Nivå 5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service Now konsulter</controllingFieldValue>
+            <valueName>Test Nivå 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service Now konsulter</controllingFieldValue>
+            <valueName>Test Nivå 3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service Now konsulter</controllingFieldValue>
+            <valueName>Test Nivå 4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service Now konsulter</controllingFieldValue>
+            <valueName>Test Nivå 5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service Now konsulter</controllingFieldValue>
+            <valueName>Projektledning/RTE/systemarkitekt Nivå 4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service Now konsulter</controllingFieldValue>
+            <valueName>Projektledning/RTE/systemarkitekt Nivå 5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service Now konsulter</controllingFieldValue>
+            <valueName>Annat</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delområde 1 – Test och testledning</controllingFieldValue>
+            <controllingFieldValue>Anbudsområde 4, arkitektur och utveckling</controllingFieldValue>
+            <controllingFieldValue>Anbudsområde 4, dynamiska rangordningen</controllingFieldValue>
+            <valueName>Testare</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delområde 1 – Test och testledning</controllingFieldValue>
+            <controllingFieldValue>Anbudsområde 4, arkitektur och utveckling</controllingFieldValue>
+            <controllingFieldValue>Anbudsområde 4, dynamiska rangordningen</controllingFieldValue>
+            <valueName>Testledare</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delområde 3 – Mjukvaruutveckling</controllingFieldValue>
+            <controllingFieldValue>Anbudsområde 4, arkitektur och utveckling</controllingFieldValue>
+            <controllingFieldValue>Anbudsområde 4, dynamiska rangordningen</controllingFieldValue>
+            <valueName>Mjukvaruarkitekt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delområde 3 – Mjukvaruutveckling</controllingFieldValue>
+            <valueName>Mjukvaruutvecklare</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anbudsområde 2, ledning av IT-projekt</controllingFieldValue>
+            <controllingFieldValue>Delområde 1 – Systemutveckling och systemintegration</controllingFieldValue>
+            <controllingFieldValue>Delområde 2 – BI (Business Intelligence)</controllingFieldValue>
+            <controllingFieldValue>Delområde 3 – Informations- och IT-säkerhet</controllingFieldValue>
+            <controllingFieldValue>Delområde 4 – Big Data och avancerad analys</controllingFieldValue>
+            <controllingFieldValue>Systemutveckling</controllingFieldValue>
+            <controllingFieldValue>IT-Konsultuppdrag</controllingFieldValue>
+            <controllingFieldValue>Anbudsområde 2, dynamiska rangordningen</controllingFieldValue>
+            <valueName>Förvaltningsledare</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anbudsområde 2, ledning av IT-projekt</controllingFieldValue>
+            <controllingFieldValue>Anbudsområde 2, dynamiska rangordningen</controllingFieldValue>
+            <valueName>Projektledare</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anbudsområde 2, ledning av IT-projekt</controllingFieldValue>
+            <controllingFieldValue>Anbudsområde 2, dynamiska rangordningen</controllingFieldValue>
+            <valueName>Teknisk Projektledare</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anbudsområde 2, ledning av IT-projekt</controllingFieldValue>
+            <controllingFieldValue>Anbudsområde 2, dynamiska rangordningen</controllingFieldValue>
+            <valueName>Tjänsteansvarig</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anbudsområde 4, arkitektur och utveckling</controllingFieldValue>
+            <controllingFieldValue>Anbudsområde 4, dynamiska rangordningen</controllingFieldValue>
+            <valueName>Databasdesigner/databasadministratör</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anbudsområde 4, arkitektur och utveckling</controllingFieldValue>
+            <controllingFieldValue>Anbudsområde 4, dynamiska rangordningen</controllingFieldValue>
+            <valueName>Enterprisearkitekt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anbudsområde 4, arkitektur och utveckling</controllingFieldValue>
+            <controllingFieldValue>Anbudsområde 4, dynamiska rangordningen</controllingFieldValue>
+            <valueName>Infrastrukturarkitekt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anbudsområde 4, arkitektur och utveckling</controllingFieldValue>
+            <controllingFieldValue>Anbudsområde 4, dynamiska rangordningen</controllingFieldValue>
+            <valueName>Konfigurations- och versionshanterare</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anbudsområde 4, arkitektur och utveckling</controllingFieldValue>
+            <controllingFieldValue>Anbudsområde 4, dynamiska rangordningen</controllingFieldValue>
+            <valueName>Lösningsarkitekt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anbudsområde 4, arkitektur och utveckling</controllingFieldValue>
+            <controllingFieldValue>Anbudsområde 4, dynamiska rangordningen</controllingFieldValue>
+            <valueName>Systemintegratör</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anbudsområde 4, arkitektur och utveckling</controllingFieldValue>
+            <controllingFieldValue>Anbudsområde 4, dynamiska rangordningen</controllingFieldValue>
+            <valueName>Systemutvecklare</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anbudsområde 4, arkitektur och utveckling</controllingFieldValue>
+            <controllingFieldValue>Anbudsområde 4, dynamiska rangordningen</controllingFieldValue>
+            <valueName>Verksamhetsarkitekt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anbudsområde 4, arkitektur och utveckling</controllingFieldValue>
+            <controllingFieldValue>Anbudsområde 4, dynamiska rangordningen</controllingFieldValue>
+            <valueName>Webbutvecklare</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delområde 1 – Systemutveckling och systemintegration</controllingFieldValue>
+            <controllingFieldValue>Delområde 2 – BI (Business Intelligence)</controllingFieldValue>
+            <controllingFieldValue>Delområde 3 – Informations- och IT-säkerhet</controllingFieldValue>
+            <controllingFieldValue>Delområde 4 – Big Data och avancerad analys</controllingFieldValue>
+            <controllingFieldValue>Systemutveckling</controllingFieldValue>
+            <controllingFieldValue>IT-Konsultuppdrag</controllingFieldValue>
+            <valueName>Architect</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delområde 1 – Systemutveckling och systemintegration</controllingFieldValue>
+            <controllingFieldValue>Delområde 2 – BI (Business Intelligence)</controllingFieldValue>
+            <controllingFieldValue>Delområde 3 – Informations- och IT-säkerhet</controllingFieldValue>
+            <controllingFieldValue>Delområde 4 – Big Data och avancerad analys</controllingFieldValue>
+            <controllingFieldValue>Systemutveckling</controllingFieldValue>
+            <controllingFieldValue>IT-Konsultuppdrag</controllingFieldValue>
+            <valueName>Business Analyst</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delområde 1 – Systemutveckling och systemintegration</controllingFieldValue>
+            <controllingFieldValue>Delområde 2 – BI (Business Intelligence)</controllingFieldValue>
+            <controllingFieldValue>Delområde 3 – Informations- och IT-säkerhet</controllingFieldValue>
+            <controllingFieldValue>Delområde 4 – Big Data och avancerad analys</controllingFieldValue>
+            <controllingFieldValue>Systemutveckling</controllingFieldValue>
+            <controllingFieldValue>IT-Konsultuppdrag</controllingFieldValue>
+            <valueName>Databas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delområde 1 – Systemutveckling och systemintegration</controllingFieldValue>
+            <controllingFieldValue>Delområde 2 – BI (Business Intelligence)</controllingFieldValue>
+            <controllingFieldValue>Delområde 3 – Informations- och IT-säkerhet</controllingFieldValue>
+            <controllingFieldValue>Delområde 4 – Big Data och avancerad analys</controllingFieldValue>
+            <controllingFieldValue>Systemutveckling</controllingFieldValue>
+            <controllingFieldValue>IT-Konsultuppdrag</controllingFieldValue>
+            <valueName>Database design and administration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delområde 1 – Systemutveckling och systemintegration</controllingFieldValue>
+            <controllingFieldValue>Delområde 2 – BI (Business Intelligence)</controllingFieldValue>
+            <controllingFieldValue>Delområde 3 – Informations- och IT-säkerhet</controllingFieldValue>
+            <controllingFieldValue>Delområde 4 – Big Data och avancerad analys</controllingFieldValue>
+            <controllingFieldValue>Systemutveckling</controllingFieldValue>
+            <controllingFieldValue>IT-Konsultuppdrag</controllingFieldValue>
+            <valueName>Developer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delområde 1 – Systemutveckling och systemintegration</controllingFieldValue>
+            <controllingFieldValue>Delområde 2 – BI (Business Intelligence)</controllingFieldValue>
+            <controllingFieldValue>Delområde 3 – Informations- och IT-säkerhet</controllingFieldValue>
+            <controllingFieldValue>Delområde 4 – Big Data och avancerad analys</controllingFieldValue>
+            <controllingFieldValue>Systemutveckling</controllingFieldValue>
+            <controllingFieldValue>IT-Konsultuppdrag</controllingFieldValue>
+            <valueName>Developer .Net</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delområde 1 – Systemutveckling och systemintegration</controllingFieldValue>
+            <controllingFieldValue>Delområde 2 – BI (Business Intelligence)</controllingFieldValue>
+            <controllingFieldValue>Delområde 3 – Informations- och IT-säkerhet</controllingFieldValue>
+            <controllingFieldValue>Delområde 4 – Big Data och avancerad analys</controllingFieldValue>
+            <controllingFieldValue>Systemutveckling</controllingFieldValue>
+            <controllingFieldValue>IT-Konsultuppdrag</controllingFieldValue>
+            <valueName>Developer Java</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delområde 1 – Systemutveckling och systemintegration</controllingFieldValue>
+            <controllingFieldValue>Delområde 2 – BI (Business Intelligence)</controllingFieldValue>
+            <controllingFieldValue>Delområde 3 – Informations- och IT-säkerhet</controllingFieldValue>
+            <controllingFieldValue>Delområde 4 – Big Data och avancerad analys</controllingFieldValue>
+            <controllingFieldValue>Systemutveckling</controllingFieldValue>
+            <controllingFieldValue>IT-Konsultuppdrag</controllingFieldValue>
+            <valueName>Developer Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delområde 1 – Systemutveckling och systemintegration</controllingFieldValue>
+            <controllingFieldValue>Delområde 2 – BI (Business Intelligence)</controllingFieldValue>
+            <controllingFieldValue>Delområde 3 – Informations- och IT-säkerhet</controllingFieldValue>
+            <controllingFieldValue>Delområde 4 – Big Data och avancerad analys</controllingFieldValue>
+            <controllingFieldValue>Systemutveckling</controllingFieldValue>
+            <controllingFieldValue>IT-Konsultuppdrag</controllingFieldValue>
+            <valueName>Infrastruktur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delområde 1 – Systemutveckling och systemintegration</controllingFieldValue>
+            <controllingFieldValue>Delområde 2 – BI (Business Intelligence)</controllingFieldValue>
+            <controllingFieldValue>Delområde 3 – Informations- och IT-säkerhet</controllingFieldValue>
+            <controllingFieldValue>Delområde 4 – Big Data och avancerad analys</controllingFieldValue>
+            <controllingFieldValue>Systemutveckling</controllingFieldValue>
+            <controllingFieldValue>IT-Konsultuppdrag</controllingFieldValue>
+            <valueName>Product Owner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delområde 1 – Systemutveckling och systemintegration</controllingFieldValue>
+            <controllingFieldValue>Delområde 2 – BI (Business Intelligence)</controllingFieldValue>
+            <controllingFieldValue>Delområde 3 – Informations- och IT-säkerhet</controllingFieldValue>
+            <controllingFieldValue>Delområde 4 – Big Data och avancerad analys</controllingFieldValue>
+            <controllingFieldValue>Systemutveckling</controllingFieldValue>
+            <controllingFieldValue>IT-Konsultuppdrag</controllingFieldValue>
+            <valueName>Project Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delområde 1 – Systemutveckling och systemintegration</controllingFieldValue>
+            <controllingFieldValue>Delområde 2 – BI (Business Intelligence)</controllingFieldValue>
+            <controllingFieldValue>Delområde 3 – Informations- och IT-säkerhet</controllingFieldValue>
+            <controllingFieldValue>Delområde 4 – Big Data och avancerad analys</controllingFieldValue>
+            <controllingFieldValue>Systemutveckling</controllingFieldValue>
+            <controllingFieldValue>IT-Konsultuppdrag</controllingFieldValue>
+            <valueName>Scrum Master</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delområde 1 – Systemutveckling och systemintegration</controllingFieldValue>
+            <controllingFieldValue>Delområde 2 – BI (Business Intelligence)</controllingFieldValue>
+            <controllingFieldValue>Delområde 3 – Informations- och IT-säkerhet</controllingFieldValue>
+            <controllingFieldValue>Delområde 4 – Big Data och avancerad analys</controllingFieldValue>
+            <controllingFieldValue>Systemutveckling</controllingFieldValue>
+            <controllingFieldValue>IT-Konsultuppdrag</controllingFieldValue>
+            <valueName>Security</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delområde 1 – Systemutveckling och systemintegration</controllingFieldValue>
+            <controllingFieldValue>Delområde 2 – BI (Business Intelligence)</controllingFieldValue>
+            <controllingFieldValue>Delområde 3 – Informations- och IT-säkerhet</controllingFieldValue>
+            <controllingFieldValue>Delområde 4 – Big Data och avancerad analys</controllingFieldValue>
+            <controllingFieldValue>Systemutveckling</controllingFieldValue>
+            <controllingFieldValue>IT-Konsultuppdrag</controllingFieldValue>
+            <valueName>Service manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delområde 1 – Systemutveckling och systemintegration</controllingFieldValue>
+            <controllingFieldValue>Delområde 2 – BI (Business Intelligence)</controllingFieldValue>
+            <controllingFieldValue>Delområde 3 – Informations- och IT-säkerhet</controllingFieldValue>
+            <controllingFieldValue>Delområde 4 – Big Data och avancerad analys</controllingFieldValue>
+            <controllingFieldValue>Systemutveckling</controllingFieldValue>
+            <controllingFieldValue>IT-Konsultuppdrag</controllingFieldValue>
+            <valueName>System developer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delområde 1 – Systemutveckling och systemintegration</controllingFieldValue>
+            <controllingFieldValue>Delområde 2 – BI (Business Intelligence)</controllingFieldValue>
+            <controllingFieldValue>Delområde 3 – Informations- och IT-säkerhet</controllingFieldValue>
+            <controllingFieldValue>Delområde 4 – Big Data och avancerad analys</controllingFieldValue>
+            <controllingFieldValue>Systemutveckling</controllingFieldValue>
+            <controllingFieldValue>IT-Konsultuppdrag</controllingFieldValue>
+            <valueName>Technical project manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delområde 1 – Systemutveckling och systemintegration</controllingFieldValue>
+            <controllingFieldValue>Delområde 2 – BI (Business Intelligence)</controllingFieldValue>
+            <controllingFieldValue>Delområde 3 – Informations- och IT-säkerhet</controllingFieldValue>
+            <controllingFieldValue>Delområde 4 – Big Data och avancerad analys</controllingFieldValue>
+            <controllingFieldValue>Systemutveckling</controllingFieldValue>
+            <controllingFieldValue>IT-Konsultuppdrag</controllingFieldValue>
+            <valueName>Test</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delområde 1 – Systemutveckling och systemintegration</controllingFieldValue>
+            <controllingFieldValue>Delområde 2 – BI (Business Intelligence)</controllingFieldValue>
+            <controllingFieldValue>Delområde 3 – Informations- och IT-säkerhet</controllingFieldValue>
+            <controllingFieldValue>Delområde 4 – Big Data och avancerad analys</controllingFieldValue>
+            <controllingFieldValue>Systemutveckling</controllingFieldValue>
+            <controllingFieldValue>IT-Konsultuppdrag</controllingFieldValue>
+            <valueName>Test leader</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delområde 1 – Systemutveckling och systemintegration</controllingFieldValue>
+            <controllingFieldValue>Delområde 2 – BI (Business Intelligence)</controllingFieldValue>
+            <controllingFieldValue>Delområde 3 – Informations- och IT-säkerhet</controllingFieldValue>
+            <controllingFieldValue>Delområde 4 – Big Data och avancerad analys</controllingFieldValue>
+            <controllingFieldValue>Systemutveckling</controllingFieldValue>
+            <controllingFieldValue>IT-Konsultuppdrag</controllingFieldValue>
+            <valueName>Test Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delområde 1 – Systemutveckling och systemintegration</controllingFieldValue>
+            <controllingFieldValue>Delområde 2 – BI (Business Intelligence)</controllingFieldValue>
+            <controllingFieldValue>Delområde 3 – Informations- och IT-säkerhet</controllingFieldValue>
+            <controllingFieldValue>Delområde 4 – Big Data och avancerad analys</controllingFieldValue>
+            <controllingFieldValue>Systemutveckling</controllingFieldValue>
+            <controllingFieldValue>IT-Konsultuppdrag</controllingFieldValue>
+            <valueName>UI/UX</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delområde 1 – Systemutveckling och systemintegration</controllingFieldValue>
+            <controllingFieldValue>Delområde 2 – BI (Business Intelligence)</controllingFieldValue>
+            <controllingFieldValue>Delområde 3 – Informations- och IT-säkerhet</controllingFieldValue>
+            <controllingFieldValue>Delområde 4 – Big Data och avancerad analys</controllingFieldValue>
+            <controllingFieldValue>Systemutveckling</controllingFieldValue>
+            <controllingFieldValue>IT-Konsultuppdrag</controllingFieldValue>
+            <valueName>Webb</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delområde 1 – Systemutveckling och systemintegration</controllingFieldValue>
+            <controllingFieldValue>Delområde 2 – BI (Business Intelligence)</controllingFieldValue>
+            <controllingFieldValue>Delområde 3 – Informations- och IT-säkerhet</controllingFieldValue>
+            <controllingFieldValue>Delområde 4 – Big Data och avancerad analys</controllingFieldValue>
+            <controllingFieldValue>Systemutveckling</controllingFieldValue>
+            <controllingFieldValue>IT-Konsultuppdrag</controllingFieldValue>
+            <valueName>Web developer</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

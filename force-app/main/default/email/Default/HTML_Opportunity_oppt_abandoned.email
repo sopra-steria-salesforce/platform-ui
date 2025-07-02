@@ -1,0 +1,18 @@
+</br>
+
+<h3>Opportunity {!Opportunity.Name}</em> on account  {!Account.Name} has been set to "{!Opportunity.StageName}" by user {!User.Name}.</h3>
+
+<strong>The opportunity was created with the following information:</strong></br></br>
+
+Opportunity: {!Opportunity.Name}</br>
+Account: {!Opportunity.Account}</br>
+Opportunity Owner: {!Opportunity.OwnerFirstName} {!Opportunity.OwnerLastName}</br>
+Created date: {!Opportunity.CreatedDate} </br></br>
+
+Link to Opportunity in Salesforce: {!Opportunity.Opportunity_Link__c}</br></br>
+<strong>
+Description:</strong></br>
+{!Opportunity.Description}
+</br></br>
+</hr>
+You cannot reply to this e-mail. If you have received this notification by a mistake please contact the Salesforce Admin in Sopra Steria.

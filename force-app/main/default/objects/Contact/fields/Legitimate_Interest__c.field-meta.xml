@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Legitimate_Interest__c</fullName>
+    <description>If true, Sopra Steria can send marketing emails with reference to legitimate interestg</description>
+    <externalId>false</externalId>
+    <formula>IF( Account.Blocked__c = True, False, True)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>If true, Sopra Steria can send marketing emails with reference to legitimate interestg</inlineHelpText>
+    <label>Legitimate Interest</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

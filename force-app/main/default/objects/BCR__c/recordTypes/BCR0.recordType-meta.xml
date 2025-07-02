@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BCR0</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <label>BCR0</label>
+    <picklistValues>
+        <picklist>A_Assistance_Only_No_Delivery__c</picklist>
+        <values>
+            <fullName>Confirmed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Answered</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Not Confirmed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>A_At_least_5WorkingDays_for_questions__c</picklist>
+        <values>
+            <fullName>Inte svarat</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Ja</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nej</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>A_Contract_value_min_10MSEK_year__c</picklist>
+        <values>
+            <fullName>Inte svarat</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Ja</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nej</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>A_Deal_and_customer_has_growth_potential__c</picklist>
+        <values>
+            <fullName>Inte svarat</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Ja</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nej</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>A_Existing_customer__c</picklist>
+        <values>
+            <fullName>Inte svarat</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Ja</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nej</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>A_Limited_Bid_Effort__c</picklist>
+        <values>
+            <fullName>Confirmed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Answered</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Not Confirmed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>A_NO_BU_Excluded_from_Future_Deliveries__c</picklist>
+        <values>
+            <fullName>Confirmed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Answered</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Not Confirmed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>A_No_Subcontractors_or_HW_SW__c</picklist>
+        <values>
+            <fullName>Confirmed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Answered</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Not Confirmed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>A_Only_One_BU_Involved__c</picklist>
+        <values>
+            <fullName>Confirmed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Answered</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Not Confirmed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>A_Opportunity_rooted_in_BU__c</picklist>
+        <values>
+            <fullName>Confirmed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Answered</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Not Confirmed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>A_Relation_to_stakeholders_in_this_deal__c</picklist>
+        <values>
+            <fullName>Inte svarat</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Ja</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nej</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>A_We_have_relation_to_stakeholders__c</picklist>
+        <values>
+            <fullName>Inte svarat</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Ja</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nej</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>A_We_have_relevant_reference_Cases__c</picklist>
+        <values>
+            <fullName>Inte svarat</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Ja</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nej</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>A_Win_strategy_is_documented__c</picklist>
+        <values>
+            <fullName>Inte svarat</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Ja</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nej</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Availability_of_required_capabilities__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Decision__c</picklist>
+        <values>
+            <fullName>GO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NO GO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Delivery_risk__c</picklist>
+        <values>
+            <fullName>0 Agency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1 Agency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10 Country%2FSubsidiary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11 Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12 Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 Agency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 Agency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4 Agency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5 BU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6 BU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7 BU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8 BU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9 Country%2FSubsidiary</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Location__c</picklist>
+        <values>
+            <fullName>DK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NO - Oslo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NO - Stavanger</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NO - Trondheim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SE - Göteborg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SE - Malmö</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SE - Stockholm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Price_risk_desirability__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Normal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opportunistic</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Q_Assistance_Only_No_Delivery__c</picklist>
+        <values>
+            <fullName>Assistance%2E No delivery obligation</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Q_At_least_5WorkingDays_for_questions__c</picklist>
+        <values>
+            <fullName>Är det minst 5 arbetsdagar kvar för att ställa frågor till kund så att vi kan säkerställa relevant svar%3F</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Q_Contract_value_annual_and_total__c</picklist>
+        <values>
+            <fullName>Vad är kontraktsvärdet per år och totalt%3F Hur vet vi detta%3F</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Q_Contract_value_min_10MSEK_year__c</picklist>
+        <values>
+            <fullName>Kontraktsvärde är på minst 10 MSEK per år%3F</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Q_Deal_and_customer_has_growth_potential__c</picklist>
+        <values>
+            <fullName>Har affären och kunden en potential att växa%3F</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Q_Existing_Customer__c</picklist>
+        <values>
+            <fullName>Kunden är en existerande kund till oss</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Q_Limited_Bid_Effort__c</picklist>
+        <values>
+            <fullName>Bid effort must be limited%3A 100 hours</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Q_NO_BU_Excluded_from_Future_Deliveries__c</picklist>
+        <values>
+            <fullName>Excludes no other BUs from future deliveries</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Q_No_Subcontractors_or_HW_SW__c</picklist>
+        <values>
+            <fullName>No subcontractors or HW %2F SW</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Q_Only_One_BU_Involved__c</picklist>
+        <values>
+            <fullName>Only one BU involved in bidding and delivery</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Q_Opportunity_rooted_in_BU__c</picklist>
+        <values>
+            <fullName>Opportunity must be rooted in BU in advance</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Q_Relation_to_stakeholders_in_this_deal__c</picklist>
+        <values>
+            <fullName>Har vi haft dialog med viktiga stakeholders hos kunden om denna affär%3F</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Q_Strategic_Win_for_these_BUs__c</picklist>
+        <values>
+            <fullName>Vilka BU bedömer denna affär som strategiskt värdefull för Sopra Steria Sverige%3F Minst två BU för Must win</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Q_We_have_relation_to_stakeholders__c</picklist>
+        <values>
+            <fullName>Vi har en relation till viktiga stakeholders hos kunden</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Q_We_have_relevant_reference_Cases__c</picklist>
+        <values>
+            <fullName>Vi har relevanta referenscase</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Q_Win_strategy_is_documented__c</picklist>
+        <values>
+            <fullName>Är vinststrategin dokumenterad%3F</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Response__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not answered</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>GO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NO GO</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>BCR0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BCR1</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Win_probability__c</picklist>
+        <values>
+            <fullName>10%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>100%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>20%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>40%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>50%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>60%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>70%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>80%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>90%25</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

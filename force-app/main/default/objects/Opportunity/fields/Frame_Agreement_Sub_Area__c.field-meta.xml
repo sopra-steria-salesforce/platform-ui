@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Frame_Agreement_Sub_Area__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>To which subarea of the frame agreement is this call-off connected</inlineHelpText>
+    <label>Frame Agreement Sub Area</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Frame_Agreement_SE__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Anbudsområde 2, ledning av IT-projekt</fullName>
+                <default>false</default>
+                <label>Anbudsområde 2, ledning av IT-projekt</label>
+            </value>
+            <value>
+                <fullName>Anbudsområde 4, arkitektur och utveckling</fullName>
+                <default>false</default>
+                <label>Anbudsområde 4, arkitektur och utveckling</label>
+            </value>
+            <value>
+                <fullName>Delområde 1 – Systemutveckling och systemintegration</fullName>
+                <default>false</default>
+                <label>Delområde 1 – Systemutveckling och systemintegration</label>
+            </value>
+            <value>
+                <fullName>Delområde 2 – BI (Business Intelligence)</fullName>
+                <default>false</default>
+                <label>Delområde 2 – BI (Business Intelligence)</label>
+            </value>
+            <value>
+                <fullName>Delområde 3 – Informations- och IT-säkerhet</fullName>
+                <default>false</default>
+                <label>Delområde 3 – Informations- och IT-säkerhet</label>
+            </value>
+            <value>
+                <fullName>Delområde 4 – Big Data och avancerad analys</fullName>
+                <default>false</default>
+                <label>Delområde 4 – Big Data och avancerad analys</label>
+            </value>
+            <value>
+                <fullName>Systemutveckling</fullName>
+                <default>false</default>
+                <label>Systemutveckling</label>
+            </value>
+            <value>
+                <fullName>IT-Konsultuppdrag</fullName>
+                <default>false</default>
+                <label>IT-Konsultuppdrag</label>
+            </value>
+            <value>
+                <fullName>Anbudsområde 2, dynamiska rangordningen</fullName>
+                <default>false</default>
+                <label>Anbudsområde 2, dynamiska rangordningen</label>
+            </value>
+            <value>
+                <fullName>Anbudsområde 4, dynamiska rangordningen</fullName>
+                <default>false</default>
+                <label>Anbudsområde 4, dynamiska rangordningen</label>
+            </value>
+            <value>
+                <fullName>Service Now konsulter</fullName>
+                <default>false</default>
+                <label>Service Now konsulter</label>
+            </value>
+            <value>
+                <fullName>Delområde A - Verksamhets- och organisationsutveckling</fullName>
+                <default>false</default>
+                <label>Delområde A - Verksamhets- och organisationsutveckling</label>
+            </value>
+            <value>
+                <fullName>Delområde 1 – Test och testledning</fullName>
+                <default>false</default>
+                <label>Delområde 1 – Test och testledning</label>
+            </value>
+            <value>
+                <fullName>Delområde 3 – Mjukvaruutveckling</fullName>
+                <default>false</default>
+                <label>Delområde 3 – Mjukvaruutveckling</label>
+            </value>
+            <value>
+                <fullName>Konsulter inom CRM</fullName>
+                <default>false</default>
+                <label>Konsulter inom CRM</label>
+            </value>
+            <value>
+                <fullName>Avtalsområde 1 - Verksamhetsutveckling, ledning och styrning</fullName>
+                <default>false</default>
+                <label>Avtalsområde 1 - Verksamhetsutveckling, ledning och styrning</label>
+            </value>
+            <value>
+                <fullName>Delområde A – Strategi- och mangementkonsulttjänster</fullName>
+                <default>false</default>
+                <label>Delområde A – Strategi- och mangementkonsulttjänster</label>
+            </value>
+            <value>
+                <fullName>Avtalsområde 10 - Strategisk hållbarhet</fullName>
+                <default>false</default>
+                <label>Avtalsområde 10 - Strategisk hållbarhet</label>
+            </value>
+            <value>
+                <fullName>1. SAP</fullName>
+                <default>false</default>
+                <label>1. SAP</label>
+            </value>
+            <value>
+                <fullName>2. Applications</fullName>
+                <default>false</default>
+                <label>2. Applications</label>
+            </value>
+            <value>
+                <fullName>4. Security</fullName>
+                <default>false</default>
+                <label>4. Security</label>
+            </value>
+            <value>
+                <fullName>5. Supportive</fullName>
+                <default>false</default>
+                <label>5. Supportive</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Region Stockholm - Konsulttjänster inom strategi och management</controllingFieldValue>
+            <valueName>Delområde A – Strategi- och mangementkonsulttjänster</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Region Stockholm - Konsulttjänster inom miljö och hållbarhet 2024</controllingFieldValue>
+            <valueName>Avtalsområde 10 - Strategisk hållbarhet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vattenfall Group - Vattenfall AB</controllingFieldValue>
+            <valueName>1. SAP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vattenfall Group - Vattenfall AB</controllingFieldValue>
+            <valueName>2. Applications</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vattenfall Group - Vattenfall AB</controllingFieldValue>
+            <valueName>4. Security</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vattenfall Group - Vattenfall AB</controllingFieldValue>
+            <valueName>5. Supportive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kammarkollegiet  IT Konsulttjänster</controllingFieldValue>
+            <valueName>Anbudsområde 2, ledning av IT-projekt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kammarkollegiet  IT Konsulttjänster</controllingFieldValue>
+            <valueName>Anbudsområde 4, arkitektur och utveckling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kammarkollegiet  IT Konsulttjänster</controllingFieldValue>
+            <valueName>Anbudsområde 2, dynamiska rangordningen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kammarkollegiet  IT Konsulttjänster</controllingFieldValue>
+            <valueName>Anbudsområde 4, dynamiska rangordningen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Region Stockholm Uppdragskonsulttjänster IT</controllingFieldValue>
+            <valueName>Delområde 1 – Systemutveckling och systemintegration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Region Stockholm Uppdragskonsulttjänster IT</controllingFieldValue>
+            <valueName>Delområde 2 – BI (Business Intelligence)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Region Stockholm Uppdragskonsulttjänster IT</controllingFieldValue>
+            <valueName>Delområde 3 – Informations- och IT-säkerhet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Region Stockholm Uppdragskonsulttjänster IT</controllingFieldValue>
+            <valueName>Delområde 4 – Big Data och avancerad analys</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Regeringskansliet</controllingFieldValue>
+            <valueName>Systemutveckling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IVO</controllingFieldValue>
+            <valueName>IT-Konsultuppdrag</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Arbetsförmedlingen Service Now konsulter</controllingFieldValue>
+            <valueName>Service Now konsulter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Göteborgs stad Verksamhets- och organisationskonsulter</controllingFieldValue>
+            <valueName>Delområde A - Verksamhets- och organisationsutveckling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nordic Medtest IT-konsulttjänster</controllingFieldValue>
+            <valueName>Delområde 1 – Test och testledning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nordic Medtest IT-konsulttjänster</controllingFieldValue>
+            <valueName>Delområde 3 – Mjukvaruutveckling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SOS Alarm</controllingFieldValue>
+            <valueName>Konsulter inom CRM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Stockholm stad</controllingFieldValue>
+            <valueName>Avtalsområde 1 - Verksamhetsutveckling, ledning och styrning</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

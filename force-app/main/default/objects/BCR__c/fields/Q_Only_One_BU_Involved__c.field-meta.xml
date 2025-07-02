@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Q_Only_One_BU_Involved__c</fullName>
+    <externalId>false</externalId>
+    <label>Question</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Only one BU involved in bidding and delivery</fullName>
+                <default>true</default>
+                <label>Only one BU involved in bidding and delivery</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

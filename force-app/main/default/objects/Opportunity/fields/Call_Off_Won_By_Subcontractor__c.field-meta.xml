@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Call_Off_Won_By_Subcontractor__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>When the call-off becomes Won and it is a subcontractor who wins specify which one</inlineHelpText>
+    <label>Call-Off Won By Subcontractor</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Subcontractor_SE</valueSetName>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

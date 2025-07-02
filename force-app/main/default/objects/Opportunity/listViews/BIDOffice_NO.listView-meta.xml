@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BIDOffice_NO</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>BID_Office_Owner__c</columns>
+    <columns>Business_Unit__c</columns>
+    <columns>Proposal_Due_Date_Time__c</columns>
+    <columns>Age__c</columns>
+    <columns>OPPORTUNITY.TYPE</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>Owner_Name__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>2 - RFI,3 - Prequal,4 - Offer</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>In Progress</value>
+    </filters>
+    <filters>
+        <field>BID_Owner_is_in_BID_Team__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>BID Office NO</label>
+    <sharedTo>
+        <group>NO</group>
+    </sharedTo>
+</ListView>

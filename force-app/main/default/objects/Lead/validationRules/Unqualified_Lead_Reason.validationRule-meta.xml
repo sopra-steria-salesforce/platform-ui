@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unqualified_Lead_Reason</fullName>
+    <active>true</active>
+    <description>Prevents user to save the record as unqualified lead if the reason is not selected from the drop down</description>
+    <errorConditionFormula>AND
+(
+ISCHANGED(Status),
+TEXT(Status)= &apos;Not Qualified&apos;,
+TEXT( Not_Qualified_Reason__c) = &apos;&apos;
+)</errorConditionFormula>
+    <errorMessage>Select a reason for unqualified lead</errorMessage>
+</ValidationRule>

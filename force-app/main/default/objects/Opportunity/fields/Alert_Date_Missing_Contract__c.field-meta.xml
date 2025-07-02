@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Alert_Date_Missing_Contract__c</fullName>
+    <description>Used to schedule reminders about missing contract when Opportunity is in stage 5 to send only on weekdays.
+Calculates date for sending first alert. Flow is recordTriggered.Opportunity Contract Not attached.</description>
+    <externalId>false</externalId>
+    <formula>DashboardsGSP__Last_Stage_Change_Date__c+
+CASE(
+WEEKDAY(DashboardsGSP__Last_Stage_Change_Date__c),
+1, 1,
+7, 2,
+0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Alert Date Missing Contract</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

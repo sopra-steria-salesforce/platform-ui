@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>1337</fullName>
+        <default>false</default>
+        <label>1337</label>
+    </customValue>
+    <customValue>
+        <fullName>Adavo</fullName>
+        <default>false</default>
+        <label>Adavo</label>
+    </customValue>
+    <customValue>
+        <fullName>Advania</fullName>
+        <default>false</default>
+        <label>Advania</label>
+    </customValue>
+    <customValue>
+        <fullName>Bearingpoint</fullName>
+        <default>false</default>
+        <label>Bearingpoint</label>
+    </customValue>
+    <customValue>
+        <fullName>CAG Arete</fullName>
+        <default>false</default>
+        <label>CAG Arete</label>
+    </customValue>
+    <customValue>
+        <fullName>Combitech</fullName>
+        <default>false</default>
+        <label>Combitech</label>
+    </customValue>
+    <customValue>
+        <fullName>Consid AB</fullName>
+        <default>false</default>
+        <label>Consid AB</label>
+    </customValue>
+    <customValue>
+        <fullName>Donald Davies partners</fullName>
+        <default>false</default>
+        <label>Donald Davies partners</label>
+    </customValue>
+    <customValue>
+        <fullName>Everone</fullName>
+        <default>false</default>
+        <label>Everone</label>
+    </customValue>
+    <customValue>
+        <fullName>HiQ</fullName>
+        <default>false</default>
+        <label>HiQ</label>
+    </customValue>
+    <customValue>
+        <fullName>KnowIT</fullName>
+        <default>false</default>
+        <label>KnowIT</label>
+    </customValue>
+    <customValue>
+        <fullName>Kontract</fullName>
+        <default>false</default>
+        <label>Kontract</label>
+    </customValue>
+    <customValue>
+        <fullName>Sourcecom</fullName>
+        <default>false</default>
+        <label>Sourcecom</label>
+    </customValue>
+    <customValue>
+        <fullName>Viati</fullName>
+        <default>false</default>
+        <label>Viati</label>
+    </customValue>
+    <customValue>
+        <fullName>Xlent</fullName>
+        <default>false</default>
+        <label>Xlent</label>
+    </customValue>
+    <customValue>
+        <fullName>Iteration</fullName>
+        <default>false</default>
+        <label>Iteration</label>
+    </customValue>
+    <masterLabel>Subcontractor SE</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

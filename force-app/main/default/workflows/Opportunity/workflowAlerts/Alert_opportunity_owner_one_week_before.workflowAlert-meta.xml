@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WorkflowAlert xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Alert_opportunity_owner_one_week_before</fullName>
+    <description>Alert opportunity owner one week before proposal due date</description>
+    <protected>false</protected>
+    <recipients>
+        <type>owner</type>
+    </recipients>
+    <senderType>DefaultWorkflowUser</senderType>
+    <template>Default/HTML_Opportunity_Alert_One_week_before</template>
+</WorkflowAlert>

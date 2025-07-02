@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_BU_Owner__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Country != &quot;Sweden&quot;,HYPERLINK(&quot;lightning/r/Report/00O4I000004WD2aUAG/view?queryScope=userFolders&amp;&quot; +
+CASE(Text(Business_Unit__c), &quot;Apps&quot;, &quot;fv1=&quot;, &quot;Advisory&quot;,&quot;fv2=&quot;,&quot;DPS&quot;,&quot;fv3=&quot;,&quot;Business Development&quot;,&quot;fv4=&quot;,&quot;&quot;) +
+FirstName  + &quot; &quot; + LastName, &quot;Report &quot; + &quot;(&quot; + TEXT(Business_Unit__c) + &quot;)&quot;),&quot;#N/A&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Opportunity BU Owner</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
