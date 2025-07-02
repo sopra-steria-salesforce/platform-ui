@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract_must_be_signed_NO_DK</fullName>
+    <active>true</active>
+    <description>You can&apos;t set Opportunity to Closed Won.
+Upload a contract</description>
+    <errorConditionFormula>($User.Country = &apos;Norway&apos; || $User.Country = &apos;Denmark&apos; ) &amp;&amp;
+((ISPICKVAL( StageName , &apos;Closed Won&apos;) &amp;&amp; ( ISCHANGED(StageName))) || 
+(ISNEW() &amp;&amp;  ISPICKVAL( StageName , &apos;Closed Won&apos;))) &amp;&amp;
+$User.Username != &apos;servicenow.integrationuser@soprasteria.com&apos; &amp;&amp;
+$User.Username != &apos;mona.wilhelmsen@soprasteria.com&apos; &amp;&amp;
+$Permission.Bypass_validation_rule = FALSE</errorConditionFormula>
+    <errorMessage>You are not allowed to set stage = Closed won. As soon as the uplodaded contract is approved by Finance, the Opportunity will be set automatically to Closed Won</errorMessage>
+</ValidationRule>

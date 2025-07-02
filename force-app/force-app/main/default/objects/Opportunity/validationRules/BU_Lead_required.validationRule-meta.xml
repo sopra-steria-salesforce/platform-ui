@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BU_Lead_required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND
+($User.Country = &apos;Norway&apos;, Business_Unit_Count__c &gt; 1 , IsClosed = false, TEXT( StageName) != &apos;0 - Planning&apos;,TEXT( StageName) != &apos;1 - Possibility&apos;, TEXT(BU_Lead__c) = &apos;&apos;)</errorConditionFormula>
+    <errorMessage>When several BU&apos;s are added in &quot;Business Unit&apos;, you have to assign one of these BU&apos;s as BU Lead to indicate that this BU is the case owner</errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WorkflowAlert xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Alert_Opportunity_Abandoned</fullName>
+    <description>Alert: opportunity abandoned</description>
+    <protected>false</protected>
+    <recipients>
+        <type>owner</type>
+    </recipients>
+    <senderType>DefaultWorkflowUser</senderType>
+    <template>Default/HTML_Opportunity_oppt_abandoned</template>
+</WorkflowAlert>

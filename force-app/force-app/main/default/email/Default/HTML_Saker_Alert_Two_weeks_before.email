@@ -1,0 +1,13 @@
+</br>
+<h3>Saken "{!Sak__c.Name}" har tidsfrist {!Sak__c.00N5800000C3DNI}.</h3>
+
+<strong>Du er oppført som ansvarlig for denne saken</strong></br></br>
+
+
+
+Lenke til saken i Salesforce: </br>
+{!Sak__c.Link}</BR></BR>
+
+
+</hr>
+You cannot reply to this e-mail. If you have received this notification by a mistake please contact the Salesforce Admin in Sopra Steria.

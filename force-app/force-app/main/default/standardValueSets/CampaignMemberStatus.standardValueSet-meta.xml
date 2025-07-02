@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>true</sorted>
+    <standardValue>
+        <fullName>1:1 follow-up</fullName>
+        <default>false</default>
+        <label>1:1 follow-up</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Accepted</fullName>
+        <default>false</default>
+        <label>Accepted</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Accepted invitation</fullName>
+        <default>false</default>
+        <label>Accepted invitation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Återkom senare</fullName>
+        <default>false</default>
+        <label>Återkom senare</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Attended</fullName>
+        <default>false</default>
+        <label>Attended</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Attended (hasn&apos;t paid)</fullName>
+        <default>false</default>
+        <label>Attended (hasn&apos;t paid)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Attended (paid)</fullName>
+        <default>false</default>
+        <label>Attended (paid)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Attended (speaker)</fullName>
+        <default>false</default>
+        <label>Attended (speaker)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Attended 2024</fullName>
+        <default>false</default>
+        <label>Attended 2024</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Attended 2024, unmailable</fullName>
+        <default>false</default>
+        <label>Attended 2024, unmailable</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Attended dag 2</fullName>
+        <default>false</default>
+        <label>Attended dag 2</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Attended internal</fullName>
+        <default>false</default>
+        <label>Attended internal</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Attended internal (paid)</fullName>
+        <default>false</default>
+        <label>Attended internal (paid)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Attended new contact</fullName>
+        <default>false</default>
+        <label>Attended new contact</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Attending only livestream</fullName>
+        <default>false</default>
+        <label>Attending only livestream</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Attented</fullName>
+        <default>false</default>
+        <label>Attented</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Canceled</fullName>
+        <default>false</default>
+        <label>Canceled</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Canceled (paid)</fullName>
+        <default>false</default>
+        <label>Canceled (paid)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Cancelled</fullName>
+        <default>false</default>
+        <label>Cancelled</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Completed</fullName>
+        <default>false</default>
+        <label>Completed</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Connected</fullName>
+        <default>false</default>
+        <label>Connected</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Contacted</fullName>
+        <default>false</default>
+        <label>Contacted</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer receives marketing</fullName>
+        <default>false</default>
+        <label>Customer receives marketing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Declined</fullName>
+        <default>false</default>
+        <label>Declined</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Declined invitation</fullName>
+        <default>false</default>
+        <label>Declined invitation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Deltager</fullName>
+        <default>false</default>
+        <label>Deltager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Deltar faglig del</fullName>
+        <default>false</default>
+        <label>Deltar faglig del</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Deltar sosial del</fullName>
+        <default>false</default>
+        <label>Deltar sosial del</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Deltok 2016</fullName>
+        <default>false</default>
+        <label>Deltok 2016</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Deltok 2017</fullName>
+        <default>false</default>
+        <label>Deltok 2017</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Deltok i 2021</fullName>
+        <default>false</default>
+        <label>Deltok i 2021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Did not Attend</fullName>
+        <default>false</default>
+        <label>Did not Attend</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Did not attend (hasn&apos;t paid)</fullName>
+        <default>false</default>
+        <label>Did not attend (hasn&apos;t paid)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Did not attend (paid)</fullName>
+        <default>false</default>
+        <label>Did not attend (paid)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Did not attend internal</fullName>
+        <default>false</default>
+        <label>Did not attend internal</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Disqualified</fullName>
+        <default>false</default>
+        <label>Disqualified</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Do not invite</fullName>
+        <default>false</default>
+        <label>Do not invite</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Do NOT send in 2017</fullName>
+        <default>false</default>
+        <label>Do NOT send in 2017</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Do NOT send in 2018</fullName>
+        <default>false</default>
+        <label>Do NOT send in 2018</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Event follow-up completed</fullName>
+        <default>false</default>
+        <label>Event follow-up completed</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Följt upp via tele</fullName>
+        <default>false</default>
+        <label>Följt upp via tele</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Följ upp via mejl</fullName>
+        <default>false</default>
+        <label>Följ upp via mejl</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Followed up</fullName>
+        <default>false</default>
+        <label>Followed up</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Followed up (next step planned)</fullName>
+        <default>false</default>
+        <label>Followed up (next step planned)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Followed up (no interest)</fullName>
+        <default>false</default>
+        <label>Followed up (no interest)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Follow up</fullName>
+        <default>false</default>
+        <label>Follow up</label>
+    </standardValue>
+    <standardValue>
+        <fullName>For invite</fullName>
+        <default>false</default>
+        <label>For invite</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Har följts upp via mejl</fullName>
+        <default>false</default>
+        <label>Har följts upp via mejl</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Har följts upp via telefon</fullName>
+        <default>false</default>
+        <label>Har följts upp via telefon</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Har svaret tilbage, men deltager ikke</fullName>
+        <default>false</default>
+        <label>Har svaret tilbage, men deltager ikke</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Har tackat ja</fullName>
+        <default>false</default>
+        <label>Har tackat ja</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Har tackat nej</fullName>
+        <default>false</default>
+        <label>Har tackat nej</label>
+    </standardValue>
+    <standardValue>
+        <fullName>IKKE delta i år ref CP</fullName>
+        <default>false</default>
+        <label>IKKE delta i år ref CP</label>
+    </standardValue>
+    <standardValue>
+        <fullName>IKKE gjennomført intervju 2022</fullName>
+        <default>false</default>
+        <label>IKKE gjennomført intervju 2022</label>
+    </standardValue>
+    <standardValue>
+        <fullName>IKKE inviteres</fullName>
+        <default>false</default>
+        <label>IKKE inviteres</label>
+    </standardValue>
+    <standardValue>
+        <fullName>IKKE inviteres i 2019</fullName>
+        <default>false</default>
+        <label>IKKE inviteres i 2019</label>
+    </standardValue>
+    <standardValue>
+        <fullName>IKKE inviteres i 2022</fullName>
+        <default>false</default>
+        <label>IKKE inviteres i 2022</label>
+    </standardValue>
+    <standardValue>
+        <fullName>IKKE inviteres i 2023</fullName>
+        <default>false</default>
+        <label>IKKE inviteres i 2023</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Inget svar</fullName>
+        <default>false</default>
+        <label>Inget svar</label>
+    </standardValue>
+    <standardValue>
+        <fullName>In progress</fullName>
+        <default>false</default>
+        <label>In progress</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Interacted</fullName>
+        <default>false</default>
+        <label>Interacted</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Interested</fullName>
+        <default>false</default>
+        <label>Interested</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Internal registered</fullName>
+        <default>false</default>
+        <label>Internal registered</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Invited</fullName>
+        <default>false</default>
+        <label>Invited</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Invited 2019 and in 2022</fullName>
+        <default>false</default>
+        <label>Invited 2019 and in 2022</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Invited 2024</fullName>
+        <default>false</default>
+        <label>Invited 2024</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Invited Aug &amp; Sept</fullName>
+        <default>false</default>
+        <label>Invited Aug &amp; Sept</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Invited - marknad har sänt påminnelse</fullName>
+        <default>false</default>
+        <label>Invited - marknad har sänt påminnelse</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Invited pri2</fullName>
+        <default>false</default>
+        <label>Invited pri2</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Inviteres i 2022</fullName>
+        <default>false</default>
+        <label>Inviteres i 2022</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Inviteres i 2023</fullName>
+        <default>false</default>
+        <label>Inviteres i 2023</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Inviteret</fullName>
+        <default>false</default>
+        <label>Inviteret</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Konkurrent</fullName>
+        <default>false</default>
+        <label>Konkurrent</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Konkurrent/annet</fullName>
+        <default>false</default>
+        <label>Konkurrent/annet</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Kontaktas</fullName>
+        <default>false</default>
+        <label>Kontaktas</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Lead from the Summit</fullName>
+        <default>false</default>
+        <label>Lead from the Summit</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Medverkade</fullName>
+        <default>false</default>
+        <label>Medverkade</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Meeting booked</fullName>
+        <default>false</default>
+        <label>Meeting booked</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Meldt interesse under Fyri</fullName>
+        <default>false</default>
+        <label>Meldt interesse under Fyri</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Möte bokat</fullName>
+        <default>false</default>
+        <label>Möte bokat</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Möte bokat efteråt</fullName>
+        <default>false</default>
+        <label>Möte bokat efteråt</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Nej till möte</fullName>
+        <default>false</default>
+        <label>Nej till möte</label>
+    </standardValue>
+    <standardValue>
+        <fullName>New</fullName>
+        <default>false</default>
+        <label>New</label>
+    </standardValue>
+    <standardValue>
+        <fullName>No marketing</fullName>
+        <default>false</default>
+        <label>No marketing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Not invited</fullName>
+        <default>false</default>
+        <label>Not invited</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Not of interest</fullName>
+        <default>false</default>
+        <label>Not of interest</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Not willing to participate</fullName>
+        <default>false</default>
+        <label>Not willing to participate</label>
+    </standardValue>
+    <standardValue>
+        <fullName>On Hold</fullName>
+        <default>false</default>
+        <label>On Hold</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Opened</fullName>
+        <default>false</default>
+        <label>Opened</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Opened email invitation</fullName>
+        <default>false</default>
+        <label>Opened email invitation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Opted out</fullName>
+        <default>false</default>
+        <label>Opted out</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Optet out</fullName>
+        <default>false</default>
+        <label>Optet out</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Opt out</fullName>
+        <default>false</default>
+        <label>Opt out</label>
+    </standardValue>
+    <standardValue>
+        <fullName>OptOut fra utsendelse</fullName>
+        <default>false</default>
+        <label>OptOut fra utsendelse</label>
+    </standardValue>
+    <standardValue>
+        <fullName>OptOut-NEI takk</fullName>
+        <default>false</default>
+        <label>OptOut-NEI takk</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Påmeldt med middag</fullName>
+        <default>false</default>
+        <label>Påmeldt med middag</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Personlig invitasjon 16 februar</fullName>
+        <default>false</default>
+        <label>Personlig invitasjon 16 februar</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Potential leads opted in for marketing</fullName>
+        <default>false</default>
+        <label>Potential leads opted in for marketing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Prioritert B</fullName>
+        <default>false</default>
+        <label>Prioritert B</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Prioritet A</fullName>
+        <default>false</default>
+        <label>Prioritet A</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Prioritet B</fullName>
+        <default>false</default>
+        <label>Prioritet B</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Prioritet C</fullName>
+        <default>false</default>
+        <label>Prioritet C</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Proposal sent</fullName>
+        <default>false</default>
+        <label>Proposal sent</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Qualified</fullName>
+        <default>false</default>
+        <label>Qualified</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Received reminder invitation</fullName>
+        <default>false</default>
+        <label>Received reminder invitation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Receives marketing</fullName>
+        <default>false</default>
+        <label>Receives marketing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Registered</fullName>
+        <default>false</default>
+        <label>Registered</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Registered (får personlig mail)</fullName>
+        <default>false</default>
+        <label>Registered (får personlig mail)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Registered internal</fullName>
+        <default>false</default>
+        <label>Registered internal</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Responded</fullName>
+        <default>false</default>
+        <label>Responded</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Responden</fullName>
+        <default>false</default>
+        <label>Responden</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Ringd - ej svar</fullName>
+        <default>false</default>
+        <label>Ringd - ej svar</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Ringd - kanske kommer</fullName>
+        <default>false</default>
+        <label>Ringd - kanske kommer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Ringd - nej tack</fullName>
+        <default>false</default>
+        <label>Ringd - nej tack</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Ringd - ska anmäla sig</fullName>
+        <default>false</default>
+        <label>Ringd - ska anmäla sig</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Så opptaket i ettertid</fullName>
+        <default>false</default>
+        <label>Så opptaket i ettertid</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Scanned QR code</fullName>
+        <default>false</default>
+        <label>Scanned QR code</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sent</fullName>
+        <default>false</default>
+        <label>Sent</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Signed up</fullName>
+        <default>false</default>
+        <label>Signed up</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Signed-up</fullName>
+        <default>false</default>
+        <label>Signed-up</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Signed-up fair</fullName>
+        <default>false</default>
+        <label>Signed-up fair</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Signed-up recording</fullName>
+        <default>false</default>
+        <label>Signed-up recording</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Speaker</fullName>
+        <default>false</default>
+        <label>Speaker</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Takket nei</fullName>
+        <default>false</default>
+        <label>Takket nei</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Takket nei 2016</fullName>
+        <default>false</default>
+        <label>Takket nei 2016</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Takket nei 2017</fullName>
+        <default>false</default>
+        <label>Takket nei 2017</label>
+    </standardValue>
+    <standardValue>
+        <fullName>To be contacted</fullName>
+        <default>false</default>
+        <label>To be contacted</label>
+    </standardValue>
+    <standardValue>
+        <fullName>To be contacted (after event)</fullName>
+        <default>false</default>
+        <label>To be contacted (after event)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>To be followed up</fullName>
+        <default>false</default>
+        <label>To be followed up</label>
+    </standardValue>
+    <standardValue>
+        <fullName>To be invited</fullName>
+        <default>false</default>
+        <label>To be invited</label>
+    </standardValue>
+    <standardValue>
+        <fullName>To be invited Prio2</fullName>
+        <default>false</default>
+        <label>To be invited Prio2</label>
+    </standardValue>
+    <standardValue>
+        <fullName>To be invited to respond to OIR</fullName>
+        <default>false</default>
+        <label>To be invited to respond to OIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Unable to attend</fullName>
+        <default>false</default>
+        <label>Unable to attend</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Uninvited</fullName>
+        <default>false</default>
+        <label>Uninvited</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Unmailable</fullName>
+        <default>false</default>
+        <label>Unmailable</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Utvalgt til deltagelse</fullName>
+        <default>false</default>
+        <label>Utvalgt til deltagelse</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Wants AI workshop</fullName>
+        <default>false</default>
+        <label>Wants AI workshop</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Wants a meeting</fullName>
+        <default>false</default>
+        <label>Wants a meeting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Wants to attend workshop</fullName>
+        <default>false</default>
+        <label>Wants to attend workshop</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Wants workshop</fullName>
+        <default>false</default>
+        <label>Wants workshop</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Ønsker ikke besvare</fullName>
+        <default>false</default>
+        <label>Ønsker ikke besvare</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Ønsker oppfølging</fullName>
+        <default>false</default>
+        <label>Ønsker oppfølging</label>
+    </standardValue>
+</StandardValueSet>

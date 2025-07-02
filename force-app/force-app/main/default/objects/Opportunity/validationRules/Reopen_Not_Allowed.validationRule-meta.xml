@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reopen_Not_Allowed</fullName>
+    <active>true</active>
+    <description>If a closed opportunity is re-opened, it will not have any new post in the Resource list in Service NOW</description>
+    <errorConditionFormula>AND(IsClosed = false , 
+				ISCHANGED(IsClosed),
+				$Permission.Bypass_validation_rule = FALSE)</errorConditionFormula>
+    <errorMessage>You are not allowed to reopen a closed Opportunity. Instead, consider to use the &apos;Clone&apos; option in the Opportunity menu to transfer information to a new Opportunity</errorMessage>
+</ValidationRule>

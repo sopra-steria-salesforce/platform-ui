@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WorkflowAlert xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SE_Lead_har_blivit_kvalificerat</fullName>
+    <description>SE Lead har blivit kvalificerat</description>
+    <protected>false</protected>
+    <recipients>
+        <recipient>kasper.olsson@soprasteria.com</recipient>
+        <type>user</type>
+    </recipients>
+    <senderAddress>soprasteria.salesforce@gmail.com</senderAddress>
+    <senderType>OrgWideEmailAddress</senderType>
+    <template>Default/SE_lead_har_kvalificerats_1738853113249</template>
+</WorkflowAlert>

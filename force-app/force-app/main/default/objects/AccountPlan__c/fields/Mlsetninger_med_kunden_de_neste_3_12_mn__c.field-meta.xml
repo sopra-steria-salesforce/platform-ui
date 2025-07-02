@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mlsetninger_med_kunden_de_neste_3_12_mn__c</fullName>
+    <externalId>false</externalId>
+    <label>Målsetninger med kunden de neste 3-12 mn</label>
+    <length>33000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

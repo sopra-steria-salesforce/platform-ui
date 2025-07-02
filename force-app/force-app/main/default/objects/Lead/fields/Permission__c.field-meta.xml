@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Permission__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Syncs with Account Engagement Permission to show if lead has explicitly given permission to send marketing emails.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Syncs with Account Engagement Permission to show if lead has explicitly given permission to send marketing emails.</inlineHelpText>
+    <label>Permission</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

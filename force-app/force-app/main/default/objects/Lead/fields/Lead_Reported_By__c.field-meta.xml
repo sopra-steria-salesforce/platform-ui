@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Reported_By__c</fullName>
+    <description>This field will be filled out automatically when a Lead is coming in from SharePoint</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field is filled out automatically if the Lead is coming from SharePoint</inlineHelpText>
+    <label>Lead Reported By</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

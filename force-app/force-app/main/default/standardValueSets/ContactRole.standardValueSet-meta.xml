@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Bid Manager</fullName>
+        <default>false</default>
+        <label>Bid Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Bid Team Member</fullName>
+        <default>true</default>
+        <label>Bid Team Member</label>
+    </standardValue>
+    <standardValue>
+        <fullName>QA Team Member</fullName>
+        <default>false</default>
+        <label>QA Team Member</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Opportunity Candidate</fullName>
+        <default>false</default>
+        <label>Opportunity Candidate</label>
+    </standardValue>
+    <standardValue>
+        <fullName>External</fullName>
+        <default>false</default>
+        <label>External</label>
+    </standardValue>
+</StandardValueSet>

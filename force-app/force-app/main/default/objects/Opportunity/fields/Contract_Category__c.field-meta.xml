@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract_Category__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Type of contract. This field is required for all opportunity types e x c e p t Frame agreement and Capacity agreement. This field is dependent on Type.
+Select which contract category this opportunity is. If it is a new call off or change, the framework agreement is selected by the “add contract” button.</inlineHelpText>
+    <label>Contract Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New contract (not connected to framework/capacity agreement)</fullName>
+                <default>false</default>
+                <label>New contract (not connected to framework/capacity agreement)</label>
+            </value>
+            <value>
+                <fullName>Call Off</fullName>
+                <default>false</default>
+                <label>Call Off</label>
+            </value>
+            <value>
+                <fullName>Change to an active call off or contract</fullName>
+                <default>false</default>
+                <label>Change to an active call off or contract</label>
+            </value>
+            <value>
+                <fullName>New call off (Agreement on existing contract)</fullName>
+                <default>false</default>
+                <label>New call off (Agreement on existing contract)</label>
+            </value>
+            <value>
+                <fullName>Capacity agreement</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Capacity agreement</label>
+            </value>
+            <value>
+                <fullName>Frame Agreement</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Frame Agreement</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Broker</controllingFieldValue>
+            <controllingFieldValue>Frame agreement</controllingFieldValue>
+            <controllingFieldValue>Resources</controllingFieldValue>
+            <controllingFieldValue>Managed services</controllingFieldValue>
+            <controllingFieldValue>Project</controllingFieldValue>
+            <controllingFieldValue>Capacity agreement</controllingFieldValue>
+            <valueName>New contract (not connected to framework/capacity agreement)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Broker</controllingFieldValue>
+            <controllingFieldValue>Resources</controllingFieldValue>
+            <controllingFieldValue>Project</controllingFieldValue>
+            <controllingFieldValue>Managed Services Add-On</controllingFieldValue>
+            <valueName>Change to an active call off or contract</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Broker</controllingFieldValue>
+            <controllingFieldValue>Resources</controllingFieldValue>
+            <controllingFieldValue>Managed services</controllingFieldValue>
+            <controllingFieldValue>Project</controllingFieldValue>
+            <controllingFieldValue>Managed Services Add-On</controllingFieldValue>
+            <valueName>New call off (Agreement on existing contract)</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

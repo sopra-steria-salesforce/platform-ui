@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Test_Is_Connected_To_Existsing_Contract__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+            ISPICKVAL(Contract_Category__c, &quot;New call off (Agreement on existing contract)&quot;),
+            &quot;Yes&quot;,
+            IF(
+                ISPICKVAL(Contract_Category__c, &quot;Change to an active call off or contract&quot;),
+                &quot;Yes&quot;,
+                &quot;No&quot;
+            )
+        )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Test Is Connected To Existing Contract</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

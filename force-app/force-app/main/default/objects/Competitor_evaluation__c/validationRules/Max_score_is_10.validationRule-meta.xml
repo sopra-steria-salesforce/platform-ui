@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Max_score_is_10</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR( Score_Price__c &gt;  Evaluation_Area__r.Opportunity__r.Max_Points__c  ,  Score_Quality_Capacity__c &gt; Evaluation_Area__r.Opportunity__r.Max_Points__c , Score_Quality_CV__c &gt; Evaluation_Area__r.Opportunity__r.Max_Points__c ,  Score_Quality_Other__c &gt; Evaluation_Area__r.Opportunity__r.Max_Points__c , Score_Quality_Quality__c &gt; Evaluation_Area__r.Opportunity__r.Max_Points__c )</errorConditionFormula>
+    <errorMessage>Maximum value for Score field is 10. Please correct any Score field with a value over 10.</errorMessage>
+</ValidationRule>

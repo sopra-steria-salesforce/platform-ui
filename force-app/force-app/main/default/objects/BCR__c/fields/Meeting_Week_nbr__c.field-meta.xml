@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Meeting_Week_nbr__c</fullName>
+    <externalId>false</externalId>
+    <formula>If(!IsNull(BCR_Meeting_Date__c), TExt(YEAR(BCR_Meeting_Date__c)) + &quot;-&quot; + LPAD(TEXT(Meeting_Week_Number__c),2,&quot;0&quot;),&quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Meeting Week #</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

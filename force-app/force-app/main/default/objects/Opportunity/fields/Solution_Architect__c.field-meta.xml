@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Solution_Architect__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>Responsible for designing the offered solution. Which includes technical implementation, risk and estimates that it is a good solution for both the customer and Sopra Steria.</inlineHelpText>
+    <label>Solution Architect</label>
+    <referenceTo>Employee__c</referenceTo>
+    <relationshipLabel>Opportunities (Solution Architect)</relationshipLabel>
+    <relationshipName>OpportunitiesSolutionArch</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

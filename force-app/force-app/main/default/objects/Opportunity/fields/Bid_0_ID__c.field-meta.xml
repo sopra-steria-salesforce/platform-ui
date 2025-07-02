@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bid_0_ID__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE (Stage_ID__c, 
+&quot;1&quot;, Bid_1_ID__c , 
+&quot;2a&quot;, Bid_2_ID__c, 
+&quot;2b&quot;, Bid_2_ID__c, 
+&quot;3a&quot;, Bid_3_ID__c, 
+&quot;3b&quot;, Bid_3_ID__c, 
+&quot;4a&quot;, Bid_4_ID__c, 
+&quot;4b&quot;, Bid_4_ID__c, 
+&quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Bid 0 ID</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

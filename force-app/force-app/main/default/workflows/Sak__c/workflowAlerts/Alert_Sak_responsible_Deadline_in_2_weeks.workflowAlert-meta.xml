@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WorkflowAlert xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Alert_Sak_responsible_Deadline_in_2_weeks</fullName>
+    <ccEmails>magne.eggen@soprasteria.com</ccEmails>
+    <description>Alert Sak responsible - Deadline in 2 weeks</description>
+    <protected>false</protected>
+    <recipients>
+        <field>Responsible__c</field>
+        <type>userLookup</type>
+    </recipients>
+    <senderType>DefaultWorkflowUser</senderType>
+    <template>Default/HTML_Saker_Alert_Two_weeks_before</template>
+</WorkflowAlert>

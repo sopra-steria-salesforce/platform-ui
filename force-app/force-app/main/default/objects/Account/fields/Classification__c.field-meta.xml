@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Classification__c</fullName>
+    <inlineHelpText>P1: Krever innsats. Kundeteam ledet av BD. Kunden er viktig for å sikre vår posisjon. Store bedrifter hvor vi i har betydelig omsetning —&gt;
+P2: Potensiale til å bli P1. Store bedrifter som prioriteres gjennom sterk salgsinnsats —&gt;
+P3: Vi ønsker å øke omsetningen og ta en sterk posisjon. Ikke potensiale til å bli P1, men likevel viktige —&gt;
+P4: Små og mellomstore med begrenset potensiale, eller store kunder med begrenset potensiale hvor vi ikke ønsker å prioritere salgsinnsats.</inlineHelpText>
+    <label>Classification</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>P1</fullName>
+                <default>false</default>
+                <label>P1</label>
+            </value>
+            <value>
+                <fullName>P2</fullName>
+                <default>false</default>
+                <label>P2</label>
+            </value>
+            <value>
+                <fullName>P3</fullName>
+                <default>false</default>
+                <label>P3</label>
+            </value>
+            <value>
+                <fullName>P4</fullName>
+                <default>true</default>
+                <label>P4</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

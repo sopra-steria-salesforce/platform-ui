@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Offer_Group__c</fullName>
+    <description>Used for Dashboard SE. Calculated value from Multi select picklist Offer. Populated by flows New / Changed Opportunity SE</description>
+    <externalId>false</externalId>
+    <label>Offer Group</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>.Net</fullName>
+                <default>false</default>
+                <label>.Net</label>
+            </value>
+            <value>
+                <fullName>Advisory</fullName>
+                <default>false</default>
+                <label>Advisory</label>
+            </value>
+            <value>
+                <fullName>Architecture</fullName>
+                <default>false</default>
+                <label>Architecture</label>
+            </value>
+            <value>
+                <fullName>BA-CRM</fullName>
+                <default>false</default>
+                <label>BA-CRM</label>
+            </value>
+            <value>
+                <fullName>BA-ERP</fullName>
+                <default>false</default>
+                <label>BA-ERP</label>
+            </value>
+            <value>
+                <fullName>BA-Collaboration</fullName>
+                <default>false</default>
+                <label>BA-Collaboration</label>
+            </value>
+            <value>
+                <fullName>Cloud</fullName>
+                <default>false</default>
+                <label>Cloud</label>
+            </value>
+            <value>
+                <fullName>Creative</fullName>
+                <default>false</default>
+                <label>Creative</label>
+            </value>
+            <value>
+                <fullName>Cyber Security &amp; Connectivity</fullName>
+                <default>false</default>
+                <label>Cyber Security &amp; Connectivity</label>
+            </value>
+            <value>
+                <fullName>Data &amp; Analytics</fullName>
+                <default>false</default>
+                <label>Data &amp; Analytics</label>
+            </value>
+            <value>
+                <fullName>Delivery</fullName>
+                <default>false</default>
+                <label>Delivery</label>
+            </value>
+            <value>
+                <fullName>Delivery Management</fullName>
+                <default>false</default>
+                <label>Delivery Management</label>
+            </value>
+            <value>
+                <fullName>DevOps</fullName>
+                <default>false</default>
+                <label>DevOps</label>
+            </value>
+            <value>
+                <fullName>EGGS Design</fullName>
+                <default>false</default>
+                <label>EGGS Design</label>
+            </value>
+            <value>
+                <fullName>Integration</fullName>
+                <default>false</default>
+                <label>Integration</label>
+            </value>
+            <value>
+                <fullName>Java</fullName>
+                <default>false</default>
+                <label>Java</label>
+            </value>
+            <value>
+                <fullName>Salesforce</fullName>
+                <default>false</default>
+                <label>Salesforce</label>
+            </value>
+            <value>
+                <fullName>Servicedesk</fullName>
+                <default>false</default>
+                <label>Servicedesk</label>
+            </value>
+            <value>
+                <fullName>No Value</fullName>
+                <default>false</default>
+                <label>No Value</label>
+            </value>
+            <value>
+                <fullName>Multi Value</fullName>
+                <default>false</default>
+                <label>Multi Value</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Quality Control</fullName>
+                <default>false</default>
+                <label>Quality Control</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
