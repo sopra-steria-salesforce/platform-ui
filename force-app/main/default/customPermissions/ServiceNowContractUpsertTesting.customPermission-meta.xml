@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Used in Apex Tests. Permission to bypass validation rule stopping Opportunities to be set to Awarded before 3 minutes after creation. 
+
+NB! Should not be given to any users in Production!</description>
+    <isLicensed>false</isLicensed>
+    <label>ServiceNow Contract Upsert Testing</label>
+</CustomPermission>

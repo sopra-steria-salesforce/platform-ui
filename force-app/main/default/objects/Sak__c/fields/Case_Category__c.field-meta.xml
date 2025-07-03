@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Category__c</fullName>
+    <externalId>false</externalId>
+    <label>Saksområde</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Assets &amp; KM</fullName>
+                <default>false</default>
+                <label>Assets &amp; KM</label>
+            </value>
+            <value>
+                <fullName>Financials</fullName>
+                <default>false</default>
+                <label>Financials</label>
+            </value>
+            <value>
+                <fullName>Ledelse &amp; Prosessforbedring</fullName>
+                <default>false</default>
+                <label>Ledelse &amp; Prosessforbedring</label>
+            </value>
+            <value>
+                <fullName>People &amp; Kompetanse</fullName>
+                <default>false</default>
+                <label>People &amp; Kompetanse</label>
+            </value>
+            <value>
+                <fullName>Rekruttering</fullName>
+                <default>false</default>
+                <label>Rekruttering</label>
+            </value>
+            <value>
+                <fullName>Salg</fullName>
+                <default>false</default>
+                <label>Salg</label>
+            </value>
+            <value>
+                <fullName>Tjenesteutvikling/Profilering</fullName>
+                <default>false</default>
+                <label>Tjenesteutvikling/Profilering</label>
+            </value>
+            <value>
+                <fullName>Strategisk bemanning</fullName>
+                <default>false</default>
+                <label>Strategisk bemanning</label>
+            </value>
+            <value>
+                <fullName>Annet</fullName>
+                <default>false</default>
+                <label>Annet</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

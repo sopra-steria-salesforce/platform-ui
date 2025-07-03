@@ -1,0 +1,17 @@
+/**
+ * Created by kjachowicz on 19.10.2023.
+ */
+:host {
+    --slds-c-textarea-sizing-min-height: 100%;
+    --slds-c-textarea-sizing-max-height: 100%;
+}
+.label {
+    background-color : lightgrey;
+    width: 100%;
+}
+.right-align {
+    text-align: right;
+}
+span {
+    padding-left : 10px
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Information to BU mailbox about BU assignment stage change</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>HTML: Opportunity BU Mailbox, stage  change</name>
+    <style>none</style>
+    <subject>*Salesforce notification* Opportunity {!Opportunity.Name} has changed to {!Opportunity.StageName}</subject>
+    <textOnly>The Opportunity {!Opportunity.Name} has changed to {!Opportunity.StageName} and is assigned to {!Opportunity.Business_Unit__c} 
+&lt;/br&gt;&lt;/br&gt;
+The opportunity is registered with the following information: &lt;/br&gt;
+Opportunity: {!Opportunity.Name} &lt;/br&gt;
+Account: {!Opportunity.Account} &lt;/br&gt;
+Opportunity Owner: {!Opportunity.OwnerFirstName} {!Opportunity.OwnerLastName}&lt;/br&gt;
+Proposal due date: {!Opportunity.Proposal_Due_Date_Time__c} &lt;/br&gt;
+New Stage: {!Opportunity.StageName} &lt;/br&gt;
+Opportunity type: {!Opportunity.Type}&lt;/br&gt;
+&lt;/br&gt;&lt;/br&gt;
+Apps owner: {!Opportunity.Apps_Owner__c} &lt;/br&gt;
+BC owner: {!Opportunity.BC_Owner__c} &lt;/br&gt;
+DPS owner: {!Opportunity.DPS_Owner__c}  &lt;/br&gt;
+&lt;/br&gt;&lt;/br&gt;
+Link to Bid portal:  {!Opportunity.Bid_portal_URL__c} &lt;/br&gt;
+Link to Opportunity in Salesforce: {!Opportunity.Opportunity_Link__c} &lt;/br&gt;
+&lt;/br&gt;&lt;/br&gt;
+Description: &lt;/br&gt;
+{!Opportunity.Description}   &lt;/br&gt;
+&lt;/br&gt;&lt;/br&gt;
+-----------------------------------------------------------------&lt;/br&gt;
+You cannot reply to this e-mail but if you have received this notification by a mistake please contact the Salesforce Admin in Sopra Steria.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

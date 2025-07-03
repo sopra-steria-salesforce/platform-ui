@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subcontractor_Partner_2__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Subcontractor / Partner 2</label>
+    <referenceTo>Suppliers__c</referenceTo>
+    <relationshipLabel>BCR (Subcontractor / Partner 2)</relationshipLabel>
+    <relationshipName>BCR6</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

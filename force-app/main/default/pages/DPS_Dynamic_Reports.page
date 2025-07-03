@@ -1,0 +1,53 @@
+<apex:page showHeader="true" standardStylesheets="false" sidebar="false" applyHtmlTag="true" applyBodyTag="false" docType="html-5.0">    
+
+<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">    
+
+<head>
+  <title>Guides, tips and tricks</title>
+    <apex:stylesheet value="{!URLFOR($Resource.SLDS100, 'assets/styles/salesforce-lightning-design-system.css')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.SLDS100, 'assets/styles/salesforce-lightning-design-system-vf.css')}" />
+</head>    
+<body>
+    <apex:form >
+        <div class="slds-modal slds-fade-in-open" aria-hidden="false" role="dialog"> 
+            <div class="slds-modal__container">
+                <div class="slds-modal__header">
+                    <h2 class="slds-text-heading--medium">DPS Dynamic Reports</h2>
+                </div>
+                <div class="slds-modal__content slds-p-around--medium">
+                    <div class="slds-grid">
+                        <div class="slds-col">
+                            <div class="slds-clearfix">
+                                <div class="slds-float--left">
+
+  <table style="border-spacing:10px 5px; border-collapse:separate;">
+  <tr>
+  <th>Action</th>
+  <th>Description</th>
+  </tr>
+  <tr>
+  <td>
+  <apex:commandbutton styleclass="slds-button slds-button--neutral" action="https://soprasteriasc--c.vf.force.com/flow/ScreenFlow_Opportunity_report_parameters?returl=https://soprasteriasc.lightning.force.com/lightning/n/DPS_Dynamic_Reports" value="Launch report"  />   
+  </td>
+  <td>Click button to see detailed instructions and run the report</td>
+  </tr>
+  
+  </table>
+
+                              </div>
+                            </div> 
+                        </div>
+                    </div> 
+                </div>
+                <div class="slds-modal__footer">
+               </div>
+            </div>
+        </div>
+    </apex:form>
+        <div class="slds-backdrop slds-backdrop--open"></div>
+
+
+
+   </body>
+</html>
+</apex:page>

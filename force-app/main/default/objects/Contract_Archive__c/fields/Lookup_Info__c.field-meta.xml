@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lookup_Info__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;Valid from: &quot; &amp; TEXT(Start_Date__c) &amp; &quot; to: &quot; &amp; TEXT(Final_Date_Of_Expiry__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Lookup Info</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

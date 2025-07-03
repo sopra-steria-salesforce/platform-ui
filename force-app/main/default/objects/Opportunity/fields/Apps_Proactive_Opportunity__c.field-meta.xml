@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Apps_Proactive_Opportunity__c</fullName>
+    <defaultValue>false</defaultValue>
+    <externalId>false</externalId>
+    <inlineHelpText>Tick off box if this opportunity does not come from any of the official portals e.g. Doffin, Mercell, call-off on framework agreement. By ticking this box you are notifying APPS sales to address the opportunity and give support</inlineHelpText>
+    <label>Apps Proactive Opportunity</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BU_Required_for_Stages_from1_to5_NO_DK</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+TEXT(StageName) != &quot;0 - Planning&quot;, $Permission.Bypass_validation_rule = FALSE,
+				TEXT(StageName) != &quot;Duplicate&quot;, LEFT(TEXT(StageName), 9) != &quot;Abandoned&quot; , Owner.Country != &quot;Sweden&quot;, OR(ISBLANK(Business_Unit__c), AND(INCLUDES(Business_Unit__c, &quot;None&quot;),Business_Unit_Count__c = 1)))</errorConditionFormula>
+    <errorMessage>Business Unit is required when opportunity is in a stage between 1 and 5 (NO)</errorMessage>
+</ValidationRule>

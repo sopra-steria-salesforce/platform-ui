@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sensitiv__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>For å markere at en sak er sensitiv. Saken blir ikke sendt med i rapport til utvidet lederteam</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Saken blir ikke sendt med i rapport til utvidet lederteam når den er markert som Sensitiv</inlineHelpText>
+    <label>Sensitive</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

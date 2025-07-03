@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WorkflowAlert xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Alert_opportunity_owner_due_date_is_today</fullName>
+    <description>Alert opportunity owner - due day is tomorrow</description>
+    <protected>false</protected>
+    <recipients>
+        <type>owner</type>
+    </recipients>
+    <senderType>DefaultWorkflowUser</senderType>
+    <template>Default/HTML_Opportunity_Alert_Tomorrow</template>
+</WorkflowAlert>

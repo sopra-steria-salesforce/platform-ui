@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Proposal_Due_Date_New_Opportunity</fullName>
+    <active>true</active>
+    <description>Gjelder pt bare for nye oppt, ettersom det kolliderer med process builder som blanker proposal due date ved endring av stage. Magne 14.09.2020</description>
+    <errorConditionFormula>AND(ISNEW(), TEXT ( Status__c ) = &apos;In progress&apos; , ISBLANK( Proposal_Due_Date_Time__c ) ,OR(ISPICKVAL(StageName , &apos;2 - RFI&apos;),ISPICKVAL(StageName , &apos;3 - Prequal&apos;),ISPICKVAL(StageName , &apos;4 - Offer&apos;)))</errorConditionFormula>
+    <errorDisplayField>Proposal_Due_Date_Time__c</errorDisplayField>
+    <errorMessage>Proposal Due Date is required when Status is &apos;In progress&apos;</errorMessage>
+</ValidationRule>

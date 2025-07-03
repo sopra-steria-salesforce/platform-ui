@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Bergen_Opportunity_Awarded_Notification</name>
+        <label>Bergen Opportunity Awarded Notification</label>
+        <locationX>1544</locationX>
+        <locationY>373</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Open_and_before_close_date</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Error_Handling</targetReference>
+        </faultConnector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>con_BergenEmail</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderType</name>
+            <value>
+                <stringValue>DefaultWorkflowUser</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>BergenOpportunityAwardedAlert</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>BergenOpportunityAwardedTeamsAlert</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <actionCalls>
+        <description>49d67524.soprasteria.com@emea.teams.ms</description>
+        <name>Bergen_Opportunity_Notification</name>
+        <label>Bergen Opportunity Notification</label>
+        <locationX>923</locationX>
+        <locationY>479</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Open_and_before_close_date</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Error_Handling</targetReference>
+        </faultConnector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>con_BergenEmail</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderType</name>
+            <value>
+                <stringValue>DefaultWorkflowUser</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>BergenOpportunityAlert</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>BergenOpportunityTeamsAlert</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <actionCalls>
+        <name>DPS_Opportunity_Owner_Email</name>
+        <label>DPS Opportunity Owner Email</label>
+        <locationX>1055</locationX>
+        <locationY>1679</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Single_BU_Lead</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Error_Handling</targetReference>
+        </faultConnector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>$Record.DPS_Business_Owner__r.Email</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>You were added as DPS Opportunity Owner.</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>txt_DPSEmailBody</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>useLineBreaks</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <apiVersion>55.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Set_BU_Lead_for_Single_BU</name>
+        <label>Set BU Lead for Single BU</label>
+        <locationX>1012</locationX>
+        <locationY>2007</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.BU_Lead__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>frmBULead</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Opportunity</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>updateAmountOldThisYear</name>
+        <label>Update amount, old, this year</label>
+        <locationX>1827</locationX>
+        <locationY>1432</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Amount</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Amount_Calculated__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Old_Value__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Amount_Calculated__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>dec_DPS_Opportunity_Owner_Changed</targetReference>
+        </connector>
+    </assignments>
+    <constants>
+        <description>Change back to 49d67524.soprasteria.com@emea.teams.ms after testing</description>
+        <name>con_BergenEmail</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>49d67524.soprasteria.com@emea.teams.ms</stringValue>
+        </value>
+    </constants>
+    <decisions>
+        <name>Amount_Decisions</name>
+        <label>Amount Decisions</label>
+        <locationX>1511</locationX>
+        <locationY>1134</locationY>
+        <defaultConnector>
+            <targetReference>dec_DPS_Opportunity_Owner_Changed</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>None of those</defaultConnectorLabel>
+        <rules>
+            <name>Amount_new_and_old_value_are_equals_Months_and_Consultants_are_greater_than_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Consultants__c</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <numberValue>0.0</numberValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Months__c</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <numberValue>0.0</numberValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Amount</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record.Amount_Old_Value__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>updateAmountOldThisYear</targetReference>
+            </connector>
+            <label>Amount new and old value are equals. #Months and #Consultants are greater than 0</label>
+        </rules>
+        <rules>
+            <name>Amount_is_0_and_Consultants_are_greater_than_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Amount</leftValueReference>
+                <operator>LessThanOrEqualTo</operator>
+                <rightValue>
+                    <numberValue>1.0</numberValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Consultants__c</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <numberValue>0.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>updateAmountOldThisYear</targetReference>
+            </connector>
+            <label>Amount is 0 and #Consultants are greater than 0</label>
+        </rules>
+        <rules>
+            <name>Amount_is_null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Amount</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Months__c</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <numberValue>0.0</numberValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Consultants__c</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <numberValue>0.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>updateAmountOldThisYear</targetReference>
+            </connector>
+            <label>Amount is null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Check if the opportunity region is Bergen and stage is not Awarded or Closed Won</description>
+        <name>dec_BergenStages</name>
+        <label>BergenStages</label>
+        <locationX>1314</locationX>
+        <locationY>390</locationY>
+        <defaultConnector>
+            <targetReference>Open_and_before_close_date</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Other</defaultConnectorLabel>
+        <rules>
+            <name>out_newBergenOpp</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>5 - Awarded</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Closed Won</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Region__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Bergen</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>frm_StageAbandoned</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Bergen_Opportunity_Notification</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>New Bergen Opp</label>
+        </rules>
+        <rules>
+            <name>out_BergenAwarded</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>5 - Awarded</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Region__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Bergen</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Bergen_Opportunity_Awarded_Notification</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Bergen Awarded</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>The value of the DPS Opportunity owner is changed.</description>
+        <name>dec_DPS_Opportunity_Owner_Changed</name>
+        <label>DPS Opportunity Owner Changed</label>
+        <locationX>1210</locationX>
+        <locationY>1637</locationY>
+        <defaultConnector>
+            <targetReference>Single_BU_Lead</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>out_Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.DPS_Business_Owner__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.DPS_Business_Owner__c</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>DPS_Opportunity_Owner_Email</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>&quot;I open before the close&quot; - Harry Potter and the Goblet of Fire</description>
+        <name>Open_and_before_close_date</name>
+        <label>Open and before close date</label>
+        <locationX>1187</locationX>
+        <locationY>971</locationY>
+        <defaultConnector>
+            <targetReference>Amount_Decisions</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>1 AND 2 AND 3</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.CloseDate</leftValueReference>
+                <operator>GreaterThanOrEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Flow.CurrentDate</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.IsClosed</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.EUR_Rate__c</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_currency_rate</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Single_BU_Lead</name>
+        <label>Single BU Lead</label>
+        <locationX>1243</locationX>
+        <locationY>1880</locationY>
+        <defaultConnector>
+            <targetReference>Update_Opportunity</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>outYesSingleBuLead</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SingleBuLead</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Country__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Sweden</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_BU_Lead_for_Single_BU</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <description>Related Opportunity Opportunity changes flow. This flow runs based on criteria and not every time. Added error handling.</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>The amount calculated formula on the opportunity was not correctly populating the Amount this Year Field, so I am bringing it in here.</description>
+        <name>frm_AmountThisYear</name>
+        <dataType>Currency</dataType>
+        <expression>IF(AND(YEAR({!$Record.Project_Start_Date__c)} = YEAR(TODAY()),{!$Record.Months__c} != 0),
+MIN((
+(13-ROUND(MONTH( {!$Record.Project_Start_Date__c }),0))/ Round({!$Record.Months__c},0) )*{!$Record.Amount},
+{!$Record.Amount}),
+0
+)</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
+        <name>frm_StageAbandoned</name>
+        <dataType>Boolean</dataType>
+        <expression>ISCHANGED({!$Record.StageName}) &amp;&amp; 
+(ISPICKVAL({!$Record.StageName} , &apos;Abandoned by Customer&apos;) || ISPICKVAL({!$Record.StageName} , &apos;Abandoned by Us&apos;))  &amp;&amp;
+LEFT({!$Record.OwnerId}, 15)  != LEFT({!$User.Id} , 15)</expression>
+    </formulas>
+    <formulas>
+        <description>Same formula as in the formula on the record.</description>
+        <name>frmAmountCalculated</name>
+        <dataType>Number</dataType>
+        <expression>{!$Record.Months__c}* {!$Record.Consultants__c}*20*7.5*1400</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>frmBULead</name>
+        <dataType>String</dataType>
+        <expression>IF (INCLUDES({!$Record.Business_Unit__c} , &apos;APPS&apos;) , &apos;APPS&apos; , 
+IF (INCLUDES({!$Record.Business_Unit__c} , &apos;DPS&apos; ), &apos;DPS&apos; , 
+IF (INCLUDES({!$Record.Business_Unit__c} , &apos;Advisory&apos; ) , &apos;Advisory&apos; , 
+IF (INCLUDES({!$Record.Business_Unit__c} , &apos;Biometrics&apos; ) , &apos;Biometrics&apos; , 
+&apos;&apos;))))</expression>
+    </formulas>
+    <formulas>
+        <name>NewOpportunity</name>
+        <dataType>Boolean</dataType>
+        <expression>ISNEW()</expression>
+    </formulas>
+    <formulas>
+        <name>SetBU_Lead</name>
+        <dataType>String</dataType>
+        <expression>IF (INCLUDES({!$Record.Business_Unit__c} , &apos;APPS&apos;) , &apos;APPS&apos; , 
+IF (INCLUDES({!$Record.Business_Unit__c} , &apos;DPS&apos; ), &apos;DPS&apos; , 
+IF (INCLUDES({!$Record.Business_Unit__c} , &apos;Advisory&apos; ) , &apos;Advisory&apos; , 
+IF (INCLUDES({!$Record.Business_Unit__c} , &apos;Biometrics&apos; ) , &apos;Biometrics&apos; , 
+&apos;&apos;))))</expression>
+    </formulas>
+    <formulas>
+        <name>SetClosingDay</name>
+        <dataType>Boolean</dataType>
+        <expression>(ISNEW() &amp;&amp;
+(TEXT({!$Record.StageName}) = &apos;5 - Awarded&apos; ||
+TEXT({!$Record.StageName}) = &apos;Closed Won&apos; ||
+TEXT({!$Record.StageName}) = &apos;Closed Lost&apos; ||
+TEXT({!$Record.StageName}) = &apos;Abandoned by Us&apos; ||
+TEXT({!$Record.StageName}) = &apos;Abandoned by Customer&apos; )) 
+|| 
+(ISCHANGED({!$Record.StageName}) &amp;&amp;
+(TEXT({!$Record.StageName}) = &apos;5 - Awarded&apos; ||
+TEXT({!$Record.StageName}) = &apos;Closed Won&apos; ||
+TEXT({!$Record.StageName}) = &apos;Closed Lost&apos; ||
+TEXT({!$Record.StageName}) = &apos;Abandoned by Us&apos; ||
+TEXT({!$Record.StageName}) = &apos;Abandoned by Customer&apos; )  &amp;&amp;
+TEXT({!$Record__Prior.StageName}) != &apos;5 - Awarded&apos; &amp;&amp;
+TEXT({!$Record__Prior.StageName}) != &apos;Closed Won&apos; &amp;&amp;
+TEXT({!$Record__Prior.StageName}) != &apos;Closed Lost&apos; )</expression>
+    </formulas>
+    <formulas>
+        <name>ShortDescription</name>
+        <dataType>String</dataType>
+        <expression>TRIM(
+  LEFT($Record.Description, 1000) &amp; &quot;.....&quot;
+)</expression>
+    </formulas>
+    <formulas>
+        <name>SingleBU_Formula</name>
+        <dataType>Boolean</dataType>
+        <expression>AND({!$Record.Business_Unit_Count__c}  = 1 , TEXT({!$Record.BU_Lead__c}) = &quot;&quot;, TEXT({!$Record.StageName}) != &apos;0 - Planning&apos;,  TEXT({!$Record.StageName}) != &apos;1 - Possibility&apos;)</expression>
+    </formulas>
+    <formulas>
+        <name>SingleBuLead</name>
+        <dataType>Boolean</dataType>
+        <expression>AND({!$Record.Business_Unit_Count__c}  = 1 , TEXT({!$Record.BU_Lead__c}) = &quot;&quot;, TEXT({!$Record.StageName}) != &apos;0 - Planning&apos;,  TEXT({!$Record.StageName}) != &apos;1 - Possibility&apos;)</expression>
+    </formulas>
+    <interviewLabel>Record Triggered: Opp Changes After Save {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Record Triggered: Opp Changes After Save</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Opportunity</name>
+        <label>Update Opportunity</label>
+        <locationX>1236</locationX>
+        <locationY>2189</locationY>
+        <faultConnector>
+            <targetReference>Error_Handling</targetReference>
+        </faultConnector>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>1060</locationX>
+        <locationY>51</locationY>
+        <connector>
+            <targetReference>dec_BergenStages</targetReference>
+        </connector>
+        <filterFormula>/* the flow should never run when the account is blocked */
+AND ({!$Record.Account.Blocked__c} = false,
+{!$Record.Name} != &apos;TestDataFactoryTestOpportunity12345&apos;,
+/*the flow should run for one of these conditions */
+OR(
+/* Bergen opportunity is not closed */
+AND({!$Record.IsClosed} = False, ISPICKVAL({!$Record.Region__c},&apos;Bergen&apos;)), 
+/*Opp is new */
+ISNEW(), 
+/* The Eur_Rate is blank */
+ISNULL({!$Record.EUR_Rate__c}), 
+/* is changed : consultants, months, dps owner (is changed to another user), OR amount */
+ISCHANGED({!$Record.Consultants__c}), 
+ISCHANGED({!$Record.Months__c}),
+ISCHANGED({!$Record.Amount}),
+(ISCHANGED({!$Record.DPS_Business_Owner__c})
+&amp;&amp; ISNULL({!$Record.DPS_Business_Owner__c})=FALSE),
+/*BU Lead should be set if there is only 1 business lead. */
+ISCHANGED({!$Record.Business_Unit_Count__c})
+
+))</filterFormula>
+        <object>Opportunity</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>Error_Handling</name>
+        <label>Error Handling</label>
+        <locationX>1502</locationX>
+        <locationY>2028</locationY>
+        <flowName>ERROR_HANDLING</flowName>
+        <inputAssignments>
+            <name>moreErrorInfo</name>
+            <value>
+                <elementReference>varMoreInfo</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>varRecordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </subflows>
+    <subflows>
+        <name>Get_currency_rate</name>
+        <label>Get currency rate</label>
+        <locationX>1055</locationX>
+        <locationY>1079</locationY>
+        <connector>
+            <targetReference>Amount_Decisions</targetReference>
+        </connector>
+        <flowName>Get_Currency_Rate</flowName>
+        <inputAssignments>
+            <name>CurrencyCode</name>
+            <value>
+                <elementReference>$Record.Currency__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>OpportunityID</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </subflows>
+    <textTemplates>
+        <name>BergenOpportunityAlert</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Ny Mulighet!</text>
+    </textTemplates>
+    <textTemplates>
+        <name>BergenOpportunityAwardedAlert</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Ny Win!</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Sends a notification on Teams channel if the Opportunity with Region Bergen is Awarded</description>
+        <name>BergenOpportunityAwardedTeamsAlert</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Bergen Opportunity has been Closed Won!
+Opportunity Name: {!$Record.Name}
+Opportunity Owner: {!$Record.Owner_Name__c}
+Account Name: {!$Record.Account_Name__c}
+Business Unit: {!$Record.Business_Unit__c}
+Amount: {!$Record.Amount}
+Stage: {!$Record.StageName}
+Description: {!ShortDescription}</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Sends a notification on Teams channel if the Opportunity is created with Region Bergen</description>
+        <name>BergenOpportunityTeamsAlert</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>A new opportunity has been created for Bergen!
+Opportunity Name: {!$Record.Name}
+Opportunity Owner: {!$Record.Owner_Name__c}
+Account name: {!$Record.Account_Name__c}
+Business Unit: {!$Record.Business_Unit__c}
+Amount: {!$Record.Amount}
+Stage: {!$Record.StageName}
+Description: {!ShortDescription}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>txt_DPSEmailBody</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;p&gt;Hello {!$Record.DPS_Business_Owner__r.FirstName},&lt;/p&gt;&lt;p&gt;You were added to &lt;a href=&quot;https://soprasteriasc.lightning.force.com/lightning/r/Opportunity/{!$Record.Id}/view&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;this opportunity&lt;/a&gt; as the DPS Opportunity Owner.&lt;/p&gt;&lt;p&gt;mvh,&lt;/p&gt;&lt;p&gt;The Bid Office&lt;/p&gt;</text>
+    </textTemplates>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>send more info for error handling to the other flow</description>
+        <name>varMoreInfo</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue>Record triggered: opp changes after save flow</stringValue>
+        </value>
+    </variables>
+</Flow>

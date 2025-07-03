@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bid_Room_EmailLink__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Bid_Number__c != &quot;&quot;, 
+
+Bid_Number__c + BID_URL_Country__c + &quot;?Title=&quot; + 
+
+SUBSTITUTE( 
+SUBSTITUTE( 
+SUBSTITUTE( 
+SUBSTITUTE( 
+SUBSTITUTE( 
+SUBSTITUTE( 
+SUBSTITUTE( 
+SUBSTITUTE( 
+SUBSTITUTE( 
+SUBSTITUTE( 
+SUBSTITUTE( 
+SUBSTITUTE( 
+
+Account_Name__c + &quot; - &quot; + Stage_ID__c + &quot; - &quot; + Name, 
+&quot;&amp;&quot;, &quot;og&quot;), 
+&quot; &quot;, &quot;%20&quot;), 
+&quot;#&quot;, &quot;-&quot;), 
+&quot;Å&quot;, &quot;A&quot;), 
+&quot;å&quot;, &quot;a&quot;), 
+&quot;Ø&quot;, &quot;O&quot;), 
+&quot;ø&quot;, &quot;o&quot;), 
+&quot;Æ&quot;, &quot;A&quot;), 
+&quot;æ&quot;, &quot;a&quot;), 
+&quot;Ä&quot;, &quot;A&quot;), 
+&quot;ä&quot;, &quot;a&quot;), 
+&quot;,&quot;, &quot; &quot;), 
+
+
+&quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Bid Room EmailLink</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
