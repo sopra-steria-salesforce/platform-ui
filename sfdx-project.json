@@ -1,11 +1,9 @@
 {
 	"packageDirectories": [
 	  {
+		"versionName": "ver 0.1",
+		"versionNumber": "0.1.0.NEXT",
 		"path": "force-app",
-		"package": "platform-ui",
-		"versionNumber": "1.1.0.NEXT",
-		"versionDescription": "Top level package for Flexipages, Quick Actions, Applications, Reports, etc. that span the entire platform",
-		"default": true,
 		"dependencies": [
 		  {
 			"package": "Nebula Logger@4.16.0.2"
@@ -30,10 +28,12 @@
 			"package": "document-transfer",
 			"versionNumber": "0.7.0.LATEST"
 		  }
-	]
-}
-],
-	"name": "platform-ui",
+		],
+		"package": "platform-ui",
+		"versionDescription": "Top level package for Flexipages, Quick Actions, Applications, Reports, etc. that span the entire platform"
+	  }
+	],
+	"name": "soprasteria-crm",
 	"namespace": "",
 	"sfdcLoginUrl": "https://login.salesforce.com",
 	"sourceApiVersion": "63.0",
@@ -44,8 +44,8 @@
 	  "Lightning Messaging Utility@1.5.0.1": "04t5w000003gWWBAA2",
 	  "platform-base": "0HoP100000001CDKAY",
 	  "trigger-actions-framework@0.3.2": "04tKY000000PdZOYA0",
-	  "document-transfer": "0HoP100000001FRKAY",
-	  "platform-ui": "0HoP100000001P7KAI"
+	  "platform-ui": "0HoP100000001P7KAI",
+	  "document-transfer":"0HoP100000001FRKAY"
 	},
 	"sourceBehaviorOptions": [
 	  "decomposeWorkflowBeta"
