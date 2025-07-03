@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Offer_Snapshot__c</fullName>
+    <description>Used to build  Opportunity Snopshot SE 
+Must be updated evey time the Offer__c field is modified</description>
+    <externalId>false</externalId>
+    <formula>SUBSTITUTE(
+IF (INCLUDES(Offer__c,&apos;.Net&apos; ),&apos;.Net; &apos;,null ) &amp;
+IF (INCLUDES(Offer__c,&apos;Advanced Analytics&apos; ),&apos;Advanced Analytics; &apos;,null ) &amp;
+IF (INCLUDES(Offer__c,&apos;Architecture Advisory&apos; ),&apos;Architecture Advisory; &apos;,null ) &amp;
+IF (INCLUDES(Offer__c,&apos;Business Analysis&apos; ),&apos;Business Analysis; &apos;,null ) &amp;
+IF (INCLUDES(Offer__c,&apos;Business Central&apos; ),&apos;Business Central; &apos;,null ) &amp;
+IF (INCLUDES(Offer__c,&apos;Business Design&apos; ),&apos;Business Design; &apos;,null ) &amp;
+IF (INCLUDES(Offer__c,&apos;Business Transformation&apos; ),&apos;Business Transformation; &apos;,null ) &amp;
+IF (INCLUDES(Offer__c,&apos;Cloud&apos; ),&apos;Cloud; &apos;,null ) &amp;
+IF (INCLUDES(Offer__c,&apos;Cyber Security &amp; Connectivity&apos; ),&apos;Cyber Security &amp; Connectivity; &apos;,null ) &amp;
+IF (INCLUDES(Offer__c,&apos;Data Engineering&apos; ),&apos;Data Engineering; &apos;,null ) &amp;
+IF (INCLUDES(Offer__c,&apos;Data Strategy&apos; ),&apos;Data Strategy; &apos;,null ) &amp;
+IF (INCLUDES(Offer__c,&apos;Delivery Management&apos; ),&apos;Delivery Management; &apos;,null ) &amp;
+IF (INCLUDES(Offer__c,&apos;DevOps&apos; ),&apos;DevOps; &apos;,null ) &amp;
+IF (INCLUDES(Offer__c,&apos;Digital Design&apos; ),&apos;Digital Design; &apos;,null ) &amp;
+IF (INCLUDES(Offer__c,&apos;Experience Tech&apos; ),&apos;Experience Tech; &apos;,null ) &amp;
+IF (INCLUDES(Offer__c,&apos;Finance&apos; ),&apos;Finance; &apos;,null ) &amp;
+IF (INCLUDES(Offer__c,&apos;Information, Risk &amp; Governance&apos; ),&apos;Information, Risk &amp; Governance; &apos;,null ) &amp;
+IF (INCLUDES(Offer__c,&apos;Integration&apos; ),&apos;Integration; &apos;,null ) &amp;
+IF (INCLUDES(Offer__c,&apos;Java&apos; ),&apos;Java; &apos;,null ) &amp;
+IF (INCLUDES(Offer__c,&apos;Modern Workplace&apos; ),&apos;Modern Workplace; &apos;,null ) &amp;
+IF (INCLUDES(Offer__c,&apos;Other&apos; ),&apos;Other; &apos;,null ) &amp;
+IF (INCLUDES(Offer__c,&apos;Project Management&apos; ),&apos;Project Management; &apos;,null ) &amp;
+IF (INCLUDES(Offer__c,&apos;Salesforce&apos; ),&apos;Salesforce; &apos;,null ) &amp;
+IF (INCLUDES(Offer__c,&apos;Service Design&apos; ),&apos;Service Design; &apos;,null ) &amp;
+IF (INCLUDES(Offer__c,&apos;Servicedesk&apos; ),&apos;Servicedesk; &apos;,null ) &amp;
+IF (INCLUDES(Offer__c,&apos;Solutions&apos; ),&apos;Solutions; &apos;,null ) &amp;
+IF (INCLUDES(Offer__c,&apos;Strategy &amp; Insight&apos; ),&apos;Strategy &amp; Insight; &apos;,null ) &amp;
+IF (INCLUDES(Offer__c,&apos;Sustainability&apos; ),&apos;Sustainability; &apos;,null ) &amp;
+IF (INCLUDES(Offer__c,&apos;Tech Transformation Advisory&apos; ),&apos;Tech Transformation Advisory; &apos;,null ) &amp;
+IF (INCLUDES(Offer__c,&apos;MS CRM&apos; ),&apos;MS CRM; &apos;,null ) &amp;
+IF (INCLUDES(Offer__c,&apos;Analytics&apos; ),&apos;Analytics; &apos;,null ) &amp;
+IF (INCLUDES(Offer__c,&apos;Quality Engineering&apos; ),&apos;Quality Engineering; &apos;,null ) &amp;
+
+&quot;-&quot;,
+&quot;; -&quot;,
+null
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Offer Snapshot</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>User_cannot_approve_BCR0</fullName>
+    <active>true</active>
+    <errorConditionFormula>BCR0_approved__c = TRUE &amp;&amp; 
+PRIORVALUE(BCR0_approved__c) = FALSE &amp;&amp; 
+
+NOT(
+  OR(
+    $User.Username = &apos;lene.melfald@soprasteria.com&apos;,
+    $User.Username = &apos;marie.kallin@soprasteria.com&apos;,
+    $User.Username = &apos;nina.lundgren@soprasteria.com&apos;,
+    $User.Username = &apos;max.yngwe@soprasteria.com&apos;
+    )
+   )</errorConditionFormula>
+    <errorMessage>Only select users can approve BCR0</errorMessage>
+</ValidationRule>

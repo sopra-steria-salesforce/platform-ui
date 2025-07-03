@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Delivery_risk__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Risk level 0 - 12, 12 is highest</inlineHelpText>
+    <label>Delivery risk</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>12 Group</fullName>
+                <color>#FF0000</color>
+                <default>false</default>
+                <label>12 Group</label>
+            </value>
+            <value>
+                <fullName>11 Group</fullName>
+                <color>#FF0000</color>
+                <default>false</default>
+                <label>11 Group</label>
+            </value>
+            <value>
+                <fullName>10 Country/Subsidiary</fullName>
+                <color>#FFCC33</color>
+                <default>false</default>
+                <label>10 Country/Subsidiary</label>
+            </value>
+            <value>
+                <fullName>9 Country/Subsidiary</fullName>
+                <color>#FFCC33</color>
+                <default>false</default>
+                <label>9 Country/Subsidiary</label>
+            </value>
+            <value>
+                <fullName>8 BU</fullName>
+                <color>#FFFF66</color>
+                <default>false</default>
+                <label>8 BU</label>
+            </value>
+            <value>
+                <fullName>7 BU</fullName>
+                <color>#FFFF66</color>
+                <default>false</default>
+                <label>7 BU</label>
+            </value>
+            <value>
+                <fullName>6 BU</fullName>
+                <color>#FFFF66</color>
+                <default>false</default>
+                <label>6 BU</label>
+            </value>
+            <value>
+                <fullName>5 BU</fullName>
+                <color>#FFFF66</color>
+                <default>false</default>
+                <label>5 BU</label>
+            </value>
+            <value>
+                <fullName>4 Agency</fullName>
+                <color>#33CC00</color>
+                <default>false</default>
+                <label>4 Agency</label>
+            </value>
+            <value>
+                <fullName>3 Agency</fullName>
+                <color>#33CC00</color>
+                <default>false</default>
+                <label>3 Agency</label>
+            </value>
+            <value>
+                <fullName>2 Agency</fullName>
+                <color>#33CC00</color>
+                <default>false</default>
+                <label>2 Agency</label>
+            </value>
+            <value>
+                <fullName>1 Agency</fullName>
+                <color>#33CC00</color>
+                <default>false</default>
+                <label>1 Agency</label>
+            </value>
+            <value>
+                <fullName>0 Agency</fullName>
+                <color>#33CC00</color>
+                <default>false</default>
+                <label>0 Agency</label>
+            </value>
+            <value>
+                <fullName>High</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>High</label>
+            </value>
+            <value>
+                <fullName>Low</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Low</label>
+            </value>
+            <value>
+                <fullName>Medium</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Medium</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

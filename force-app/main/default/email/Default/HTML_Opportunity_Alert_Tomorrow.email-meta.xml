@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>HTML: Opportunity Alert - Tomorrow</name>
+    <style>none</style>
+    <subject>*Salesforce deadline notification* Your opportunity {!Opportunity.Name} has proposal due date tomorrow</subject>
+    <textOnly>You recieve this e-mail because the Opportunity &lt;strong&gt;{!Opportunity.Name}&lt;/strong&gt; has a proposal due date &lt;strong&gt;{!Opportunity.Proposal_Due_Date_Time__c}&lt;/strong&gt;.
+
+The opportunity is registered with the following information: 
+Opportunity: {!Opportunity.Name} 
+Account: {!Opportunity.Account} 
+Proposal due date: {!Opportunity.Proposal_Due_Date_Time__c} 
+Amount this year: {!Opportunity.Amount_This_Year__c}   
+
+For more details, click the following link:  
+
+{!Opportunity.Opportunity_Link__c}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

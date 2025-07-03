@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Apps_Owner__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>The bid owner in Apps. Is automatically populated with the Apps owner who is registered on the Account in Salesforce, but this can be manually overridden.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Manager that has the overall responsibility for the opportunity, should be a  a member from LG Core or Delivery. Responsible for driving the tender forward, onboarding the right team, delivering on time with high quality. Also responsible for reporting and escalating progress and risk.</inlineHelpText>
+    <label>Apps Opportunity Owner</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Opportunities</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+</CustomField>

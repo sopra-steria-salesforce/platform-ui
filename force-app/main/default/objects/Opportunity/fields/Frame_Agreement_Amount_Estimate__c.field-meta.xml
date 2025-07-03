@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Frame_Agreement_Amount_Estimate__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Renewal: Your estimate for average value of the existing frame agreement over the past two years. If filled in, this value will replaced the calculation of Frame Agreement Value - Calculated. Use Qlikview to get finance data.</inlineHelpText>
+    <label>Frame Agreement Amount-Your Estimate</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X30DaysBeforeCloseDate__c</fullName>
+    <externalId>false</externalId>
+    <formula>CloseDate = TODAY()+30</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>30DaysBeforeCloseDate</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

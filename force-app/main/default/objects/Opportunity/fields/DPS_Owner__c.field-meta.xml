@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DPS_Owner__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>Account Manager in DPS Management group, assigned to Priority- and Hunting accounts. The role is responsible for Relationship Management during the sales process. The field is inherited from Client object in SF</inlineHelpText>
+    <label>DPS Client Developer</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>DPS_Opportunities</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

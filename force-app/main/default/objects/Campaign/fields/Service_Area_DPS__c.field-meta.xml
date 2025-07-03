@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Area_DPS__c</fullName>
+    <externalId>false</externalId>
+    <label>Service Area DPS</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>IT Excellence</fullName>
+                <default>false</default>
+                <label>IT Excellence</label>
+            </value>
+            <value>
+                <fullName>Operational Excellence</fullName>
+                <default>false</default>
+                <label>Operational Excellence</label>
+            </value>
+            <value>
+                <fullName>Solution Architecture</fullName>
+                <default>false</default>
+                <label>Solution Architecture</label>
+            </value>
+            <value>
+                <fullName>Cybersecurity</fullName>
+                <default>false</default>
+                <label>Cybersecurity</label>
+            </value>
+            <value>
+                <fullName>Application Lifecycle Management</fullName>
+                <default>false</default>
+                <label>Application Lifecycle Management</label>
+            </value>
+            <value>
+                <fullName>Collaboration</fullName>
+                <default>false</default>
+                <label>Collaboration</label>
+            </value>
+            <value>
+                <fullName>End User Computing</fullName>
+                <default>false</default>
+                <label>End User Computing</label>
+            </value>
+            <value>
+                <fullName>Outsourcing</fullName>
+                <default>false</default>
+                <label>Outsourcing</label>
+            </value>
+            <value>
+                <fullName>RightService</fullName>
+                <default>false</default>
+                <label>RightService</label>
+            </value>
+            <value>
+                <fullName>Data Management</fullName>
+                <default>false</default>
+                <label>Data Management</label>
+            </value>
+            <value>
+                <fullName>Identity &amp; Access Management</fullName>
+                <default>false</default>
+                <label>Identity &amp; Access Management</label>
+            </value>
+            <value>
+                <fullName>Microsoft Cloud</fullName>
+                <default>false</default>
+                <label>Microsoft Cloud</label>
+            </value>
+            <value>
+                <fullName>Open Source Cloud</fullName>
+                <default>false</default>
+                <label>Open Source Cloud</label>
+            </value>
+            <value>
+                <fullName>Converged Infrastructure</fullName>
+                <default>false</default>
+                <label>Converged Infrastructure</label>
+            </value>
+            <value>
+                <fullName>Network</fullName>
+                <default>false</default>
+                <label>Network</label>
+            </value>
+            <value>
+                <fullName>Application Intelligence &amp; Monitoring</fullName>
+                <default>false</default>
+                <label>Application Intelligence &amp; Monitoring</label>
+            </value>
+            <value>
+                <fullName>Service Management Solutions</fullName>
+                <default>false</default>
+                <label>Service Management Solutions</label>
+            </value>
+            <value>
+                <fullName>Project Management</fullName>
+                <default>false</default>
+                <label>Project Management</label>
+            </value>
+            <value>
+                <fullName>Infrastructure Testing</fullName>
+                <default>false</default>
+                <label>Infrastructure Testing</label>
+            </value>
+            <value>
+                <fullName>RightCloud</fullName>
+                <default>false</default>
+                <label>RightCloud</label>
+            </value>
+            <value>
+                <fullName>RightSecurity</fullName>
+                <default>false</default>
+                <label>RightSecurity</label>
+            </value>
+            <value>
+                <fullName>RightExperience</fullName>
+                <default>false</default>
+                <label>RightExperience</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

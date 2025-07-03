@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BC_Go2Market_Offering__c</fullName>
+    <externalId>false</externalId>
+    <label>Advisory Go2Market Offering</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Datavisualisering</fullName>
+                <default>false</default>
+                <label>Datavisualisering</label>
+            </value>
+            <value>
+                <fullName>Design sprint</fullName>
+                <default>false</default>
+                <label>Design sprint</label>
+            </value>
+            <value>
+                <fullName>Digital modenhetsanalyse</fullName>
+                <default>false</default>
+                <label>Digital modenhetsanalyse</label>
+            </value>
+            <value>
+                <fullName>Discover sustainable value</fullName>
+                <default>false</default>
+                <label>Discover sustainable value</label>
+            </value>
+            <value>
+                <fullName>Due diligence personvern</fullName>
+                <default>false</default>
+                <label>Due diligence personvern</label>
+            </value>
+            <value>
+                <fullName>Etterlevelse av åpenhetsloven</fullName>
+                <default>false</default>
+                <label>Etterlevelse av åpenhetsloven</label>
+            </value>
+            <value>
+                <fullName>KI-oppdrag</fullName>
+                <default>false</default>
+                <label>KI-oppdrag</label>
+            </value>
+            <value>
+                <fullName>Leverandørvurdering personvern</fullName>
+                <default>false</default>
+                <label>Leverandørvurdering personvern</label>
+            </value>
+            <value>
+                <fullName>Modenhetsanalyse innovasjon</fullName>
+                <default>false</default>
+                <label>Modenhetsanalyse innovasjon</label>
+            </value>
+            <value>
+                <fullName>Modenhetsvurdering Bærekraft</fullName>
+                <default>false</default>
+                <label>Modenhetsvurdering Bærekraft</label>
+            </value>
+            <value>
+                <fullName>Somulator</fullName>
+                <default>false</default>
+                <label>Somulator</label>
+            </value>
+            <value>
+                <fullName>Toppleders Digitale Agenda 2022</fullName>
+                <default>false</default>
+                <label>Toppleders Digitale Agenda 2022</label>
+            </value>
+            <value>
+                <fullName>Vesentlighetsanalyse</fullName>
+                <default>false</default>
+                <label>Vesentlighetsanalyse</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

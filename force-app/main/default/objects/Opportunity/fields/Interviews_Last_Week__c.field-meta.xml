@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Interviews_Last_Week__c</fullName>
+    <externalId>false</externalId>
+    <formula>If((MOD(FLOOR( (Interview_Date__c -DATEVALUE(&quot;2006-01-02&quot; ))/7),52)-1 + (100 * Year(Interview_Date__c))) + 1 = MOD(FLOOR( (Today() -DATEVALUE(&quot;2006-01-02&quot; ))/7),52)-1 + (100 * Year(Today())) , 1, 0) +
+If((MOD(FLOOR( (Interview_Date_2__c -DATEVALUE(&quot;2006-01-02&quot; ))/7),52)-1 + (100 * Year(Interview_Date_2__c)))+ 1 = MOD(FLOOR( (Today() -DATEVALUE(&quot;2006-01-02&quot; ))/7),52)-1 + (100 * Year(Today())) , 1, 0 )+ 
+If((MOD(FLOOR( (Interview_Date_3__c -DATEVALUE(&quot;2006-01-02&quot; ))/7),52)-1 + (100 * Year(Interview_Date_3__c)))+ 1 = MOD(FLOOR( (Today() -DATEVALUE(&quot;2006-01-02&quot; ))/7),52)-1 + (100 * Year(Today())) , 1, 0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Interviews Last Week</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

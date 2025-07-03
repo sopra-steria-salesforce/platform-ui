@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WorkflowAlert xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Alert_Apps_Mailbox_when_Opportunity_Closed</fullName>
+    <ccEmails>NO.salg.applications@soprasteria.com</ccEmails>
+    <description>Alert: Apps Mailbox when Opportunity -&gt; Closed</description>
+    <protected>false</protected>
+    <senderType>DefaultWorkflowUser</senderType>
+    <template>Default/HTML_Opportunity_BU_Mailbox_Closed</template>
+</WorkflowAlert>

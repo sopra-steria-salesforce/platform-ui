@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Name_is_ReadOnly</fullName>
+    <active>true</active>
+    <description>Account name is read-only. Master data is in Navision</description>
+    <errorConditionFormula>AND(ISCHANGED( Name ),$User.Username !=&apos;servicenow.integrationuser@soprasteria.com&apos;,$User.Username !=&apos;magne.eggen@soprasteria.com&apos;)</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>Sorry, You can not modify Account name. Master data is in Navision, please contact account controller in Finance if you need to modify Account name</errorMessage>
+</ValidationRule>

@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Alert_Apps_Mailbox</name>
+        <label>Alert Apps Mailbox</label>
+        <locationX>314</locationX>
+        <locationY>431</locationY>
+        <actionName>Opportunity.Alert_Opportunity_assigned_to_Apps</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>New_Opportunity_Alert_and_Chatter_Follow_0</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Opportunity.Alert_Opportunity_assigned_to_Apps</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <actionCalls>
+        <name>Alert_Apps_Mailbox_0</name>
+        <label>Alert Apps Mailbox</label>
+        <locationX>842</locationX>
+        <locationY>539</locationY>
+        <actionName>Opportunity.Alert_Opportunity_assigned_to_Apps</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>APPS_Status_Abandoned</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Opportunity.Alert_Opportunity_assigned_to_Apps</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <actionCalls>
+        <name>Alert_APPS_Mailbox_Status_abandoned</name>
+        <label>Alert APPS Mailbox - Status abandoned</label>
+        <locationX>842</locationX>
+        <locationY>839</locationY>
+        <actionName>Opportunity.Alert_Opportunity_APPS_status_abandoned</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>APPS_Owner_changed_0</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Opportunity.Alert_Opportunity_APPS_status_abandoned</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <actionCalls>
+        <name>Alert_APPS_Owner_0</name>
+        <label>Alert APPS Owner</label>
+        <locationX>50</locationX>
+        <locationY>647</locationY>
+        <actionName>Opportunity.Alert_Apps_owner_is_assigned</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Chatter_Follow_0</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Opportunity.Alert_Apps_owner_is_assigned</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <actionCalls>
+        <name>Alert_APPS_Owner_Assigned_0_0</name>
+        <label>Alert APPS Owner</label>
+        <locationX>314</locationX>
+        <locationY>755</locationY>
+        <actionName>Opportunity.Alert_Apps_owner_is_assigned</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Chatter_Follower_0_0</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Opportunity.Alert_Apps_owner_is_assigned</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <actionCalls>
+        <name>Alert_APPS_Owner_Assigned_0_0_0</name>
+        <label>Alert APPS Owner</label>
+        <locationX>842</locationX>
+        <locationY>1247</locationY>
+        <actionName>Opportunity.Alert_Apps_owner_is_assigned</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Opportunity.Alert_Apps_owner_is_assigned</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <apiVersion>54.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>APPS_Owner_changed_0</name>
+        <label>APPS Owner changed</label>
+        <locationX>974</locationX>
+        <locationY>1031</locationY>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Yes_changed_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>APPS_Owner_Changed_Formula</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Apps_Owner__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Add_Chatter_Follower_0</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>APPS_Status_Abandoned</name>
+        <label>APPS Status Abandoned</label>
+        <locationX>974</locationX>
+        <locationY>731</locationY>
+        <defaultConnector>
+            <targetReference>APPS_Owner_changed_0</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Yes_APPS_Status_abandoned</name>
+            <conditionLogic>1 AND 2 AND (3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.IsClosed</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Apps_Status__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Apps_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>5 Abandoned by us - Capacity</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Apps_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>6 Abandoned by us - Out of Scope</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Alert_APPS_Mailbox_Status_abandoned</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Business_Unit_APPS_added</name>
+        <label>Business Unit APPS added</label>
+        <locationX>974</locationX>
+        <locationY>431</locationY>
+        <defaultConnector>
+            <targetReference>APPS_Status_Abandoned</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Yes_added</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Business_Unit__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>APPS</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>PriovalueAPPSfalse</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Alert_Apps_Mailbox_0</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>New_Opportunity</name>
+        <label>New Opportunity</label>
+        <locationX>380</locationX>
+        <locationY>323</locationY>
+        <defaultConnector>
+            <targetReference>Business_Unit_APPS_added</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Account_is_Blocked</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Account.Blocked__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Account is Blocked</label>
+        </rules>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IsNew</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Business_Unit__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>APPS</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Alert_Apps_Mailbox</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>New_Opportunity_Alert_and_Chatter_Follow_0</name>
+        <label>New Opty, with APPS Owner</label>
+        <locationX>314</locationX>
+        <locationY>539</locationY>
+        <defaultConnectorLabel>Ignore</defaultConnectorLabel>
+        <rules>
+            <name>Has_APPS_Owner_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IsNewAndAppsOwnerTrue</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Alert_APPS_Owner_0</targetReference>
+            </connector>
+            <label>Has APPS Owner</label>
+        </rules>
+        <rules>
+            <name>Set_APPS_Owner_1_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SetAPPSOwner</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_APPS_Owner_0_0</targetReference>
+            </connector>
+            <label>Set APPS Owner</label>
+        </rules>
+    </decisions>
+    <description>Added criteria to exclude blocked accounts</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>AlertAPPSFormula</name>
+        <dataType>Boolean</dataType>
+        <expression>ISNEW() &amp;&amp;
+INCLUDES( {!$Record.Business_Unit__c} , &quot;APPS&quot; )</expression>
+    </formulas>
+    <formulas>
+        <name>AlertAppsMailbox</name>
+        <dataType>Boolean</dataType>
+        <expression>NOT ISNEW() &amp;&amp;
+INCLUDES( {!$Record.Business_Unit__c} , &quot;APPS&quot; ) &amp;&amp;
+ISPICKVAL( PRIORVALUE({!$Record.StageName} ) ,&quot;Lead&quot; ) &amp;&amp; 
+ISPICKVAL({!$Record.StageName} ,&quot;Lead&quot; ) = false</expression>
+    </formulas>
+    <formulas>
+        <name>APPS_Owner_Changed_Formula</name>
+        <dataType>Boolean</dataType>
+        <expression>ISBLANK( {!$Record.Apps_Owner__c} ) = false &amp;&amp;
+ISPICKVAL( {!$Record.StageName}  ,&quot;0 - Planning&quot; ) = false</expression>
+    </formulas>
+    <formulas>
+        <name>IsNew</name>
+        <dataType>Boolean</dataType>
+        <expression>IsNew()</expression>
+    </formulas>
+    <formulas>
+        <name>IsNewAndAppsOwnerTrue</name>
+        <dataType>Boolean</dataType>
+        <expression>IsNew()&amp;&amp; ISBLANK ({!$Record.Apps_Owner__c})=false</expression>
+    </formulas>
+    <formulas>
+        <name>NewBUAdded</name>
+        <dataType>Boolean</dataType>
+        <expression>NOT ISNEW() &amp;&amp;
+INCLUDES( {!$Record.Business_Unit__c},&quot;APPS&quot; ) &amp;&amp;
+INCLUDES( PRIORVALUE( {!$Record.Business_Unit__c} ),&quot;APPS&quot; ) = false</expression>
+    </formulas>
+    <formulas>
+        <name>NewStageFormula</name>
+        <dataType>Boolean</dataType>
+        <expression>ISNEW() = false &amp;&amp;
+ISBLANK( {!$Record.Apps_Owner__c} ) = false &amp;&amp;
+ISPICKVAL( PRIORVALUE( {!$Record.StageName} ) ,&quot;Lead&quot; ) &amp;&amp; 
+ISPICKVAL( {!$Record.StageName}  ,&quot;Lead&quot; ) = false</expression>
+    </formulas>
+    <formulas>
+        <name>OpportunityClosed</name>
+        <dataType>Boolean</dataType>
+        <expression>NOT ISNEW() &amp;&amp;
+INCLUDES( {!$Record.Business_Unit__c} , &quot;APPS&quot; ) &amp;&amp;
+(ISPICKVAL( PRIORVALUE({!$Record.StageName}) ,&quot;Qualified&quot; ) ||
+ISPICKVAL( PRIORVALUE({!$Record.StageName}) ,&quot;Proposal in progress&quot; ) ||
+ISPICKVAL( PRIORVALUE({!$Record.StageName} ) ,&quot;1 - Possibility&quot; ) ||
+ISPICKVAL( PRIORVALUE({!$Record.StageName} ) ,&quot;Negotiations / Interview&quot; ) )
+&amp;&amp; 
+(ISPICKVAL( {!$Record.StageName}, &quot;Closed Won&quot;) ||
+ ISPICKVAL( {!$Record.StageName} , &quot;Closed Lost&quot;) ||
+ ISPICKVAL( {!$Record.StageName} , &quot;Abandoned by Us&quot;) ||
+ ISPICKVAL( {!$Record.StageName} , &quot;Abandoned by Customer&quot;) )</expression>
+    </formulas>
+    <formulas>
+        <name>PriovalueAPPSfalse</name>
+        <dataType>Boolean</dataType>
+        <expression>INCLUDES( {!$Record__Prior.Business_Unit__c} ,&quot;APPS&quot; ) = false</expression>
+    </formulas>
+    <formulas>
+        <name>SetAPPSOwner</name>
+        <dataType>Boolean</dataType>
+        <expression>ISNEW() &amp;&amp;
+ISBLANK( {!$Record.Apps_Owner__c} ) &amp;&amp;
+ISBLANK( {!$Record.Account.Apps_Owner__c} ) = false &amp;&amp;
+INCLUDES( {!$Record.Business_Unit__c} , &quot;APPS&quot; )</expression>
+    </formulas>
+    <interviewLabel>Opportunity APPS: Email Alert and Chatter Follow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Record Triggered: Opportunity: APPS Email Alert and Chatter Follow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Set_APPS_Owner_0_0</name>
+        <label>Set APPS Owner</label>
+        <locationX>314</locationX>
+        <locationY>647</locationY>
+        <connector>
+            <targetReference>Alert_APPS_Owner_Assigned_0_0</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Apps_Owner__c</field>
+            <value>
+                <elementReference>$Record.Account.Apps_Owner__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>254</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>New_Opportunity</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Country__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Sweden</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Business_Unit__c</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>APPS</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Last_Created_Activity__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Name</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>TestDataFactoryTestOpportunity12345</stringValue>
+            </value>
+        </filters>
+        <object>Opportunity</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>Add_Chatter_Follower_0</name>
+        <label>Add Chatter Follower</label>
+        <locationX>842</locationX>
+        <locationY>1139</locationY>
+        <connector>
+            <targetReference>Alert_APPS_Owner_Assigned_0_0_0</targetReference>
+        </connector>
+        <flowName>Add_Chatter_follower</flowName>
+        <inputAssignments>
+            <name>FollowerID</name>
+            <value>
+                <elementReference>$Record.Apps_Owner__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>OpportunityID</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </subflows>
+    <subflows>
+        <name>Chatter_Follow_0</name>
+        <label>Chatter Follow</label>
+        <locationX>50</locationX>
+        <locationY>755</locationY>
+        <flowName>Add_Chatter_follower</flowName>
+        <inputAssignments>
+            <name>FollowerID</name>
+            <value>
+                <elementReference>$Record.Apps_Owner__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>OpportunityID</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </subflows>
+    <subflows>
+        <name>Chatter_Follower_0_0</name>
+        <label>Chatter Follower</label>
+        <locationX>314</locationX>
+        <locationY>863</locationY>
+        <flowName>Add_Chatter_follower</flowName>
+        <inputAssignments>
+            <name>FollowerID</name>
+            <value>
+                <elementReference>$Record.Apps_Owner__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>OpportunityID</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </subflows>
+</Flow>

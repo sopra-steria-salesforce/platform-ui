@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Status for current Stage. Required for Stages 2 - RFI, 3 - Prequal and 4 - Offer.    
+When opportunity moves to new Stage, Status must be set to “In progress”</inlineHelpText>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>true</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>StageName</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+                <label>In Progress</label>
+            </value>
+            <value>
+                <fullName>Sent</fullName>
+                <default>false</default>
+                <label>Sent</label>
+            </value>
+            <value>
+                <fullName>Negotiation</fullName>
+                <default>false</default>
+                <label>Negotiation</label>
+            </value>
+            <value>
+                <fullName>-</fullName>
+                <default>true</default>
+                <label>-</label>
+            </value>
+            <value>
+                <fullName>Out of Scope</fullName>
+                <default>false</default>
+                <label>Out of Scope</label>
+            </value>
+            <value>
+                <fullName>Capacity</fullName>
+                <default>false</default>
+                <label>Capacity</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Abandoned by Customer</controllingFieldValue>
+            <controllingFieldValue>Abandoned by Us</controllingFieldValue>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <controllingFieldValue>0 - Planning</controllingFieldValue>
+            <controllingFieldValue>1 - Possibility</controllingFieldValue>
+            <controllingFieldValue>5 - Awarded</controllingFieldValue>
+            <controllingFieldValue>Closed Won</controllingFieldValue>
+            <valueName>-</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abandoned by Us</controllingFieldValue>
+            <valueName>Out of Scope</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abandoned by Us</controllingFieldValue>
+            <valueName>Capacity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2 - RFI</controllingFieldValue>
+            <controllingFieldValue>3 - Prequal</controllingFieldValue>
+            <controllingFieldValue>4 - Offer</controllingFieldValue>
+            <valueName>In Progress</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2 - RFI</controllingFieldValue>
+            <controllingFieldValue>3 - Prequal</controllingFieldValue>
+            <controllingFieldValue>4 - Offer</controllingFieldValue>
+            <valueName>Sent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>4 - Offer</controllingFieldValue>
+            <valueName>Negotiation</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

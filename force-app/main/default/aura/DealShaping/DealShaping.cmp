@@ -1,0 +1,8 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId">
+	<lightning:card title="">
+        <div class="slds-m-around_medium">
+        	<img src="{!$Resource.DealShaping}" alt="Displayed Picture"/>
+            <p>Resultatet av arbeidet med Deal-shaping er viktige input til Win-strategien som tilbudsteamet må utarbeide fra Stage 4 - Offer</p>
+        </div>
+    </lightning:card>
+</aura:component>

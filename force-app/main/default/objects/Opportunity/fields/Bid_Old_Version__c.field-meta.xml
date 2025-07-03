@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bid_Old_Version__c</fullName>
+    <externalId>false</externalId>
+    <formula>AND ( 
+OR( 
+AND( !ISBlank( Bid_Number_1__c ) , Left( Stage_ID__c, 1 )= &quot;1&quot; ), 
+AND( !ISBlank( Bid_Number_2a__c ) , Left( Stage_ID__c, 1 )= &quot;2&quot; ), 
+AND( !ISBlank( Bid_Number_3a__c ) , Left( Stage_ID__c, 1 )= &quot;3&quot; ), 
+AND( !ISBlank( Bid_Number_4a__c ) , Left( Stage_ID__c, 1 )= &quot;4&quot; )),
+ LastModifiedById = &quot;00558000000VjOEAA0&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Bid Old Version</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

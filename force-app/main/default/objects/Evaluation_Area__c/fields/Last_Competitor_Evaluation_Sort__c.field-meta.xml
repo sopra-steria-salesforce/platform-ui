@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_Competitor_Evaluation_Sort__c</fullName>
+    <description>Last time for sort execution, Compare tp Last Competitor Evaluation Update to check if sort is updated</description>
+    <externalId>false</externalId>
+    <label>Last Competitor Evaluation Sort</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

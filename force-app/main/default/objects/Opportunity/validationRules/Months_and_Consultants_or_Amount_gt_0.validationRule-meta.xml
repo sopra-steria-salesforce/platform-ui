@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Months_and_Consultants_or_Amount_gt_0</fullName>
+    <active>true</active>
+    <description>User must enter either Amount, or Months &amp; Consultants for Opporunity, except when Type = &quot;Pre-qualification&quot;</description>
+    <errorConditionFormula>($Permission.Bypass_validation_rule = FALSE &amp;&amp; $User.Id != &quot;0054I000007wHw2&quot; &amp;&amp; $User.Country != &quot;Sweden&quot; &amp;&amp; Stage_ID__c !=&apos;0&apos; &amp;&amp; TEXT(StageName)!=&apos;Closed Lost&apos; &amp;&amp; TEXT(StageName)!=&apos;Abandoned by Customer&apos; &amp;&amp; TEXT(StageName)!=&apos;Abandoned by Us&apos;&amp;&amp; (Months__c =0 || ISBLANK(Months__c)) &amp;&amp; (Consultants__c =0 || ISBLANK(Consultants__c)) &amp;&amp; (Amount =0 || ISBLANK(Amount))) 
+|| 
+($Permission.Bypass_validation_rule = FALSE &amp;&amp; $User.Id != &quot;0054I000007wHw2&quot; &amp;&amp; $User.Country != &quot;Sweden&quot; &amp;&amp; Stage_ID__c !=&apos;0&apos; &amp;&amp; TEXT(StageName)!=&apos;Closed Lost&apos; &amp;&amp; TEXT(StageName)!=&apos;Abandoned by Customer&apos; &amp;&amp; TEXT(StageName)!=&apos;Abandoned by Us&apos; &amp;&amp; ((( Consultants__c =0 || ISBLANK(Consultants__c)) || (Months__c =0 || ISBLANK(Months__c)))&amp;&amp; (Amount =0 || ISBLANK(Amount))))</errorConditionFormula>
+    <errorMessage>#Months and #Consultants or Amount must be greater than 0</errorMessage>
+</ValidationRule>

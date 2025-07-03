@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>For email alert when oppt is set to abandoned</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>HTML: Opportunity: abandoned</name>
+    <style>none</style>
+    <subject>*Salesforce notification* Opportunity {!Opportunity.Name} on Account {!Account.Name} was Abandoned</subject>
+    <textOnly>Opportunity {!Opportunity.Name} on account  {!Account.Name} has been set to &quot;{!Opportunity.StageName}&quot; by user {!User.Name}. 
+
+The opportunity was created with the following information: 
+Opportunity: {!Opportunity.Name} 
+Account: {!Opportunity.Account} 
+Opportunity Owner: {!Opportunity.OwnerFirstName} {!Opportunity.OwnerLastName}
+Created date: {!Opportunity.CreatedDate}  
+Link to Opportunity in Salesforce: {!Opportunity.Opportunity_Link__c}  
+Description: {!Opportunity.Description}   
+
+You cannot reply to this e-mail. If you have received this notification by a mistake please contact the Salesforce Admin in Sopra Steria.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

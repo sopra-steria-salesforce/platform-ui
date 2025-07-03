@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enable_Duplicate_Rules__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( (NOW()-LastModifiedDate)*86400&gt;5  ,true, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Enable Duplicate Rules</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

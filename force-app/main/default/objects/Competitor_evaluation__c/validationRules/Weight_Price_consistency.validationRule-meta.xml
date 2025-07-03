@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Weight_Price_consistency</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( Evaluation_Area__r.Validate_Weight_Price__c = 0 ,  Score_Price__c != 0)</errorConditionFormula>
+    <errorMessage>You have added a Price score, but no Price Weight in the opportunity!</errorMessage>
+</ValidationRule>

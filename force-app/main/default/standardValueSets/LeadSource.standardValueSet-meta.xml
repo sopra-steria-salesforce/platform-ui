@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Event Lead</fullName>
+        <default>false</default>
+        <label>Event Lead</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Internal Lead</fullName>
+        <default>false</default>
+        <label>Internal Lead</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Internal Lead SE</fullName>
+        <default>false</default>
+        <label>Internal Lead SE</label>
+    </standardValue>
+    <standardValue>
+        <fullName>External Conference</fullName>
+        <default>false</default>
+        <label>External Conference</label>
+    </standardValue>
+    <standardValue>
+        <fullName>G2M</fullName>
+        <default>false</default>
+        <label>G2M</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Web</fullName>
+        <default>false</default>
+        <label>Web</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EGGS migration</fullName>
+        <default>false</default>
+        <label>EGGS migration</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Reports</fullName>
+        <default>false</default>
+        <label>Reports</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Webinar</fullName>
+        <default>false</default>
+        <label>Webinar</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Event Lead Denmark</fullName>
+        <default>false</default>
+        <label>Event Lead Denmark</label>
+    </standardValue>
+    <standardValue>
+        <fullName>AzureMarketplace-CSC|Sopra Steria Go2Cloud Assessment and Roadmap 6 wks</fullName>
+        <default>false</default>
+        <label>AzureMarketplace-CSC|Sopra Steria Go2Cloud Assessment and Roadmap 6 wks</label>
+    </standardValue>
+    <standardValue>
+        <fullName>AzureMarketplace-PLT|Azure IoT Platform in a Box</fullName>
+        <default>false</default>
+        <label>AzureMarketplace-PLT|Azure IoT Platform in a Box</label>
+    </standardValue>
+    <standardValue>
+        <fullName>AzureMarketplace-PLT|Azure Data Platform In a Box</fullName>
+        <default>false</default>
+        <label>AzureMarketplace-PLT|Azure Data Platform In a Box</label>
+    </standardValue>
+    <standardValue>
+        <fullName>AzureMarketplace-PLT|Holographic Healthcare</fullName>
+        <default>false</default>
+        <label>AzureMarketplace-PLT|Holographic Healthcare</label>
+    </standardValue>
+    <standardValue>
+        <fullName>AzureMarketplace-PLT|Remote Assist as a Service</fullName>
+        <default>false</default>
+        <label>AzureMarketplace-PLT|Remote Assist as a Service</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SPZA-CSC|Bc for PSA</fullName>
+        <default>false</default>
+        <label>SPZA-CSC|Bc for PSA</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SPZA-CSC|CRM Marketing Automation 1d workshop</fullName>
+        <default>false</default>
+        <label>SPZA-CSC|CRM Marketing Automation 1d workshop</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SPZA-PLT|Azure IoT Platform in a Box</fullName>
+        <default>false</default>
+        <label>SPZA-PLT|Azure IoT Platform in a Box</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SPZA-PLT|Holographic Healthcare</fullName>
+        <default>false</default>
+        <label>SPZA-PLT|Holographic Healthcare</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SPZA-PLT|Remote Assist as a Service</fullName>
+        <default>false</default>
+        <label>SPZA-PLT|Remote Assist as a Service</label>
+    </standardValue>
+</StandardValueSet>

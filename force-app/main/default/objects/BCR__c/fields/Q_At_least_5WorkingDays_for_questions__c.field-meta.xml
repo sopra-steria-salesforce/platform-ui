@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Q_At_least_5WorkingDays_for_questions__c</fullName>
+    <externalId>false</externalId>
+    <label>Question 5</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Är det minst 5 arbetsdagar kvar för att ställa frågor till kund så att vi kan säkerställa relevant svar?</fullName>
+                <default>true</default>
+                <label>Är det minst 5 arbetsdagar kvar för att ställa frågor till kund så att vi kan säkerställa relevant svar?</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

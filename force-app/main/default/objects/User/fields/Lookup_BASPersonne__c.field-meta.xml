@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lookup_BASPersonne__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;https://steria.sharepoint.com/sites/intra_root/sitepages/search-people.aspx#Default=%7B%22k%22%3A%22&quot; &amp; SUBSTITUTE(FirstName &amp; &quot; &quot; &amp; LastName, &quot; &quot;, &quot;%20&quot;) &amp; &quot;%22%2C%22r%22%3A%5B%5D%7D&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Find Person in Face2Face</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Apps_Active_Client_Network__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Field deactivated 11.10.2023 /Request by Anne Sofie Bjørnebye.  
+Field to be deleted</description>
+    <externalId>false</externalId>
+    <label>Apps Active Client Network</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

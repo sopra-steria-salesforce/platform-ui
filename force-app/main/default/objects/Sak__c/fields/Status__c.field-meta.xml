@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0 Waiting</fullName>
+                <default>true</default>
+                <label>0 Waiting</label>
+            </value>
+            <value>
+                <fullName>1 Decision</fullName>
+                <default>false</default>
+                <label>1 Decision</label>
+            </value>
+            <value>
+                <fullName>2 Closed</fullName>
+                <default>false</default>
+                <label>2 Closed</label>
+            </value>
+            <value>
+                <fullName>3 Abandoned</fullName>
+                <default>false</default>
+                <label>3 Abandoned</label>
+            </value>
+            <value>
+                <fullName>2 In progress</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2 In progress</label>
+            </value>
+            <value>
+                <fullName>3 Closing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>3 Closing</label>
+            </value>
+            <value>
+                <fullName>Ferdig</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Ferdig</label>
+            </value>
+            <value>
+                <fullName>Til behandling</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Til behandling</label>
+            </value>
+            <value>
+                <fullName>Under arbeid</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Under arbeid</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

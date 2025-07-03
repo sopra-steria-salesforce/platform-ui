@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Inte svarat</fullName>
+        <default>true</default>
+        <label>Inte svarat</label>
+    </customValue>
+    <customValue>
+        <fullName>Ja</fullName>
+        <default>false</default>
+        <label>Ja</label>
+    </customValue>
+    <customValue>
+        <fullName>Nej</fullName>
+        <default>false</default>
+        <label>Nej</label>
+    </customValue>
+    <description>Ja/Nei SE</description>
+    <masterLabel>YN</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

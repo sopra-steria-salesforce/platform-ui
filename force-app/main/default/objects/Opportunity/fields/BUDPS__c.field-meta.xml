@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BUDPS__c</fullName>
+    <description>In addition to severla reports, the field is used as search filter for extracting data to DPS resource list in Sharepoint, Do not delete!</description>
+    <externalId>false</externalId>
+    <formula>IF(OR (INCLUDES(Business_Unit_SE__c, &apos;DPS&apos;), INCLUDES(Business_Unit__c, &apos;DPS&apos;)),true, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>BUDPS</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

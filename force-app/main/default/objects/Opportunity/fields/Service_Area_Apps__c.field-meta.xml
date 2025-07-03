@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Area_Apps__c</fullName>
+    <externalId>false</externalId>
+    <label>Service Area Apps</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Apps</fullName>
+                <default>false</default>
+                <label>Apps</label>
+            </value>
+            <value>
+                <fullName>X Advisory</fullName>
+                <default>false</default>
+                <label>X Advisory</label>
+            </value>
+            <value>
+                <fullName>X Design</fullName>
+                <default>false</default>
+                <label>X Design</label>
+            </value>
+            <value>
+                <fullName>X Solutions</fullName>
+                <default>false</default>
+                <label>X Solutions</label>
+            </value>
+            <value>
+                <fullName>C Advisory</fullName>
+                <default>false</default>
+                <label>C Advisory</label>
+            </value>
+            <value>
+                <fullName>C Architecture</fullName>
+                <default>false</default>
+                <label>C Architecture</label>
+            </value>
+            <value>
+                <fullName>C Build</fullName>
+                <default>false</default>
+                <label>C Build</label>
+            </value>
+            <value>
+                <fullName>C Cloud</fullName>
+                <default>false</default>
+                <label>C Cloud</label>
+            </value>
+            <value>
+                <fullName>C Gisbim</fullName>
+                <default>false</default>
+                <label>C Gisbim</label>
+            </value>
+            <value>
+                <fullName>C Java</fullName>
+                <default>false</default>
+                <label>C Java</label>
+            </value>
+            <value>
+                <fullName>C DevOps &amp; Sec</fullName>
+                <default>false</default>
+                <label>C DevOps &amp; Sec</label>
+            </value>
+            <value>
+                <fullName>C Mixr</fullName>
+                <default>false</default>
+                <label>C Mixr</label>
+            </value>
+            <value>
+                <fullName>C .Net</fullName>
+                <default>false</default>
+                <label>C .Net</label>
+            </value>
+            <value>
+                <fullName>BP High productivity</fullName>
+                <default>false</default>
+                <label>BP High productivity</label>
+            </value>
+            <value>
+                <fullName>BP Business Apps</fullName>
+                <default>false</default>
+                <label>BP Business Apps</label>
+            </value>
+            <value>
+                <fullName>BP Digital Workplace</fullName>
+                <default>false</default>
+                <label>BP Digital Workplace</label>
+            </value>
+            <value>
+                <fullName>BP Analytics</fullName>
+                <default>false</default>
+                <label>BP Analytics</label>
+            </value>
+            <value>
+                <fullName>BP ERP</fullName>
+                <default>false</default>
+                <label>BP ERP</label>
+            </value>
+            <value>
+                <fullName>B Marketing Services</fullName>
+                <default>false</default>
+                <label>B Marketing Services</label>
+            </value>
+            <value>
+                <fullName>Q Advisory</fullName>
+                <default>false</default>
+                <label>Q Advisory</label>
+            </value>
+            <value>
+                <fullName>Q Solutions</fullName>
+                <default>false</default>
+                <label>Q Solutions</label>
+            </value>
+            <value>
+                <fullName>R Bergen</fullName>
+                <default>false</default>
+                <label>R Bergen</label>
+            </value>
+            <value>
+                <fullName>R Drammen</fullName>
+                <default>false</default>
+                <label>R Drammen</label>
+            </value>
+            <value>
+                <fullName>R Fredrikstad</fullName>
+                <default>false</default>
+                <label>R Fredrikstad</label>
+            </value>
+            <value>
+                <fullName>R Kristiansand</fullName>
+                <default>false</default>
+                <label>R Kristiansand</label>
+            </value>
+            <value>
+                <fullName>R Nearshore</fullName>
+                <default>false</default>
+                <label>R Nearshore</label>
+            </value>
+            <value>
+                <fullName>R Stavanger</fullName>
+                <default>false</default>
+                <label>R Stavanger</label>
+            </value>
+            <value>
+                <fullName>R Trondheim</fullName>
+                <default>false</default>
+                <label>R Trondheim</label>
+            </value>
+            <value>
+                <fullName>FAST</fullName>
+                <default>false</default>
+                <label>FAST</label>
+            </value>
+            <value>
+                <fullName>Agile G2M</fullName>
+                <default>false</default>
+                <label>Agile G2M</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

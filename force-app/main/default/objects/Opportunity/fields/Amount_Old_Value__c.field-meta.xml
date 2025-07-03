@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Amount_Old_Value__c</fullName>
+    <defaultValue>0</defaultValue>
+    <description>This field is used for calculating the Amount using months and consultants in a separate formula. Jessie does not know how it works or how it is used, but it works so leaving it for now. January 2025</description>
+    <externalId>false</externalId>
+    <label>Amount Old Value</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

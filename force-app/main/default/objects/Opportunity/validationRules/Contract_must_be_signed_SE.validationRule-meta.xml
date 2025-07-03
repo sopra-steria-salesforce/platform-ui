@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract_must_be_signed_SE</fullName>
+    <active>true</active>
+    <description>must be checked off before opportunity can be set to Closed Won. Just applicable for Sweden</description>
+    <errorConditionFormula>$User.Country = &apos;Sweden&apos; &amp;&amp; 
+(ISPICKVAL(New_or_Renewal__c, &apos;New&apos;) || 
+(Contract_singed__c = FALSE &amp;&amp; ISPICKVAL(New_or_Renewal__c, &apos;Renewal&apos;))) &amp;&amp;
+((ISPICKVAL( StageName , &apos;Closed Won&apos;) &amp;&amp; ( ISCHANGED(StageName))) ||
+(ISNEW() &amp;&amp; ISPICKVAL( StageName , &apos;Closed Won&apos;))) &amp;&amp;
+$User.Username != &apos;servicenow.integrationuser@soprasteria.com&apos; &amp;&amp;
+$User.Username != &apos;mona.wilhelmsen@soprasteria.com&apos; &amp;&amp;
+$Permission.Bypass_validation_rule = FALSE</errorConditionFormula>
+    <errorMessage>You can&apos;t set an opportunity to Closed Won. If this is a Renewal, you can still do this if you first check off &apos;Contract is signed and archived&apos;</errorMessage>
+</ValidationRule>

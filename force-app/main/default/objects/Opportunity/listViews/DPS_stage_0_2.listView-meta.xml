@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DPS_stage_0_2</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Sector__c</columns>
+    <columns>Stage_Status__c</columns>
+    <columns>OPPORTUNITY.TYPE</columns>
+    <columns>Business_Unit__c</columns>
+    <columns>Probability__c</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>Proposal_Due_Date_Time__c</columns>
+    <columns>DPS_Business_Owner__c</columns>
+    <columns>DPS_Team__c</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>Country__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.CLOSED</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Country__c</field>
+        <operation>notEqual</operation>
+        <value>Denmark</value>
+    </filters>
+    <filters>
+        <field>Business_Unit__c</field>
+        <operation>includes</operation>
+        <value>DPS</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.TYPE</field>
+        <operation>equals</operation>
+        <value>Capacity agreement,Frame agreement,Managed services,Managed Services Add-On,Project</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>0 - Planning,1 - Possibility,2 - RFI</value>
+    </filters>
+    <filters>
+        <field>DPS_Team__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>DPS stage 0-2</label>
+</ListView>

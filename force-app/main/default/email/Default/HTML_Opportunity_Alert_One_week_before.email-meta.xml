@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>HTML: Opportunity Alert - One week before</name>
+    <style>none</style>
+    <subject>*Salesforce deadline notification* Opportunity reminder on {!Opportunity.Name}</subject>
+    <textOnly>You recieve this e-mail because the Opportunity {!Opportunity.Name} has a proposal due date {!Opportunity.Proposal_Due_Date_Time__c}. 
+
+The opportunity is registered with the following information: 
+
+Opportunity: {!Opportunity.Name} 
+Account: {!Opportunity.Account} 
+Proposal due date: {!Opportunity.Proposal_Due_Date_Time__c} 
+Amount this year: {!Opportunity.Amount_This_Year__c} 
+Close date: {!Opportunity.CloseDate} 
+
+For more details, click the following link: 
+
+{!Opportunity.Opportunity_Link__c}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

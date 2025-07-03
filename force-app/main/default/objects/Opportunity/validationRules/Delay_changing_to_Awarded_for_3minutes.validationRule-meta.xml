@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Delay_changing_to_Awarded_for_3minutes</fullName>
+    <active>true</active>
+    <description>Prevent Changing status to Awarded for 3 minutes after creation</description>
+    <errorConditionFormula>
+        AND(
+            NOT($Permission.ServiceNowContractUpsertTesting),
+            ISCHANGED(StageName),
+            ISPICKVAL(StageName, &apos;5 - Awarded&apos;),
+            ISPICKVAL(New_or_Renewal__c, &apos;New&apos;),
+            (TIMENOW() - TIMEVALUE(CreatedDate)) / 60000 &lt; 3
+        )
+    </errorConditionFormula>
+    <errorMessage>Opportunity is pending creation in ServiceNow. Please wait some minutes and then change to “Awarded”.</errorMessage>
+</ValidationRule>

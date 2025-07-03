@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>AbandonedAlert</name>
+        <label>AbandonedAlert</label>
+        <locationX>1927</locationX>
+        <locationY>465</locationY>
+        <actionName>Opportunity.Alert_Opportunity_Abandoned</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>asst_Set_Close_Date_0_0</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Opportunity.Alert_Opportunity_Abandoned</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <apiVersion>55.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>asst_Set_Close_Date</name>
+        <label>Set Close Date</label>
+        <locationX>2486</locationX>
+        <locationY>1155</locationY>
+        <assignmentItems>
+            <assignToReference>recVar.Id</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>recVar.CloseDate</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>asst_Set_Close_Date_0_0</name>
+        <label>Set Close Date</label>
+        <locationX>2107</locationX>
+        <locationY>601</locationY>
+        <assignmentItems>
+            <assignToReference>recVar.Id</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>recVar.CloseDate</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>dec_SetCloseDate</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>asst_Set_Closing_Date</name>
+        <label>Set Closing Date</label>
+        <locationX>957</locationX>
+        <locationY>1103</locationY>
+        <assignmentItems>
+            <assignToReference>Opportunity.Closing_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Remove_Due_Date</name>
+        <label>Remove Due Date</label>
+        <locationX>1463</locationX>
+        <locationY>1787</locationY>
+        <assignmentItems>
+            <assignToReference>Opportunity.Proposal_Due_Date_Time__c</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Stage_is_Changed_to_5</name>
+        <label>Stage is Changed to 5</label>
+        <locationX>1532</locationX>
+        <locationY>946</locationY>
+        <assignmentItems>
+            <assignToReference>Opportunity.Close_Date_Awarded__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>UpdateStagePriorValue</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>UpdateStagePriorValue</name>
+        <label>UpdateStagePriorValue</label>
+        <locationX>1089</locationX>
+        <locationY>887</locationY>
+        <assignmentItems>
+            <assignToReference>Opportunity.StageName_Priorvalue__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record__Prior.StageName</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>dec_SetClosingDate</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>Closed Lost (added May 2025) or Awarded</description>
+        <name>dec_SetCloseDate</name>
+        <label>Set Close Date</label>
+        <locationX>2234</locationX>
+        <locationY>892</locationY>
+        <defaultConnector>
+            <targetReference>Update</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Do not</defaultConnectorLabel>
+        <rules>
+            <name>out_Set_CloseDate</name>
+            <conditionLogic>1 AND 2 AND (3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$User.Country</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Sweden</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.CloseDate</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Flow.CurrentDate</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>5 - Awarded</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Closed Lost</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>asst_Set_Close_Date</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Set Close Date</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Decision based on formula SetClosingDay and Current Close date in future</description>
+        <name>dec_SetClosingDate</name>
+        <label>Set ClosingDate</label>
+        <locationX>1195</locationX>
+        <locationY>1013</locationY>
+        <defaultConnectorLabel>Do not</defaultConnectorLabel>
+        <rules>
+            <name>out_Set_ClosingDate</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>setClosingDay</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.CloseDate</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <elementReference>$Flow.CurrentDate</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>asst_Set_Closing_Date</targetReference>
+            </connector>
+            <label>Set Closing Date</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>decStage_is_Abandoned</name>
+        <label>Stage is Abandoned</label>
+        <locationX>2216</locationX>
+        <locationY>360</locationY>
+        <defaultConnector>
+            <targetReference>dec_SetCloseDate</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not abandoned</defaultConnectorLabel>
+        <rules>
+            <name>doNotAlert</name>
+            <conditionLogic>1 AND (2 OR 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.OwnerId</leftValueReference>
+                <operator>StartsWith</operator>
+                <rightValue>
+                    <elementReference>$User.Id</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Abandoned by Customer</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Abandoned by Us</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>asst_Set_Close_Date_0_0</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Do not alert owner</label>
+        </rules>
+        <rules>
+            <name>AlertOwner</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Abandoned by Customer</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Abandoned by Us</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>AbandonedAlert</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Alert Owner</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Stage_Change</name>
+        <label>Stage Change</label>
+        <locationX>1328</locationX>
+        <locationY>764</locationY>
+        <defaultConnectorLabel>Default</defaultConnectorLabel>
+        <rules>
+            <name>Stage_Has_Changed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>5 - Awarded</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>UpdateStagePriorValue</targetReference>
+            </connector>
+            <label>Stage ChangeNot5</label>
+        </rules>
+        <rules>
+            <name>Stage_Changed_to_5</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>5 - Awarded</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Stage_is_Changed_to_5</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Stage Changed to 5</label>
+        </rules>
+        <rules>
+            <name>Only_Status_Change</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Stage_is_set_to_RFI_Prequal</targetReference>
+            </connector>
+            <label>Only Status Change</label>
+        </rules>
+        <rules>
+            <name>New_Opportunity</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>StagePriorValue</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <elementReference>StageChangeTrue</elementReference>
+                </rightValue>
+            </conditions>
+            <label>New Opportunity</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Stage_is_set_to_RFI_Prequal</name>
+        <label>Stage is set to RFI / Prequal, Status is changed</label>
+        <locationX>1595</locationX>
+        <locationY>1679</locationY>
+        <defaultConnector>
+            <targetReference>Update</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>RFI_Sent</name>
+            <conditionLogic>1 AND 3 AND 5 AND (2 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>2 - RFI</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Sent</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>3 - Prequal</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Proposal_Due_Date_Time__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+            </conditions>
+            <connector>
+                <targetReference>Remove_Due_Date</targetReference>
+            </connector>
+            <label>RFI or Prequal is Sent</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>StageChange</name>
+        <label>StageChange</label>
+        <locationX>983</locationX>
+        <locationY>548</locationY>
+        <defaultConnector>
+            <targetReference>Stage_Change</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>StageChangeTrue</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>StageChangeTrue</label>
+        </rules>
+    </decisions>
+    <description>Opportunity is stage 5, closed lost or abandoned. Previous version was not updating close date if the opportunity was marked abandoned by the opportunity owner. Fixed this. Revised logic to use decision instead of formula.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>frmAbandoned</name>
+        <dataType>Boolean</dataType>
+        <expression>ISCHANGED({!$Record.StageName}) &amp;&amp; 
+(ISPICKVAL({!$Record.StageName} , &apos;Abandoned by Customer&apos;) || ISPICKVAL({!$Record.StageName} , &apos;Abandoned by Us&apos;))  &amp;&amp;
+LEFT({!$Record.OwnerId}, 15)  != LEFT({!$User.Id} , 15)</expression>
+    </formulas>
+    <formulas>
+        <name>linkToRecord</name>
+        <dataType>String</dataType>
+        <expression>{!$Label.BaseURL} &amp; &apos;/lightning/r/Opportunity/&apos; &amp; {!$Record.Id} &amp; &apos;/view&apos;</expression>
+    </formulas>
+    <formulas>
+        <name>Now</name>
+        <dataType>DateTime</dataType>
+        <expression>NOW()</expression>
+    </formulas>
+    <formulas>
+        <description>If the opportunity is new and in one of these stages, set closing day. If it is not new and stage changed to one of these stages, set closing day.</description>
+        <name>setClosingDay</name>
+        <dataType>Boolean</dataType>
+        <expression>(ISNEW() &amp;&amp;
+(TEXT({!$Record.StageName}) = &apos;5 - Awarded&apos; ||
+TEXT({!$Record.StageName}) = &apos;Closed Won&apos; ||
+TEXT({!$Record.StageName}) = &apos;Closed Lost&apos; ||
+TEXT({!$Record.StageName}) = &apos;Abandoned by Us&apos; ||
+TEXT({!$Record.StageName}) = &apos;Abandoned by Customer&apos; )) 
+|| 
+(ISCHANGED({!$Record.StageName}) &amp;&amp;
+(TEXT({!$Record.StageName}) = &apos;5 - Awarded&apos; ||
+TEXT({!$Record.StageName}) = &apos;Closed Won&apos; ||
+TEXT({!$Record.StageName}) = &apos;Closed Lost&apos; ||
+TEXT({!$Record.StageName}) = &apos;Abandoned by Us&apos; ||
+TEXT({!$Record.StageName}) = &apos;Abandoned by Customer&apos; )  &amp;&amp;
+TEXT({!$Record__Prior.StageName}) != &apos;5 - Awarded&apos; &amp;&amp;
+TEXT({!$Record__Prior.StageName}) != &apos;Closed Won&apos; &amp;&amp;
+TEXT({!$Record__Prior.StageName}) != &apos;Closed Lost&apos; )</expression>
+    </formulas>
+    <formulas>
+        <name>StagePriorValue</name>
+        <dataType>String</dataType>
+        <expression>TEXT(Priorvalue({!$Record.StageName}))</expression>
+    </formulas>
+    <interviewLabel>Record Triggered: Opp Stage Change Actions &amp; Related {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Record Triggered: Opp Stage Change Actions &amp; Related</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Opportunity</name>
+        <label>Opportunity</label>
+        <locationX>1369</locationX>
+        <locationY>358</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Opportunity</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update</name>
+        <label>Update</label>
+        <locationX>2190</locationX>
+        <locationY>1718</locationY>
+        <inputReference>recVar</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>1469</locationX>
+        <locationY>47</locationY>
+        <connector>
+            <targetReference>decStage_is_Abandoned</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterFormula>{!$Record.CloseDate} != Today() &amp;&amp; OR(ISPICKVAL({!$Record.StageName}, &apos;5 - Awarded&apos;), ISPICKVAL({!$Record.StageName}, &apos;Closed Lost&apos;),
+ISPICKVAL({!$Record.StageName} , &apos;Abandoned by Customer&apos;), ISPICKVAL({!$Record.StageName} , &apos;Abandoned by Us&apos;))</filterFormula>
+        <object>Opportunity</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>myTextTemplate</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;triggering opp close date = {!$Record.CloseDate}&lt;/p&gt;&lt;p&gt;Set to closedate = {!recVar.CloseDate}&lt;/p&gt;&lt;p&gt;Opportunity name = {!$Record.Name}&lt;/p&gt;</text>
+    </textTemplates>
+    <triggerOrder>1999</triggerOrder>
+    <variables>
+        <name>recVar</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Opportunity</objectType>
+    </variables>
+</Flow>

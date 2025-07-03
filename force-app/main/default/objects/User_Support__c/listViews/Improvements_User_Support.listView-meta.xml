@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Improvements_User_Support</fullName>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Business_Unit__c</columns>
+    <columns>Country__c</columns>
+    <columns>Object_Picklist__c</columns>
+    <columns>Owner_Name__c</columns>
+    <columns>Status__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>Description__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Type_of_request__c</field>
+        <operation>equals</operation>
+        <value>Improvements</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Cancelled</value>
+    </filters>
+    <label>Improvement / Change request</label>
+    <sharedTo>
+        <group>Admins_and_Super_Users</group>
+    </sharedTo>
+</ListView>

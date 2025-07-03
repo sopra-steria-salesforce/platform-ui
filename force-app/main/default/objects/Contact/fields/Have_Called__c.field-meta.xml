@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Have_Called__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This checkbox is used for Sales people to know who to call and not.</description>
+    <externalId>false</externalId>
+    <label>Have Called</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Info message to admin when user has been deactivated</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>User deactivated</name>
+    <style>none</style>
+    <subject>User {!Target_User.Name} has been deactivated</subject>
+    <textOnly>User {!Target_User.Name}, id: {!Target_User.Id} has been deactivated by {!User.Name}. 
+
+Please verify changes in record ownership and BU owner fields for Accounts and Opportunities!</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

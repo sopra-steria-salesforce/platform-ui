@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WorkflowAlert xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Alert_Opportunity_alert_account_owner</fullName>
+    <description>Alert: Opportunity alert account owner</description>
+    <protected>false</protected>
+    <recipients>
+        <type>accountOwner</type>
+    </recipients>
+    <senderType>DefaultWorkflowUser</senderType>
+    <template>Default/HTML_Opportunity_new_oppt_alert_account_owner</template>
+</WorkflowAlert>

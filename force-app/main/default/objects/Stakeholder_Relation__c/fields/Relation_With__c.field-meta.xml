@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Relation_With__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>Add which employee have or should have a relationship with this stakeholder</inlineHelpText>
+    <label>Relation With</label>
+    <referenceTo>Employee__c</referenceTo>
+    <relationshipLabel>Stakeholder Relation</relationshipLabel>
+    <relationshipName>Stakeholder_Relation</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

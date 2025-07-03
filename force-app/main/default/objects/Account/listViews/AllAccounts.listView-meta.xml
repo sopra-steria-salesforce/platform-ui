@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AllAccounts</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>Classification__c</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>Country__c</columns>
+    <columns>Org_number__c</columns>
+    <columns>Org_Number_Numeric__c</columns>
+    <columns>ACCOUNT.LAST_UPDATE</columns>
+    <columns>CaseSafe_Id__c</columns>
+    <columns>ACCOUNT.CREATED_DATE</columns>
+    <columns>Ownership_SE__c</columns>
+    <columns>ACCOUNT.OWNERSHIP</columns>
+    <columns>Ownership_NO__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Accounts</label>
+</ListView>

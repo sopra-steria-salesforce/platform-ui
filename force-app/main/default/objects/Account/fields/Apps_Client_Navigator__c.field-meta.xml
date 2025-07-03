@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Apps_Client_Navigator__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Apps Client Navigator</label>
+    <referenceTo>Employee__c</referenceTo>
+    <relationshipLabel>Accounts (Apps Client Developer 2)</relationshipLabel>
+    <relationshipName>Accounts2</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+</CustomField>

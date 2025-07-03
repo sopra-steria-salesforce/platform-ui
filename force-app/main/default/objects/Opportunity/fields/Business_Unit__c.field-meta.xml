@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Unit__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the BU’s that could be a part of the Opportunity.
+This field is not required for the stages 
+“Planning” and “Closed”</inlineHelpText>
+    <label>Business Unit</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Business_Unit</valueSetName>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

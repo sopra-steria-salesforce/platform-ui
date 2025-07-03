@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sent_Date_Prequal__c</fullName>
+    <description>Date Prequal was sent. Used in reports / dashboards</description>
+    <externalId>false</externalId>
+    <label>Sent Date Prequal</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

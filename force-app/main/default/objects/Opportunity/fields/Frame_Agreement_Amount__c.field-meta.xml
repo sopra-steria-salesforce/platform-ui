@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Frame_Agreement_Amount__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF (ISPICKVAL( Type , &quot;Frame Agreement&quot;),
+  IF(  Frame_Agreement_Amount_Estimate__c &gt; 0, Frame_Agreement_Amount_Estimate__c ,
+        IF(TEXT(Frame_Agreement_Context__c)=&apos;New&apos;, 
+		Amount / MAX(Number_of_Suppliers__c, 1) * 0.4, 
+            Amount / MAX(Number_of_Suppliers__c, 1))), 
+     
+   0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Calculates value of the Frame agreement based on your input. Please refer to user documentation for details.</inlineHelpText>
+    <label>Frame Agreement Amount - Calculation</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

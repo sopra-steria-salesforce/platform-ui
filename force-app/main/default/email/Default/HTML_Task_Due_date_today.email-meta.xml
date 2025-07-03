@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>HTML: Task: Due date today</name>
+    <style>none</style>
+    <subject>*Salesforce deadline notification* Task reminder: {!Task.Subject}</subject>
+    <textOnly>The task {!Task.Subject} is due today
+
+The task is registered with the following information:
+
+Task: {!Task.Subject}
+Task due date:: {!Task.ActivityDate}
+Created by: {!Task.CreatedBy}
+
+For more details, click the following link: 
+
+{!Task.Link}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

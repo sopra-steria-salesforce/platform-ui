@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WorkflowAlert xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Alert_DPS_owner_is_assigned</fullName>
+    <description>Alert: DPS owner is assigned</description>
+    <protected>false</protected>
+    <recipients>
+        <field>DPS_Owner__c</field>
+        <type>userLookup</type>
+    </recipients>
+    <senderType>DefaultWorkflowUser</senderType>
+    <template>Default/HTML_Opportunity_BU_Owner_Assigned</template>
+</WorkflowAlert>

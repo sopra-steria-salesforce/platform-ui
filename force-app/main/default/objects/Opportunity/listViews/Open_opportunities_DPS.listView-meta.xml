@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Open_opportunities_DPS</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>DPS_Status__c</columns>
+    <columns>DPS_Bid_Manager_optional__c</columns>
+    <columns>DPS_Owner__c</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.CLOSED</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Country__c</field>
+        <operation>equals</operation>
+        <value>Norway</value>
+    </filters>
+    <filters>
+        <field>Business_Unit__c</field>
+        <operation>includes</operation>
+        <value>DPS</value>
+    </filters>
+    <filters>
+        <field>DPS_Status__c</field>
+        <operation>notEqual</operation>
+        <value>Completed,Abandoned by Us - Capacity,Abandoned by us - Out of Scope</value>
+    </filters>
+    <label>Open opportunities DPS</label>
+    <sharedTo>
+        <group>NO</group>
+    </sharedTo>
+</ListView>

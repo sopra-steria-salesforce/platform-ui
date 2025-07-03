@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>APPS_Share_Pct_Validation__c</fullName>
+    <description>Used for formula validation of the field Apps Share %
+Removed access 13.05.2025 To be deleted</description>
+    <formula>APPS_Share_Pct__c</formula>
+    <label>xxxAPPS Share % Validation</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Relation_Visual__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(TEXT(Personal_Relation__c)=&quot;Trusted personal relationship&quot;, 
+			IMAGE(&quot;/resource/1708162574000/Flags/Flags/png/01_flag_green.png&quot;,&quot;Trusted personal relationship&quot;),
+IF(TEXT(Personal_Relation__c)=&quot;Business meeting relationship&quot;, 
+			IMAGE(&quot;/resource/1708162574000/Flags/Flags/png/02_flag_yellow.png&quot;,&quot;Business meeting relationship&quot;),
+IF(TEXT(Personal_Relation__c)=&quot;No relationship&quot;, 
+			IMAGE(&quot;/resource/1708162574000/Flags/Flags/png/03_flag_red.png&quot;,&quot;No relationship&quot;),
+IMAGE(&quot;/resource/1708162574000/Flags/Flags/png/03_flag_red.png&quot;,&quot;Unknown&quot;))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Relation</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

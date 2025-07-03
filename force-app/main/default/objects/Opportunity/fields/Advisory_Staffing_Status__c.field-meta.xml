@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Advisory_Staffing_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Advisory Staffing Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Open for staffing</fullName>
+                <default>false</default>
+                <label>Open for staffing</label>
+            </value>
+            <value>
+                <fullName>Staffing complete</fullName>
+                <default>false</default>
+                <label>Staffing complete</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

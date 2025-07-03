@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract_Category_FollowUp</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>OPPORTUNITY.TYPE</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <columns>BID_Office_Owner__c</columns>
+    <columns>Contract_Category__c</columns>
+    <columns>BU_Lead__c</columns>
+    <columns>Business_Unit__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Contract_Category_FollowUp__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>notEqual</operation>
+        <value>5 - Awarded,Closed Won,Closed Lost,Abandoned by Customer,Abandoned by Us</value>
+    </filters>
+    <filters>
+        <field>BU_Lead__c</field>
+        <operation>equals</operation>
+        <value>DPS</value>
+    </filters>
+    <label>Contract Category FollowUp</label>
+</ListView>

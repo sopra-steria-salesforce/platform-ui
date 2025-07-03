@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WorkflowAlert xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Alert_Opportunity_assigned_to_BC</fullName>
+    <ccEmails>salg_consulting@soprasteria.com</ccEmails>
+    <description>Alert: Opportunity assigned to BC</description>
+    <protected>false</protected>
+    <senderType>DefaultWorkflowUser</senderType>
+    <template>Default/HTML_Opportunity_BU_Mailbox</template>
+</WorkflowAlert>

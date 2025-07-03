@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DPS_Amount_Won__c</fullName>
+    <description>Removed access 13.05.25 To be deleted</description>
+    <formula>IF( AND(Includes(Business_Unit__c, &quot;DPS&quot;),!INCLUDES(Business_Unit__c, &quot;APPS&quot;) , !INCLUDES(Business_Unit__c,&quot;BC&quot;)), Amount_Won__c, 
+Amount_Won__c * DPS_Share_Pct__c / 100)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>xxxDPS Amount Won</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

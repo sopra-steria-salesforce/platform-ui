@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BID_Office_Owner__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Name of bid manager for the deal. (In Norway, typically a person in Business Development</description>
+    <externalId>false</externalId>
+    <label>BID Office Owner</label>
+    <lookupFilter>
+        <active>false</active>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <filterItems>
+            <field>User.BID_Team_Member__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <filterItems>
+            <field>User.Country</field>
+            <operation>equals</operation>
+            <value>Sweden</value>
+        </filterItems>
+        <infoMessage>BID office must be member of BID Tema (For Norway Only)</infoMessage>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Opportunities1</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+</CustomField>

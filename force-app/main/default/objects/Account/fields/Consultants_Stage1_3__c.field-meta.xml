@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Consultants_Stage1_3__c</fullName>
+    <description>Sum of consultants field for opportunities in stage 1-3</description>
+    <externalId>false</externalId>
+    <label>Consultants Stage1-3</label>
+    <summarizedField>Opportunity.Consultants__c</summarizedField>
+    <summaryFilterItems>
+        <field>Opportunity.StageName</field>
+        <operation>equals</operation>
+        <value>1 - Possibility, 2 - RFI, 3 - Prequal</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <type>Summary</type>
+</CustomField>

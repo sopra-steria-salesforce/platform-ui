@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>HTML: Opportunity: assigned to you</name>
+    <style>none</style>
+    <subject>*Salesforce notification* Opportunity {!Opportunity.Name} on Account {!Account.Name} was assigned to you</subject>
+    <textOnly>New Opportunity {!Opportunity.Name} has been created on account  {!Account.Name} 
+
+The opportunity is registered with the following information: 
+
+Opportunity: {!Opportunity.Name} 
+Account: {!Opportunity.Account} 
+Opportunity Owner: {!Opportunity.OwnerFirstName} {!Opportunity.OwnerLastName} 
+
+Proposal due date: {!Opportunity.Proposal_Due_Date_Time__c} 
+Link to Bid portal: {!Opportunity.Bid_portal_URL__c}
+Link to Opportunity in Salesforce: {!Opportunity.Opportunity_Link__c} 
+Description: {!Opportunity.Description}   
+
+You cannot reply to this e-mail but if you have received this notification by a mistake please contact the Salesforce Admin in Sopra Steria.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

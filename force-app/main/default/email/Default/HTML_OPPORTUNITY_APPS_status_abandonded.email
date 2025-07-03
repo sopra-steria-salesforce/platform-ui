@@ -1,0 +1,17 @@
+</br>
+
+<h3>The Opportunity {!Opportunity.Name} that is assigned to you was abandoned by APPS.</h3></br>
+<strong>The opportunity is registered with the following information:</strong></br></br>
+
+Opportunity: {!Opportunity.Name}</br>
+Account: {!Opportunity.Account}</br>
+Opportunity Owner: {!Opportunity.OwnerFirstName} {!Opportunity.OwnerLastName}</br>
+Stage: {!Opportunity.StageName}</br></br>
+
+Link to Bid portal: {!Opportunity.BID_room__c}</br></br>
+Link to Opportunity in Salesforce: {!Opportunity.Opportunity_Link__c}</br></br>
+<strong>Description:</strong></br>
+{!Opportunity.Description}
+</br></br>
+</hr>
+You cannot reply to this e-mail but if you have received this notification by a mistake please contact the Salesforce Admin in Sopra Steria.

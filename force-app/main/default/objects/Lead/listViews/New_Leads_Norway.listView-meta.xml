@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Leads_Norway</fullName>
+    <columns>LEAD.STATUS</columns>
+    <columns>Lead_Subject__c</columns>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>DB_Created_Date_without_Time__c</columns>
+    <columns>Next_Step__c</columns>
+    <columns>Age__c</columns>
+    <columns>Owner_Name__c</columns>
+    <columns>Business_Unit__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Country__c</field>
+        <operation>equals</operation>
+        <value>Norway</value>
+    </filters>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>equals</operation>
+        <value>New,Qualification</value>
+    </filters>
+    <filters>
+        <field>LEAD.LEAD_SOURCE</field>
+        <operation>equals</operation>
+        <value>Internal Lead</value>
+    </filters>
+    <filters>
+        <field>Primary_Campaign_Source__c</field>
+        <operation>notEqual</operation>
+        <value>Microsoft refferals</value>
+    </filters>
+    <filters>
+        <field>LEAD.CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>THIS_YEAR</value>
+    </filters>
+    <label>New Leads Norway</label>
+    <sharedTo>
+        <group>NO</group>
+    </sharedTo>
+</ListView>

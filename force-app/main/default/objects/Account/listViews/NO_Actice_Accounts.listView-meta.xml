@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NO_Actice_Accounts</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Owner__c</columns>
+    <columns>ACCOUNT.OWNERSHIP</columns>
+    <columns>Classification__c</columns>
+    <columns>Apps_Owner__c</columns>
+    <columns>Apps_Client_Developer_1__c</columns>
+    <columns>Apps_Project_Owner__c</columns>
+    <columns>DPS_Owner__c</columns>
+    <columns>DPS_Client_Developer1__c</columns>
+    <columns>DPS_Client_Developer2__c</columns>
+    <columns>DPS_Engagement_Manager__c</columns>
+    <columns>BC_Owner__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Country__c</field>
+        <operation>equals</operation>
+        <value>Norway</value>
+    </filters>
+    <filters>
+        <field>Owner__c</field>
+        <operation>notEqual</operation>
+        <value>Temp Owner</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.TYPE</field>
+        <operation>equals</operation>
+        <value>Customer,Customer and Partner</value>
+    </filters>
+    <label>NO Active Accounts</label>
+</ListView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>HTML: Opportunity BC status abandonded</name>
+    <style>none</style>
+    <subject>*Salesforce notification* Opportunity {!Opportunity.Name} abandoned by BC</subject>
+    <textOnly>The Opportunity {!Opportunity.Name} that is assigned to you was abandoned by Advisory. 
+
+The opportunity is registered with the following information: 
+
+Opportunity: {!Opportunity.Name} 
+Account: {!Opportunity.Account} 
+Opportunity Owner: {!Opportunity.OwnerFirstName} {!Opportunity.OwnerLastName} 
+Stage: {!Opportunity.StageName} 
+Link to Bid portal: http://soprasteria.force.com/?id={!Opportunity.Id} 
+Link to Opportunity in Salesforce: {!Opportunity.Opportunity_Link__c} 
+
+Description: {!Opportunity.Description}   
+
+
+You cannot reply to this e-mail but if you have received this notification by a mistake please contact the Salesforce Admin in Sopra Steria.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

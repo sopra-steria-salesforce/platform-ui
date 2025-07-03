@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NO_Member_status__c</fullName>
+    <description>A new restricted picklist for Campaign member status used by the norwegian marketing team. 
+Set up as a standard for the event management system we are integrating in 2025.</description>
+    <inlineHelpText>Status på personen knyttet til eventet.</inlineHelpText>
+    <label>Member status</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Attended</fullName>
+                <default>false</default>
+                <label>Attended</label>
+            </value>
+            <value>
+                <fullName>Canceled</fullName>
+                <default>false</default>
+                <label>Canceled</label>
+            </value>
+            <value>
+                <fullName>Internal registered</fullName>
+                <default>false</default>
+                <label>Internal registered</label>
+            </value>
+            <value>
+                <fullName>Invited</fullName>
+                <default>false</default>
+                <label>Invited</label>
+            </value>
+            <value>
+                <fullName>Opted out</fullName>
+                <default>false</default>
+                <label>Opted out</label>
+            </value>
+            <value>
+                <fullName>Registered</fullName>
+                <default>false</default>
+                <label>Registered</label>
+            </value>
+            <value>
+                <fullName>To be invited</fullName>
+                <default>false</default>
+                <label>To be invited</label>
+            </value>
+            <value>
+                <fullName>Unable to attend</fullName>
+                <default>false</default>
+                <label>Unable to attend</label>
+            </value>
+            <value>
+                <fullName>Unmailable</fullName>
+                <default>false</default>
+                <label>Unmailable</label>
+            </value>
+            <value>
+                <fullName>Waitlist</fullName>
+                <default>false</default>
+                <label>Waitlist</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

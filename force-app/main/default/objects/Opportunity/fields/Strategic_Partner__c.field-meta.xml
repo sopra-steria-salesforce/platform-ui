@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Strategic_Partner__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Strategic partner for the Opportunity</inlineHelpText>
+    <label>Strategic Partner</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Amazon (AWS)</fullName>
+                <default>false</default>
+                <label>Amazon (AWS)</label>
+            </value>
+            <value>
+                <fullName>Atlassian</fullName>
+                <default>false</default>
+                <label>Atlassian</label>
+            </value>
+            <value>
+                <fullName>Axway</fullName>
+                <default>false</default>
+                <label>Axway</label>
+            </value>
+            <value>
+                <fullName>Google (GCP)</fullName>
+                <default>false</default>
+                <label>Google (GCP)</label>
+            </value>
+            <value>
+                <fullName>Microsoft</fullName>
+                <default>false</default>
+                <label>Microsoft</label>
+            </value>
+            <value>
+                <fullName>Oracle</fullName>
+                <default>false</default>
+                <label>Oracle</label>
+            </value>
+            <value>
+                <fullName>Redhat</fullName>
+                <default>false</default>
+                <label>Redhat</label>
+            </value>
+            <value>
+                <fullName>SalesForce</fullName>
+                <default>false</default>
+                <label>SalesForce</label>
+            </value>
+            <value>
+                <fullName>Sanity</fullName>
+                <default>false</default>
+                <label>Sanity</label>
+            </value>
+            <value>
+                <fullName>SAP</fullName>
+                <default>false</default>
+                <label>SAP</label>
+            </value>
+            <value>
+                <fullName>ServiceNow</fullName>
+                <default>false</default>
+                <label>ServiceNow</label>
+            </value>
+            <value>
+                <fullName>VMWare</fullName>
+                <default>false</default>
+                <label>VMWare</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

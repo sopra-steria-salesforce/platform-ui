@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Unit_SE__c</fullName>
+    <description>**************
+Remember to update Business Unit SE Snapshot formula field when new picklist values are added!
+**************************</description>
+    <externalId>false</externalId>
+    <label>Business Unit SE</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>DPS</fullName>
+                <default>false</default>
+                <label>Digital Platform Services</label>
+            </value>
+            <value>
+                <fullName>BVS</fullName>
+                <default>false</default>
+                <label>Business Value Services</label>
+            </value>
+            <value>
+                <fullName>Advisory Services</fullName>
+                <default>false</default>
+                <label>Advisory Services</label>
+            </value>
+            <value>
+                <fullName>Apps</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Applications</label>
+            </value>
+            <value>
+                <fullName>BC</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Business Consulting</label>
+            </value>
+            <value>
+                <fullName>Core</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Core Tech Solutions</label>
+            </value>
+            <value>
+                <fullName>East</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>East</label>
+            </value>
+            <value>
+                <fullName>Eggs Part Of Sopra Steria</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Eggs Part Of Sopra Steria</label>
+            </value>
+            <value>
+                <fullName>North</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>North</label>
+            </value>
+            <value>
+                <fullName>West</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>West</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Amount_This_Year_Calculated__c</fullName>
+    <description>Hvis 
+Project tart date er i år og Months__c er fylt ut
+velg den minste verdien av:
+((13 - Måned for Project Start Date ) / Months__c) * Amount.
+I understood that from the  formula And the last element, 3 clause in the IF statement is that the value will be 0 if the Project start date is not this year.  It will actually be wrong if the project start date is in the previous year, but since this field is only intended for forecasting, it should not matter: then projects that were started last year should not be included in any case</description>
+    <externalId>false</externalId>
+    <formula>IF(AND(YEAR(Project_Start_Date__c) = YEAR(TODAY()),Months__c != 0),
+MIN((
+(13-ROUND(MONTH( Project_Start_Date__c ),0))/ Round(Months__c,0) )*Amount,
+Amount),
+0
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Approximate calculation. Assignment Start Date, Amount and Months are used for the calculation, and must all have a value.</inlineHelpText>
+    <label>Amount This Fiscal Year</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

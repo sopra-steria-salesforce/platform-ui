@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunities_phase_1_2_health</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Status__c</columns>
+    <columns>Business_Unit__c</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>Owner_Name__c</columns>
+    <columns>Proposal_Due_Date_Time__c</columns>
+    <columns>BID_Office_Owner__c</columns>
+    <columns>Account_Owner__c</columns>
+    <columns>Apps_Status__c</columns>
+    <columns>BC_Status__c</columns>
+    <columns>DPS_Status__c</columns>
+    <columns>OPPORTUNITY.LAST_ACTIVITY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.CLOSED</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Sector__c</field>
+        <operation>equals</operation>
+        <value>Healthcare</value>
+    </filters>
+    <filters>
+        <field>Owner_Country__c</field>
+        <operation>equals</operation>
+        <value>Norway</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>1 - Possibility,2 - RFI</value>
+    </filters>
+    <label>Opportunities phase 1-2 health</label>
+    <sharedTo>
+        <group>DK</group>
+        <group>NO</group>
+    </sharedTo>
+</ListView>

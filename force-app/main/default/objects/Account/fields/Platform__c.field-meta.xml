@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Platform__c</fullName>
+    <externalId>false</externalId>
+    <label>Platform</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Salesforce</fullName>
+                <default>false</default>
+                <label>Salesforce</label>
+            </value>
+            <value>
+                <fullName>ServiceNow</fullName>
+                <default>false</default>
+                <label>ServiceNow</label>
+            </value>
+            <value>
+                <fullName>Microsoft ERP</fullName>
+                <default>false</default>
+                <label>Microsoft ERP</label>
+            </value>
+            <value>
+                <fullName>Microsoft CRM</fullName>
+                <default>false</default>
+                <label>Microsoft CRM</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

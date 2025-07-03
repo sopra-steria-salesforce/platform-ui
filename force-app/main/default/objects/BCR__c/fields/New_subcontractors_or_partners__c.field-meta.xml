@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_subcontractors_or_partners__c</fullName>
+    <defaultValue>false</defaultValue>
+    <externalId>false</externalId>
+    <inlineHelpText>If new subcontractors or partners are included in the delivery, signed Sopra Steria teaming agreement, Supplier Code of Conduct and Security evalutaion are required</inlineHelpText>
+    <label>New subcontractors or partners ?</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>
