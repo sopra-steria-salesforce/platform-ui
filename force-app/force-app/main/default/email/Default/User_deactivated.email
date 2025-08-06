@@ -1,4 +1,0 @@
-User {!Target_User.Name}, id: {!Target_User.Id} has been deactivated by {!User.Name}. 
-</br>
-</br>
-Please verify changes in record ownership and BU owner fields for Accounts and Opportunities!

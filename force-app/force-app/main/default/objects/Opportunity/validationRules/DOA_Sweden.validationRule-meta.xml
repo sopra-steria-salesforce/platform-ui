@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>DOA_Sweden</fullName>
-    <active>true</active>
-    <errorConditionFormula>AND(  Contract_review_according_to_DOA__c = true,  Call_off_according_to_Avropsinstruktion__c = true)</errorConditionFormula>
-    <errorMessage>You can only select &apos;Call off according to Avropsinstruktion&apos; OR  &apos;Contract review according to DOA&apos;, NOT both conditions at the same time, Please deselect one of the fields!</errorMessage>
-</ValidationRule>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Calloff_required_Fields_SE</fullName>
-    <active>true</active>
-    <description>For Sweden</description>
-    <errorConditionFormula>AND(Frame_Agreement_Call_off__c = true, OR( TEXT(Frame_Agreement_SE__c)=&apos;&apos;, ISBLANK( Call_Off_Due_Date__c ), ISBLANK( Call_Off_Request_Date__c )))</errorConditionFormula>
-    <errorMessage>When &apos;Frame Agreement Call-off&apos; is checked, Frame agreement, Call-off Due Date and Call-off Request date must all have a value</errorMessage>
-</ValidationRule>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Is_related_to_active_opportunity__c</fullName>
-    <defaultValue>false</defaultValue>
-    <description>Is used by Opportunity Overview</description>
-    <externalId>false</externalId>
-    <label>Is related to active opportunity</label>
-    <type>Checkbox</type>
-</CustomField>

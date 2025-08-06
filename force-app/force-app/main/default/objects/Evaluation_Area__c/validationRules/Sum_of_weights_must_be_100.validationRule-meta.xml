@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Sum_of_weights_must_be_100</fullName>
-    <active>true</active>
-    <errorConditionFormula>OR((Validate_Weight_Capacity__c +  Validate_Weight_CV__c +  Validate_Weight_Other__c +  Validate_Weight_Price__c +  Validate_Weight_Quality__c) &lt;=0.99 , (Validate_Weight_Capacity__c +  Validate_Weight_CV__c +  Validate_Weight_Other__c +  Validate_Weight_Price__c +  Validate_Weight_Quality__c) &gt;= 1.01)</errorConditionFormula>
-    <errorMessage>Sum of all Weight values must be 100%</errorMessage>
-</ValidationRule>

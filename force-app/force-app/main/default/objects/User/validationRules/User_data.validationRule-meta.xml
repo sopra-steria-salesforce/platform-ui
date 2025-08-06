@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>User_data</fullName>
-    <active>true</active>
-    <errorConditionFormula>!(Country =  &quot;Norway&quot; || Country = &quot;Denmark&quot; || Country = &quot;Sweden&quot; || Country = &quot;Temp&quot;)</errorConditionFormula>
-    <errorDisplayField>Country</errorDisplayField>
-    <errorMessage>Country must be &apos;Norway&apos;, &apos;Denmark&apos; or &apos;Sweden&apos;.</errorMessage>
-</ValidationRule>

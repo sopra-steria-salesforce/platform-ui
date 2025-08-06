@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Status_Change</fullName>
-    <active>true</active>
-    <errorConditionFormula>AND(TEXT(Status__c) = &apos;Sent&apos;, $Permission.Bypass_validation_rule = FALSE,ISCHANGED(StageName), OR(TEXT(StageName) = &apos;2 - RFI&apos;, TEXT(StageName) = &apos;3 - Prequal&apos;, TEXT(StageName) = &apos;4 - Offer&apos;))</errorConditionFormula>
-    <errorDisplayField>Status__c</errorDisplayField>
-    <errorMessage>When Stage is changed to RFI, Prequal or Offer, new Status must be &apos;In Progress&apos;</errorMessage>
-</ValidationRule>

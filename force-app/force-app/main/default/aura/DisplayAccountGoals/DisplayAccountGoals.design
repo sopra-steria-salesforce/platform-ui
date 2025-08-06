@@ -1,4 +1,0 @@
-<design:component>
-    <design:attribute name="taskList" Label="Task IDs (Business Goals)"/>
-    <design:attribute name="selectedTasks" Label="Selected Task (Business Goals)"/>
-</design:component>

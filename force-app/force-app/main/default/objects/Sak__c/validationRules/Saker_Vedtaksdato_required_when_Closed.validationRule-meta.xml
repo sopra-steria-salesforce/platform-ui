@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Saker_Vedtaksdato_required_when_Closed</fullName>
-    <active>false</active>
-    <errorConditionFormula>ISPICKVAL(Status__c, &quot;Ferdig behandlet&quot;) &amp;&amp;
-ISBLANK( Decision_date__c )</errorConditionFormula>
-    <errorMessage>Vedtaksdato må fylles inn når status settes til Ferdig behandlet</errorMessage>
-</ValidationRule>

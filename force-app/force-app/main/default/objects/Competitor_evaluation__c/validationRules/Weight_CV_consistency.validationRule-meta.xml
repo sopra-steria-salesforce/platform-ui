@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Weight_CV_consistency</fullName>
-    <active>true</active>
-    <errorConditionFormula>AND( Evaluation_Area__r.Validate_Weight_CV__c = 0 ,  Score_Quality_CV__c != 0)</errorConditionFormula>
-    <errorMessage>You have added a Quality CV score, but no Quality CV Weight in the opportunity!</errorMessage>
-</ValidationRule>
