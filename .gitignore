@@ -50,3 +50,6 @@ target/
 /.illuminatedCloud/
 **/tsconfig*.json
 **/*.tsbuildinfo
+/testdata/source
+testdata/CSVIssuesReport.csv
+testdata/MissingParentRecordsReport.csv
