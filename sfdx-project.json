@@ -23,15 +23,11 @@
 				},
 				{
 					"package": "platform-base",
-					"versionNumber": "1.2.0.LATEST"
+					"versionNumber": "1.10.0.LATEST"
 				},
 				{
 					"package": "document-transfer",
-					"versionNumber": "0.7.0.LATEST"
-				},
-				{
-					"package": "document-transfer",
-					"versionNumber": "0.7.0.LATEST"
+					"versionNumber": "0.8.0.LATEST"
 				},
 				{
 					"package": "bids",
