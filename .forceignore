@@ -16,3 +16,15 @@
 **/tsconfig*.json
 **/*.tsbuildinfo
 **/eslint.config.mjs
+
+# Ignore (Home) FlexiPages with Dashboard & Report references
+force-app/main/default/flexipages/SE_Home.flexipage-meta.xml
+force-app/main/default/flexipages/NO_Home.flexipage-meta.xml
+force-app/main/default/flexipages/DK_Home.flexipage-meta.xml
+force-app/main/default/flexipages/Apps_home.flexipage-meta.xml
+force-app/main/default/flexipages/desktopDefault.flexipage-meta.xml
+force-app/main/default/flexipages/desktopDefaultBC.flexipage-meta.xml
+
+force-app/main/default/flexipages/Account_Dynamic_Form_Desktop.flexipage-meta.xml
+force-app/main/default/flexipages/Account_Dynamic_Form_Phone.flexipage-meta.xml
+force-app/main/default/flexipages/Account_Record_Page.flexipage-meta.xml
