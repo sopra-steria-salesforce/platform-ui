@@ -5,6 +5,9 @@
 			"versionDescription": "Top level package for Flexipages, Quick Actions, Applications, Reports, etc. that span the entire platform",
 			"versionNumber": "0.1.0.NEXT",
 			"path": "force-app",
+			"seedMetadata": {
+				"path": "pre_dependencies/standardValueSets"
+			},
 			"dependencies": [
 				{
 					"package": "Nebula Logger@4.16.0.2"
