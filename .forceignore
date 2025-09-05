@@ -18,12 +18,12 @@
 **/eslint.config.mjs
 
 # Ignore (Home) FlexiPages and Apps with Dashboard & Report references
-#force-app/flexipages/SE_Home.flexipage-meta.xml
+force-app/flexipages/SE_Home.flexipage-meta.xml
 force-app/flexipages/NO_Home.flexipage-meta.xml
-#force-app/flexipages/DK_Home.flexipage-meta.xml
-#force-app/flexipages/Apps_home.flexipage-meta.xml
+force-app/flexipages/DK_Home.flexipage-meta.xml
+force-app/flexipages/Apps_home.flexipage-meta.xml
 force-app/flexipages/desktopDefault.flexipage-meta.xml
-#force-app/flexipages/desktopDefaultBC.flexipage-meta.xml
+force-app/flexipages/desktopDefaultBC.flexipage-meta.xml
 
 # Account record pages not in use
 force-app/flexipages/Account_Dynamic_Form_Desktop.flexipage-meta.xml
