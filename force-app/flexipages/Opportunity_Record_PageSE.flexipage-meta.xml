@@ -1853,7 +1853,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>richTextValue</name>
-                    <value>&lt;p&gt;&lt;strong style=&quot;font-size: 16px;&quot;&gt;Contract Upload&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Click this link: &lt;a href=&quot;https://alfred.service-now.com/hub?id=emp_taxonomy_topic&amp;amp;topic_id=c4152a671bf58ad0b168a938bd4bcb47&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;The Hub applications - The Hub &lt;/a&gt;and select contract upload option&lt;/p&gt;</value>
+                    <value>&lt;p&gt;&lt;strong style=&quot;font-size: 16px;&quot;&gt;Contract Upload&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(68, 68, 68);&quot;&gt;Click this link: &lt;/span&gt;&lt;a href=&quot;https://thehub.soprasteria.com/hub?id=sc_cat_item&amp;amp;table=sc_cat_item&amp;amp;sys_id=366fcafac3b4d250314e77f4e40131b8&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;color: rgb(12, 102, 228); font-size: 14px; font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Ubuntu, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; background-color: rgb(255, 255, 255);&quot;&gt;Extension/change of agreement - The Hub&lt;/a&gt;&lt;span style=&quot;color: rgb(68, 68, 68);&quot;&gt; and upload contract &lt;/span&gt;&lt;/p&gt;</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:richText</componentName>
                 <identifier>flexipage_richText2</identifier>

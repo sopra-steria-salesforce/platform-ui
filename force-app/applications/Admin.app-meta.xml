@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Opportunity_Record_Page_NO</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+    </actionOverrides>
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <logo>setup</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>Admin tools</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>Admin</label>
+    <navType>Standard</navType>
+    <setupExperience>all</setupExperience>
+    <tabs>Bid_URL__c</tabs>
+    <tabs>Bid__c</tabs>
+    <tabs>Bid_URL_SE__c</tabs>
+    <tabs>Bid_SE__c</tabs>
+    <tabs>standard-Opportunity</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-DeleteEvent</tabs>
+    <tabs>standard-OrgMetric</tabs>
+    <tabs>Employee__c</tabs>
+    <tabs>Account_Contract_Archive_Junction__c</tabs>
+    <tabs>Opportunity_Power_Map__c</tabs>
+    <tabs>OpportunityLog__c</tabs>
+    <tabs>AccountLog__c</tabs>
+    <tabs>Application_Log__c</tabs>
+    <tabs>G_Customer__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>BidAdmin_UtilityBar</utilityBar>
+</CustomApplication>
