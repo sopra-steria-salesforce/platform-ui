@@ -8,15 +8,7 @@
 	],
 	"pre_deploy": [],
 	"post_deploy": [
-		{
-			"type": "metadata",
-			"value": "unpackaged"
-		}
 	],
 	"post_install": [
-		{
-			"type": "metadata",
-			"value": "unpackaged"
-		}
 	]
 }
