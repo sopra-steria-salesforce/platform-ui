@@ -214,16 +214,6 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.New_Account__c</fieldItem>
-                <identifier>RecordNew_Account_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
                     <value>required</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.AccountId</fieldItem>
@@ -420,16 +410,6 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Domain__c</fieldItem>
-                <identifier>RecordDomain_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.Strategic_Partner__c</fieldItem>
                 <identifier>RecordPartner_Funnel__cField</identifier>
             </fieldInstance>
@@ -462,16 +442,6 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.High_Importance__c</fieldItem>
                 <identifier>RecordHigh_Importance_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.C3_Level__c</fieldItem>
-                <identifier>RecordC3_Level_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
