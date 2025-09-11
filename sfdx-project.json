@@ -3,7 +3,7 @@
         {
             "package": "platform-ui",
             "versionDescription": "Top level package for Flexipages, Quick Actions, Applications, Reports, etc. that span the entire platform",
-            "versionNumber": "0.2.0.NEXT",
+            "versionNumber": "0.3.0.NEXT",
             "path": "force-app",
             "seedMetadata": {
                 "path": "pre_dependencies/standardValueSets"
@@ -54,5 +54,7 @@
         "document-transfer": "0HoP100000001FRKAY",
         "bids": "0HoP100000001fFKAQ"
     },
-    "sourceBehaviorOptions": ["decomposeWorkflowBeta"]
+    "sourceBehaviorOptions": [
+        "decomposeWorkflowBeta"
+    ]
 }
