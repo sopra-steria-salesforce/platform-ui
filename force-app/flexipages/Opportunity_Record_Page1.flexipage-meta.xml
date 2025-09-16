@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
     <flexiPageRegions>
         <itemInstances>
@@ -308,6 +308,16 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
+                <fieldItem>Record.Domain__c</fieldItem>
+                <identifier>RecordDomain_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Region__c</fieldItem>
                 <identifier>RecordRegion_cField</identifier>
             </fieldInstance>
@@ -320,6 +330,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Campaign_Source__c</fieldItem>
                 <identifier>RecordCampaign_Source_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.C3_Level__c</fieldItem>
+                <identifier>RecordC3_Level_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-af1cbb39-1bb3-40c8-a502-304bce891672</name>

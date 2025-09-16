@@ -3,7 +3,6 @@
     <customButtons>Bid_room</customButtons>
     <excludeButtons>ChangeRecordType</excludeButtons>
     <excludeButtons>Clone</excludeButtons>
-    <excludeButtons>OpenSlackRecordChannel</excludeButtons>
     <excludeButtons>SendEmail</excludeButtons>
     <excludeButtons>Share</excludeButtons>
     <excludeButtons>Submit</excludeButtons>
@@ -76,6 +75,10 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>C3_Level__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>Apps_Opportunity_Manager__c</field>
             </layoutItems>
             <layoutItems>
@@ -107,6 +110,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Opportunity_Contact__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Domain__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -648,12 +655,6 @@
         <relatedList>Opportunity_Contributor__c.Opportunity__c</relatedList>
     </relatedLists>
     <relatedLists>
-        <fields>MemberName</fields>
-        <fields>OppAccessLevel</fields>
-        <fields>TeamMemberRole</fields>
-        <relatedList>RelatedOpportunitySalesTeam</relatedList>
-    </relatedLists>
-    <relatedLists>
         <excludeButtons>MassChangeOwner</excludeButtons>
         <fields>Contact_lkp__c</fields>
         <fields>Contact.NAME</fields>
@@ -673,7 +674,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00hPv00000AXg63</masterLabel>
+        <masterLabel>00h58000000fsbv</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>
