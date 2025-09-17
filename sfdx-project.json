@@ -14,7 +14,7 @@
                 { "package": "trigger-actions-framework@0.3.2" },
                 {
                     "package": "platform-base",
-                    "versionNumber": "2.10.0.LATEST"
+                    "versionNumber": "2.11.0.LATEST"
                 },
                 {
                     "package": "document-transfer",
