@@ -799,6 +799,16 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
+                <fieldItem>Record.Assignment_Date_Extended__c</fieldItem>
+                <identifier>RecordAssignment_Date_Extended_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Consultant_Onsite__c</fieldItem>
                 <identifier>RecordConsultant_Onsite_cField</identifier>
             </fieldInstance>
