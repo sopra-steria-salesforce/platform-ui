@@ -165,7 +165,7 @@
                             </visibilityRule>
                         </valueListItems>
                         <valueListItems>
-                            <value>CustomButton.Opportunity.Add_to_My_Opps_DetailPage</value>
+                            <value>CustomButton.Opportunity.MyOppsDetailPage</value>
                         </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
