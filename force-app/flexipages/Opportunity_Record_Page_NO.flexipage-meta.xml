@@ -799,8 +799,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Assignment_Date_Extended__c</fieldItem>
-                <identifier>RecordAssignment_Date_Extended_cField</identifier>
+                <fieldItem>Record.Assignment_End_Date_Extended__c</fieldItem>
+                <identifier>RecordAssignment_End_Date_Extended_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
