@@ -18,7 +18,7 @@
                 },
                 {
                     "package": "document-transfer",
-                    "versionNumber": "0.12.0.LATEST"
+                    "versionNumber": "0.13.0.LATEST"
                 },
                 { "package": "bids", "versionNumber": "0.1.0.LATEST" }
             ]
