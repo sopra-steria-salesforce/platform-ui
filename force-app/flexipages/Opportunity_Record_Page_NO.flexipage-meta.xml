@@ -1041,50 +1041,10 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Contract_Type__c</fieldItem>
-                <identifier>RecordContract_Type_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
                     <value>readonly</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Apps_Sales_Progress__c</fieldItem>
                 <identifier>RecordApps_Sales_Progress_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Apps_Win_Loss_Review__c</fieldItem>
-                <identifier>RecordApps_Win_Loss_Review_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Apps_Win_Loss_Reason__c</fieldItem>
-                <identifier>RecordApps_Win_Loss_Reason_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Apps_Win_Loss_Additional_Comments__c</fieldItem>
-                <identifier>RecordApps_Win_Loss_Additional_Comments_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-a88c216a-8d13-4f66-acba-3fe401bd2902</name>
