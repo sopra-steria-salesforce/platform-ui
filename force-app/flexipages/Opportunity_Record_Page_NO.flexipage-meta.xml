@@ -703,7 +703,7 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>ReadOnly</value>
+                    <value>readonly</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Months__c</fieldItem>
                 <identifier>RecordMonths_cField</identifier>
