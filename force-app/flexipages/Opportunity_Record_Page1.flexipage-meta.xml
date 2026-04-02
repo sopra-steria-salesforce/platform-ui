@@ -482,21 +482,12 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>none</value>
+                    <value>readonly</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Months__c</fieldItem>
                 <identifier>RecordMonths_cField</identifier>
             </fieldInstance>
         </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Consultants__c</fieldItem>
-                <identifier>RecordConsultants_cField</identifier>
-            </fieldInstance>
         </itemInstances>
         <itemInstances>
             <fieldInstance>
